@@ -1,0 +1,22 @@
+{
+  "name": "typescript-framework",
+  "version": "0.0.1",
+  "description": "A framework for a full stack ui in expressjs and react",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist/ && npx tsc -p tsconfig-build.json"
+  },
+  "author": "adityahegderocks@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^15.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "pluralize": "^8.0.0",
+    "validator": "^13.6.0"
+  }
+}
