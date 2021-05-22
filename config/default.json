@@ -1,0 +1,15 @@
+{
+  "log": {
+    "level": "debug"
+  },
+  "server": {
+    "port": 8080,
+    "routes": {
+      "recordsResultLimit": 5
+    }
+  },
+  "mongodb": {
+    "connectionUrl": "mongodb://localhost",
+    "dbName": "server-test"
+  }
+}
