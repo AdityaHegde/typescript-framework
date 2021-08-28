@@ -1,8 +1,8 @@
 import {Authentication} from "../Authentication";
 import {Application, Request, Response} from "express";
 import session from "express-session";
-import {Log} from "../../../logging/LoggerBase";
-import {DataStore} from "../../../datastore/DataStore";
+import {Log} from "../../logging/LoggerBase";
+import {DataStore} from "../../datastore/DataStore";
 
 const SESSION_COOKIE = "sid";
 

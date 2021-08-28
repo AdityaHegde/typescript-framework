@@ -2,10 +2,10 @@ import {Application, Request, Response} from "express";
 import {UserAuthentication} from "./UserAuthentication";
 import {RouteFactory} from "../routes/RouteFactory";
 import {AuthenticationConfig} from "./AuthenticationConfig";
-import {LoggerBase} from "../../logging/LoggerBase";
-import {DataStore} from "../../datastore/DataStore";
-import {UserModel} from "../../../models/UserModel";
-import {UserInvite} from "../../../models/UserInvite";
+import {LoggerBase} from "../logging/LoggerBase";
+import {DataStore} from "../datastore/DataStore";
+import {UserModel} from "../../models/UserModel";
+import {UserInvite} from "../../models/UserInvite";
 
 export abstract class Authentication extends LoggerBase {
   protected config: AuthenticationConfig;

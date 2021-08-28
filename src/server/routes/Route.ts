@@ -1,10 +1,10 @@
-import {DataStoreModel} from "../../datastore/DataStoreModel";
+import {DataStoreModel} from "../datastore/DataStoreModel";
 import {Request, Router} from "express";
 import {Authentication} from "../authentication/Authentication";
-import {LoggerBase} from "../../logging/LoggerBase";
+import {LoggerBase} from "../logging/LoggerBase";
 import {RouteFactory} from "./RouteFactory";
 import {RoutesConfig} from "./RoutesConfig";
-import { BaseType } from "../../../models/BaseType";
+import { BaseType } from "../../models/BaseType";
 
 export class Route extends LoggerBase {
   public readonly model: typeof BaseType;

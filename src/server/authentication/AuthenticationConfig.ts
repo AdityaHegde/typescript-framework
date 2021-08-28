@@ -1,4 +1,4 @@
-import {Config} from "../../../utils/Config";
+import {Config} from "../../utils/Config";
 
 export class AuthenticationConfig extends Config<AuthenticationConfig> {
   @Config.ConfigField()

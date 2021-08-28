@@ -1,7 +1,7 @@
 import should from "should";
 import {MochaTestBase} from "../../../src/test-utils/mocha";
 import {DataProviderData} from "../../../src/test-utils";
-import {getQueryString} from "../../../src/utils/getQueryString";
+import {getQueryString} from "../../../src/ui/utils/getQueryString";
 
 @MochaTestBase.Suite
 export class GetQueryStringSpec extends MochaTestBase {

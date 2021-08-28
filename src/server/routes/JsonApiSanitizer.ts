@@ -1,8 +1,8 @@
 import {Request} from "express";
 import {JsonApiRoute, JSONRecordType} from "./JsonApiRoute";
 import {RouteFactory} from "./RouteFactory";
-import {ModelSelectFieldType} from "../../../models/metadata/Fields";
-import {BaseType} from "../../../models/BaseType";
+import {ModelSelectFieldType} from "../../models/metadata/Fields";
+import {BaseType} from "../../models/BaseType";
 
 /**
  * Extracted responsibility of sanitizing various aspects in json api from JsonApiRoute

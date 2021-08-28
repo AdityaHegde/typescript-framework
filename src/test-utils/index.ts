@@ -1,4 +1,1 @@
-import {DataProviderData, TestBase} from "./TestBase";
-export {
-  TestBase, DataProviderData,
-}
+export {DataProviderData, TestBase} from "./TestBase";

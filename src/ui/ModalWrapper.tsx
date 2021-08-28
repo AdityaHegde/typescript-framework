@@ -1,7 +1,7 @@
 import React from "react";
-import {ModelForm, useFormRef} from "../form";
+import {ModelForm, useFormRef} from "./form";
 import Modal from "antd/lib/modal/Modal";
-import { BaseType } from "../../models/BaseType";
+import { BaseType } from "../models/BaseType";
 
 type ModalWrapperProps<Model extends BaseType> = {
   title: string;

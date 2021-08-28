@@ -3,9 +3,9 @@ import http from "http";
 import cookieParser from "cookie-parser";
 import {Authentication} from "./authentication/Authentication";
 import {RouteFactory} from "./routes/RouteFactory";
-import {DataStore} from "../datastore/DataStore";
+import {DataStore} from "./datastore/DataStore";
 import bodyParser from "body-parser";
-import {Log, LoggerBase} from "../logging/LoggerBase";
+import {Log, LoggerBase} from "./logging/LoggerBase";
 import {ServerConfig} from "./ServerConfig";
 
 @Log

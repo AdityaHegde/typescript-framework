@@ -5,12 +5,12 @@ import {BootstrapDataType, getInstances} from "../../test-bases/getInstances";
 import {JwtMongooseTestBase} from "../../test-bases/JwtMongooseTestBase";
 import {ServerParameterizedTestBase} from "../../test-bases/ServerParameterizedTestBase";
 import {UserModel} from "../../../src/models/UserModel";
-import {ServerConfig} from "../../../src/server/server/ServerConfig";
+import {ServerConfig} from "../../../src/server/ServerConfig";
 import {loginUser} from "../../utils/getCookieJar";
 import {DataStore} from "../../../src/server/datastore/DataStore";
-import {JsonApiRoute} from "../../../src/server/server/routes/JsonApiRoute";
-import {JwtAuthentication} from "../../../src/server/server/authentication/jwt";
-import {RouteFactory} from "../../../src/server/server/routes/RouteFactory";
+import {JsonApiRoute} from "../../../src/server/routes/JsonApiRoute";
+import {JwtAuthentication} from "../../../src/server/authentication/jwt";
+import {RouteFactory} from "../../../src/server/routes/RouteFactory";
 import { UserWithSingleRole } from "../../test-classes/server/user/UserWithSingleRole";
 
 @ServerParameterizedTestBase.StaticSuite

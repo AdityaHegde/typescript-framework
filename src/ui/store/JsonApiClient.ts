@@ -1,6 +1,6 @@
 import {ModelClient} from "./ModelClient";
 import {fetchWrapper} from "../utils/fetch";
-import {getQueryString} from "../../utils/getQueryString";
+import {getQueryString} from "../utils/getQueryString";
 import {ModelNameMap} from "../../models/ModelList";
 import {BaseType} from "../../models/BaseType";
 

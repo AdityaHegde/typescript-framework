@@ -1,4 +1,4 @@
-import {Config} from "../../../utils/Config";
+import {Config} from "../../utils/Config";
 
 export class RoutesConfig extends Config<RoutesConfig> {
   @Config.ConfigField(25)

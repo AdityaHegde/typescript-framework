@@ -1,6 +1,6 @@
 import {AuthenticationConfig} from "./authentication/AuthenticationConfig";
 import {RoutesConfig} from "./routes/RoutesConfig";
-import {Config} from "../../utils/Config";
+import {Config} from "../utils/Config";
 
 export class ServerConfig extends Config<ServerConfig> {
   @Config.ConfigField()

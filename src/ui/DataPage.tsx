@@ -1,12 +1,12 @@
 import React from "react";
 import {Button} from "antd";
 import {ModalWrapper} from "./ModalWrapper";
-import {ModelList} from "../list";
-import {useRecords, useRecordOperations, ModelStore} from "../store";
-import {ModelFilter} from "../filter";
-import {RestrictAccess} from "../user/RestrictAccess";
-import {ModelNameMap, PolymorphicModelLookup} from "../../models/ModelList";
-import { BaseType } from "../../models/BaseType";
+import {ModelList} from "./list";
+import {useRecords, useRecordOperations, ModelStore} from "./store";
+import {ModelFilter} from "./filter";
+import {RestrictAccess} from "./user/RestrictAccess";
+import {ModelNameMap, PolymorphicModelLookup} from "../models/ModelList";
+import { BaseType } from "../models/BaseType";
 
 export function DataPage<Model extends BaseType>(
   {modelStore, params}: { modelStore: ModelStore<Model>, params?: any },

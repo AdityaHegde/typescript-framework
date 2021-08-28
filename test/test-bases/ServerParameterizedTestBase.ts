@@ -1,9 +1,9 @@
 import {ServerTestBase} from "./ServerTestBase";
 import {BootstrapDataType} from "./getInstances";
-import {ServerConfig} from "../../src/server/server/ServerConfig";
-import {Authentication} from "../../src/server/server/authentication/Authentication";
+import {ServerConfig} from "../../src/server/ServerConfig";
+import {Authentication} from "../../src/server/authentication/Authentication";
 import {DataStore} from "../../src/server/datastore/DataStore";
-import {RouteFactory} from "../../src/server/server/routes/RouteFactory";
+import {RouteFactory} from "../../src/server/routes/RouteFactory";
 
 export class ServerParameterizedTestBase extends ServerTestBase {
   protected bootstrapData: BootstrapDataType;

@@ -1,9 +1,9 @@
 import {Route} from "./Route";
 import {Application, Router} from "express";
-import {DataStoreModelFactory} from "../../datastore/DataStoreModelFactory";
+import {DataStoreModelFactory} from "../datastore/DataStoreModelFactory";
 import {Authentication} from "../authentication/Authentication";
 import {RoutesConfig} from "./RoutesConfig";
-import { ModelList } from "../../../models/ModelList";
+import { ModelList } from "../../models/ModelList";
 
 const API_BASE = "api";
 

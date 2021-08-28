@@ -1,10 +1,10 @@
-import {DataStoreModel} from "../../datastore/DataStoreModel";
+import {DataStoreModel} from "../datastore/DataStoreModel";
 import bcrypt from "bcrypt";
 import {Route} from "../routes/Route";
 import {Request} from "express";
-import {Log, LoggerBase} from "../../logging/LoggerBase";
-import {UserModel} from "../../../models/UserModel";
-import {UserInvite} from "../../../models/UserInvite";
+import {Log, LoggerBase} from "../logging/LoggerBase";
+import {UserModel} from "../../models/UserModel";
+import {UserInvite} from "../../models/UserInvite";
 
 const SALT_LENGTH = 10;
 

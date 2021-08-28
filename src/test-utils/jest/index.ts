@@ -1,4 +1,1 @@
-import {JestTestBase} from "./JestTestBase";
-export {
-  JestTestBase
-}
+export {JestTestBase} from "./JestTestBase";

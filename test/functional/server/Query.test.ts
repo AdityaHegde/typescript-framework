@@ -2,7 +2,7 @@ import got from "got";
 import should from "should";
 import {QueryTestModel} from "../../test-classes/server/QueryTestModel";
 import {JwtMongooseTestBase} from "../../test-bases/JwtMongooseTestBase";
-import {JSONRecordType, JSONResponse} from "../../../src/server/server/routes/JsonApiRoute";
+import {JSONRecordType, JSONResponse} from "../../../src/server/routes/JsonApiRoute";
 import {sanitize} from "../../data/mongoose";
 
 @JwtMongooseTestBase.Suite

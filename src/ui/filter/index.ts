@@ -1,6 +1,2 @@
-import {ModelFilter} from "./ModelFilter";
-import {NumberFilterItem} from "./NumberFilterItem";
-
-export {
-  ModelFilter, NumberFilterItem,
-}
+export {ModelFilter} from "./ModelFilter";
+export {NumberFilterItem} from "./NumberFilterItem";

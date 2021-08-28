@@ -22,9 +22,6 @@ export class MongooseStore extends DataStore {
   public async connect(): Promise<void> {
     this.mongoose = await mongoose.connect(this.config.connectionUrl, {
       dbName: this.config.dbName,
-      useNewUrlParser: true,
-      useFindAndModify: false,
-      useUnifiedTopology: true,
     });
 
     this.logger.info("Connected to mongo db");

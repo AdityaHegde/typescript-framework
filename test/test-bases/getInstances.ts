@@ -3,13 +3,13 @@ import {UserInvite} from "../../src/models/UserInvite";
 import {MongooseStore, MongooseStoreModelFactory} from "../../src/server/datastore/mongoose";
 import {User} from "../test-classes/ui/User";
 import {DataStoreModelFactory} from "../../src/server/datastore/DataStoreModelFactory";
-import {SessionAuthentication} from "../../src/server/server/authentication/session";
-import {ServerConfig} from "../../src/server/server/ServerConfig";
-import {Authentication} from "../../src/server/server/authentication/Authentication";
-import {JsonApiRoute} from "../../src/server/server/routes/JsonApiRoute";
+import {SessionAuthentication} from "../../src/server/authentication/session";
+import {ServerConfig} from "../../src/server/ServerConfig";
+import {Authentication} from "../../src/server/authentication/Authentication";
+import {JsonApiRoute} from "../../src/server/routes/JsonApiRoute";
 import {DataStore} from "../../src/server/datastore/DataStore";
-import {JwtAuthentication} from "../../src/server/server/authentication/jwt";
-import {RouteFactory} from "../../src/server/server/routes/RouteFactory";
+import {JwtAuthentication} from "../../src/server/authentication/jwt";
+import {RouteFactory} from "../../src/server/routes/RouteFactory";
 import {bootstrapMongooseData} from "../data/mongoose";
 
 const serverConfig = new ServerConfig({

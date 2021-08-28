@@ -1,4 +1,1 @@
-import {MochaTestBase} from "./MochaTestBase";
-export {
-  MochaTestBase
-}
+export {MochaTestBase} from "./MochaTestBase";

@@ -1,5 +1,5 @@
 import validator from "validator";
-import { BaseType } from "../../../models/BaseType";
+import { BaseType } from "../../models/BaseType";
 import {ValidationError} from "./ValidationError";
 
 export function validateRecord(model: typeof BaseType, record: BaseType) {

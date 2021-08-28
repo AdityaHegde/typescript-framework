@@ -1,17 +1,17 @@
 import {Route} from "./Route";
 import {Request, Response, Router} from "express";
 import {validateRecord} from "../validation/validateRecord";
-import {Log} from "../../logging/LoggerBase";
+import {Log} from "../logging/LoggerBase";
 import { JsonApiSanitizer } from "./JsonApiSanitizer";
 import {RouteFactory} from "./RouteFactory";
-import {DataStoreModel} from "../../datastore/DataStoreModel";
+import {DataStoreModel} from "../datastore/DataStoreModel";
 import {Authentication} from "../authentication/Authentication";
 import {RoutesConfig} from "./RoutesConfig";
-import {UserModel} from "../../../models/UserModel";
-import {ModelSelectFieldType} from "../../../models/metadata/Fields";
-import {BaseType} from "../../../models/BaseType";
-import {getQueryString} from "../../../utils/getQueryString";
-import {ModelNameMap} from "../../../models/ModelList";
+import {UserModel} from "../../models/UserModel";
+import {ModelSelectFieldType} from "../../models/metadata/Fields";
+import {BaseType} from "../../models/BaseType";
+import {getQueryString} from "../../ui/utils/getQueryString";
+import {ModelNameMap} from "../../models/ModelList";
 
 export type LinksType = {
   [link in string]: string
