@@ -14,11 +14,16 @@
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "sourceMap": true,
-    "declaration": true
+    "declaration": true,
+    "skipLibCheck": true
   },
   "include": [
     "src/**/*.ts",
+    "src/**/*.tsx",
     "test/**/*.ts",
+    "test/**/*.tsx",
+    "example/**/*.ts",
+    "example/**/*.tsx",
     "gulpfile.ts"
   ],
   "exclude": [

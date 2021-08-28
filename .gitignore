@@ -11,7 +11,7 @@
 #### Generated
 /dist
 /coverage
-/test/functional/server/public
+/example/server/public
 
 #### Misc
 npm-debug.log

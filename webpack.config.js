@@ -6,7 +6,7 @@ module.exports = {
   mode: "development",
   devtool: "source-map",
   entry: [
-    "./test/functional/ui/index.tsx",
+    "./example/ui/index.tsx",
   ],
   resolve: {
     extensions: ["*", ".ts", ".tsx", ".js"],
@@ -14,7 +14,7 @@ module.exports = {
 
   module: {
     rules: [{
-      test: /(src|test)\/.*\.tsx?$/,
+      test: /(src|test|example)\/.*\.tsx?$/,
       loader: "ts-loader",
       options: {
         configFile: "tsconfig-webpack.json",
@@ -36,8 +36,6 @@ module.exports = {
     }],
   },
 
-  watch: true,
-
   plugins: [
     new CleanWebpackPlugin({
       cleanStaleWebpackAssets: false,
@@ -56,7 +54,7 @@ module.exports = {
 
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "test/functional/server/public"),
+    path: path.resolve(__dirname, "example/server/public"),
     publicPath: "/",
   },
 };
