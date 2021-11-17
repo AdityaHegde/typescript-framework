@@ -1,11 +1,7 @@
-import {MochaTestBase} from "../../src/test-utils/mocha";
-import {ServerConfig} from "../../src/server/ServerConfig";
-import {Authentication} from "../../src/server/authentication/Authentication";
-import {DataStore} from "../../src/server/datastore/DataStore";
 import {Models, UserModels} from "../test-classes/server/Models";
-import {addModelsToList} from "../../src/models/ModelList";
-import {RouteFactory} from "../../src/server/routes/RouteFactory";
-import {Server} from "../../src/server/Server";
+import {MochaTestBase} from "@adityahegde/typescript-test-utils/dist/mocha";
+import {Authentication, DataStore, RouteFactory, Server, ServerConfig} from "../../src/server";
+import {addModelsToList} from "../../src/models";
 
 addModelsToList([
   ...Models,

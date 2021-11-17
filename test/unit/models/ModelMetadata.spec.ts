@@ -1,10 +1,8 @@
 import should from "should";
-import { MochaTestBase } from "../../../src/test-utils/mocha";
-import {ServerModelMetadata} from "../../../src/models/server-metadata/ServerModelMetadata";
+import {ModelMetadata, ServerModelMetadata, ValidationMetadata} from "../../../src/models";
+import {MochaTestBase} from "@adityahegde/typescript-test-utils/dist/mocha";
 import {TestMetadataBase} from "../../test-classes/models/TestMetadataBase";
 import {Field3Enum} from "../../test-classes/models/Field3Enum";
-import {ValidationMetadata} from "../../../src/models/validation-metadata/ValidationMetadata";
-import {ModelMetadata} from "../../../src/models/metadata/ModelMetadata";
 import {IndividualFieldTest} from "../../test-classes/models/IndividualFieldTest";
 
 @MochaTestBase.Suite

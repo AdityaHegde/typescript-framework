@@ -1,9 +1,9 @@
 import should from "should";
-import { MochaTestBase } from "../../../src/test-utils/mocha";
+import {Builder} from "../../../src";
+import {MochaTestBase} from "@adityahegde/typescript-test-utils/dist/mocha";
 import {TestMetadataBase} from "../../test-classes/models/TestMetadataBase";
 import {TestMetadataChild} from "../../test-classes/models/TestMetadataChild";
 import {Field3Enum} from "../../test-classes/models/Field3Enum";
-import {Builder} from "../../../src/utils/Builder";
 
 @MochaTestBase.Suite
 export class BuilderSpec extends MochaTestBase {

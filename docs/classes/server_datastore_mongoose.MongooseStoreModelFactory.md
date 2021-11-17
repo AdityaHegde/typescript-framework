@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / [server/datastore/mongoose](../modules/server_datastore_mongoose.md) / MongooseStoreModelFactory
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / [server/datastore/mongoose](../modules/server_datastore_mongoose.md) / MongooseStoreModelFactory
 
 # Class: MongooseStoreModelFactory
 
@@ -102,17 +102,17 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStoreModelFactory.ts:6](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/datastore/DataStoreModelFactory.ts#L6)
+[src/server/datastore/DataStoreModelFactory.ts:6](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModelFactory.ts#L6)
 
 ___
 
 ### mongooseModels
 
-• `Private` **mongooseModels**: `Map`<`string`, `Model`<`Document`<`any`, `any`, `any`\>, `Object`, `Object`\>\>
+• `Private` **mongooseModels**: `Map`<`string`, `Model`<`Document`<`any`, `any`, `any`\>, `Object`, `Object`, `Object`\>\>
 
 #### Defined in
 
-[src/server/datastore/mongoose/MongooseStoreModelFactory.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/datastore/mongoose/MongooseStoreModelFactory.ts#L11)
+[src/server/datastore/mongoose/MongooseStoreModelFactory.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/mongoose/MongooseStoreModelFactory.ts#L11)
 
 ___
 
@@ -202,7 +202,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/mongoose/MongooseStoreModelFactory.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/datastore/mongoose/MongooseStoreModelFactory.ts#L13)
+[src/server/datastore/mongoose/MongooseStoreModelFactory.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/mongoose/MongooseStoreModelFactory.ts#L13)
 
 ___
 
@@ -319,7 +319,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStoreModelFactory.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/datastore/DataStoreModelFactory.ts#L15)
+[src/server/datastore/DataStoreModelFactory.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModelFactory.ts#L15)
 
 ___
 
@@ -361,7 +361,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStoreModelFactory.ts:8](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/datastore/DataStoreModelFactory.ts#L8)
+[src/server/datastore/DataStoreModelFactory.ts:8](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModelFactory.ts#L8)
 
 ___
 

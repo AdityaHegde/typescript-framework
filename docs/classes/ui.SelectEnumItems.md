@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / [ui](../modules/ui.md) / SelectEnumItems
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / [ui](../modules/ui.md) / SelectEnumItems
 
 # Class: SelectEnumItems<Opt\>
 
@@ -68,7 +68,7 @@ Map&lt;any, Array&lt;Opt\&gt;\&gt;.constructor
 
 #### Defined in
 
-[src/ui/utils/SelectEnumItems.ts:4](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/utils/SelectEnumItems.ts#L4)
+[src/ui/utils/SelectEnumItems.ts:4](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/SelectEnumItems.ts#L4)
 
 ## Properties
 
@@ -78,7 +78,7 @@ Map&lt;any, Array&lt;Opt\&gt;\&gt;.constructor
 
 #### Inherited from
 
-Map.\_\_@toStringTag@151
+Map.\_\_@toStringTag@167
 
 #### Defined in
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[src/ui/utils/SelectEnumItems.ts:2](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/utils/SelectEnumItems.ts#L2)
+[src/ui/utils/SelectEnumItems.ts:2](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/SelectEnumItems.ts#L2)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Inherited from
 
-Map.\_\_@species@6
+Map.\_\_@species@8
 
 #### Defined in
 
@@ -151,7 +151,7 @@ Returns an iterable of entries in the map.
 
 #### Inherited from
 
-Map.\_\_@iterator@23
+Map.\_\_@iterator@28
 
 #### Defined in
 
@@ -286,7 +286,7 @@ ___
 
 #### Defined in
 
-[src/ui/utils/SelectEnumItems.ts:19](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/utils/SelectEnumItems.ts#L19)
+[src/ui/utils/SelectEnumItems.ts:19](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/SelectEnumItems.ts#L19)
 
 ___
 
@@ -306,7 +306,7 @@ ___
 
 #### Defined in
 
-[src/ui/utils/SelectEnumItems.ts:9](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/utils/SelectEnumItems.ts#L9)
+[src/ui/utils/SelectEnumItems.ts:9](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/SelectEnumItems.ts#L9)
 
 ___
 

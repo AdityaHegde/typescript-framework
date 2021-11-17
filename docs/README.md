@@ -1,4 +1,4 @@
-@adityhegde/typescript-framework / [Modules](modules.md)
+@adityahegde/typescript-framework / [Modules](modules.md)
 
 # typescript-framework
 

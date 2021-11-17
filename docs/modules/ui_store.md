@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / ui/store
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / ui/store
 
 # Module: ui/store
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[src/ui/store/useRecordOperations.ts:29](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/store/useRecordOperations.ts#L29)
+[src/ui/store/useRecordOperations.ts:29](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/store/useRecordOperations.ts#L29)
 
 ___
 
@@ -73,4 +73,4 @@ ___
 
 #### Defined in
 
-[src/ui/store/useRecords.ts:5](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/store/useRecords.ts#L5)
+[src/ui/store/useRecords.ts:5](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/store/useRecords.ts#L5)

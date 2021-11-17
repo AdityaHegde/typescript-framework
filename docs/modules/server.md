@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / server
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / server
 
 # Module: server
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[src/server/routes/JsonApiRoute.ts:19](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/routes/JsonApiRoute.ts#L19)
+[src/server/routes/JsonApiRoute.ts:19](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/JsonApiRoute.ts#L19)
 
 ___
 
@@ -70,17 +70,17 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiRoute.ts:26](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/routes/JsonApiRoute.ts#L26)
+[src/server/routes/JsonApiRoute.ts:26](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/JsonApiRoute.ts#L26)
 
 ___
 
 ### LinksType
 
-Ƭ **LinksType**: { [link in string]: string}
+Ƭ **LinksType**: { [link in string]: string }
 
 #### Defined in
 
-[src/server/routes/JsonApiRoute.ts:16](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/routes/JsonApiRoute.ts#L16)
+[src/server/routes/JsonApiRoute.ts:16](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/JsonApiRoute.ts#L16)
 
 ___
 
@@ -94,11 +94,11 @@ ___
 | :------ | :------ |
 | `fromId?` | `string` |
 | `limit?` | `number` |
-| `sort?` | { [field in string]: 1 \| -1} |
+| `sort?` | { [field in string]: 1 \| -1 } |
 
 #### Defined in
 
-[src/server/datastore/DataStoreModel.ts:3](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/datastore/DataStoreModel.ts#L3)
+[src/server/datastore/DataStoreModel.ts:3](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModel.ts#L3)
 
 ## Functions
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[src/server/logging/LoggerBase.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/logging/LoggerBase.ts#L14)
+[src/server/logging/LoggerBase.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/logging/LoggerBase.ts#L14)
 
 ___
 
@@ -139,4 +139,4 @@ ___
 
 #### Defined in
 
-[src/server/validation/validateRecord.ts:5](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/validation/validateRecord.ts#L5)
+[src/server/validation/validateRecord.ts:5](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/validation/validateRecord.ts#L5)

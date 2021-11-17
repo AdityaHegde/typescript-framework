@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / server/authentication/jwt
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / server/authentication/jwt
 
 # Module: server/authentication/jwt
 

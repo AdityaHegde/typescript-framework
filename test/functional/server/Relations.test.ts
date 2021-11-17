@@ -5,8 +5,8 @@ import {JwtMongooseTestBase} from "../../test-bases/JwtMongooseTestBase";
 import {ParentModel} from "../../test-classes/server/relation/ParentModel";
 import {ChildOneOneModel} from "../../test-classes/server/relation/ChildOneOneModel";
 import {ChildTwoModel} from "../../test-classes/server/relation/ChildTwoModel";
-import {DataProviderData} from "../../../src/test-utils";
 import {parseGotResponse} from "../../data/mongoose";
+import {DataProviderData} from "@adityahegde/typescript-test-utils";
 
 const RelationsModels = [
   ParentModel, ChildOneModel, ChildOneOneModel, ChildTwoModel,
@@ -81,15 +81,15 @@ export class RelationsTest extends JwtMongooseTestBase {
         title: "Partial Sparse Data",
         args: [
           InitialData[2],
-          { label: "Parent_2", childOneModelId: "ChildOne_3", childTwoModelIds: undefined},
-          undefined,
+          { label: "Parent_2", childOneModelId: "ChildOne_3", childTwoModelIds: []},
+          [],
         ],
       }, {
         title: "Sparse Data",
         args: [
           InitialData[3],
-          { label: "Parent_3", childOneModelId: undefined, childTwoModelIds: undefined},
-          undefined,
+          { label: "Parent_3", childOneModelId: undefined, childTwoModelIds: []},
+          [],
         ],
       }]
     }
@@ -115,8 +115,8 @@ export class RelationsTest extends JwtMongooseTestBase {
     should({
       label: record.attributes.label,
       childOneModelId: childOneModel?.attributes.label,
-      childTwoModelIds: childTwoModels?.map?.(childTwoModel => childTwoModel.attributes.label),
+      childTwoModelIds: childTwoModels?.map?.(childTwoModel => childTwoModel.attributes.label) ?? [],
     }).containDeep(expectedParentModelResponse);
-    should(childOneOneModels?.map?.(childOneOneModel => childOneOneModel.attributes.label)).be.containDeep(expectedChildOneOneModels);
+    should(childOneOneModels?.map?.(childOneOneModel => childOneOneModel.attributes.label) ?? []).be.containDeep(expectedChildOneOneModels);
   }
 }

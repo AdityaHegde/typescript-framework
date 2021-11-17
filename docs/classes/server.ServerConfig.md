@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / [server](../modules/server.md) / ServerConfig
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / [server](../modules/server.md) / ServerConfig
 
 # Class: ServerConfig
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[src/utils/Config.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/utils/Config.ts#L13)
+[src/utils/Config.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/Config.ts#L13)
 
 ## Properties
 
@@ -62,7 +62,7 @@
 
 #### Defined in
 
-[src/server/ServerConfig.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/ServerConfig.ts#L13)
+[src/server/ServerConfig.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/ServerConfig.ts#L13)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[src/server/ServerConfig.ts:9](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/ServerConfig.ts#L9)
+[src/server/ServerConfig.ts:9](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/ServerConfig.ts#L9)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[src/server/ServerConfig.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/ServerConfig.ts#L7)
+[src/server/ServerConfig.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/ServerConfig.ts#L7)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/server/ServerConfig.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/ServerConfig.ts#L11)
+[src/server/ServerConfig.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/ServerConfig.ts#L11)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/server/ServerConfig.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/ServerConfig.ts#L15)
+[src/server/ServerConfig.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/ServerConfig.ts#L15)
 
 ## Methods
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-[src/utils/Config.ts:33](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/utils/Config.ts#L33)
+[src/utils/Config.ts:33](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/Config.ts#L33)
 
 ___
 
@@ -179,4 +179,4 @@ ___
 
 #### Defined in
 
-[src/utils/Config.ts:44](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/utils/Config.ts#L44)
+[src/utils/Config.ts:44](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/Config.ts#L44)

@@ -13,7 +13,12 @@ import {JwtAuthentication} from "../../../src/server/authentication/jwt";
 import {RouteFactory} from "../../../src/server/routes/RouteFactory";
 import { UserWithSingleRole } from "../../test-classes/server/user/UserWithSingleRole";
 
-@ServerParameterizedTestBase.StaticSuite
+const {dataStore, serverConfig, bootstrapData} = getInstances()[0];
+
+@ServerParameterizedTestBase.ParameterizedSuite(
+  [ UserWithSingleRole/*, UserWithMultiRole */].map(userModel =>
+    [`RolesTest for ${userModel.metadata.modelName}`, dataStore, serverConfig, bootstrapData, userModel])
+)
 export class RolesTest extends ServerParameterizedTestBase {
   private LoginUrl: string;
   private UpdateRoleUrl: string;
@@ -111,8 +116,3 @@ export class RolesTest extends ServerParameterizedTestBase {
     });
   }
 }
-
-const {dataStore, serverConfig, bootstrapData} = getInstances()[0];
-[ UserWithSingleRole/*, UserWithMultiRole */].forEach((userModel) =>
-  new RolesTest(`RolesTest for ${userModel.metadata.modelName}`, dataStore, serverConfig,
-    bootstrapData, userModel).test());

@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / index
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / index
 
 # Module: index
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[src/utils/Config.ts:3](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/utils/Config.ts#L3)
+[src/utils/Config.ts:3](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/Config.ts#L3)
 
 ___
 
@@ -58,13 +58,13 @@ ___
 
 #### Defined in
 
-[src/utils/Builder.ts:3](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/utils/Builder.ts#L3)
+[src/utils/Builder.ts:3](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/Builder.ts#L3)
 
 ___
 
 ### NonFunctionPropertyNames
 
-Ƭ **NonFunctionPropertyNames**<`T`\>: { [K in keyof T]: T[K] extends Function ? never : K}[keyof `T`]
+Ƭ **NonFunctionPropertyNames**<`T`\>: { [K in keyof T]: T[K] extends Function ? never : K }[keyof `T`]
 
 #### Type parameters
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[src/utils/Builder.ts:1](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/utils/Builder.ts#L1)
+[src/utils/Builder.ts:1](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/Builder.ts#L1)
 
 ## Functions
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[src/utils/Builder.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/utils/Builder.ts#L11)
+[src/utils/Builder.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/Builder.ts#L11)
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 #### Defined in
 
-[src/utils/asyncWait.ts:1](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/utils/asyncWait.ts#L1)
+[src/utils/asyncWait.ts:1](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/asyncWait.ts#L1)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[src/utils/awaitEvent.ts:4](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/utils/awaitEvent.ts#L4)
+[src/utils/awaitEvent.ts:4](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/awaitEvent.ts#L4)
 
 ___
 
@@ -171,7 +171,7 @@ ___
 
 #### Defined in
 
-[src/utils/dedupeFieldTypes.ts:1](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/utils/dedupeFieldTypes.ts#L1)
+[src/utils/dedupeFieldTypes.ts:1](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/dedupeFieldTypes.ts#L1)
 
 ___
 
@@ -191,7 +191,7 @@ ___
 
 #### Defined in
 
-[src/utils/getClassName.ts:4](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/utils/getClassName.ts#L4)
+[src/utils/getClassName.ts:4](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/getClassName.ts#L4)
 
 ___
 
@@ -213,7 +213,7 @@ ___
 
 #### Defined in
 
-[src/utils/promisify.ts:1](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/utils/promisify.ts#L1)
+[src/utils/promisify.ts:1](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/promisify.ts#L1)
 
 ___
 
@@ -235,4 +235,4 @@ ___
 
 #### Defined in
 
-[src/utils/waitUntil.ts:3](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/utils/waitUntil.ts#L3)
+[src/utils/waitUntil.ts:3](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/waitUntil.ts#L3)

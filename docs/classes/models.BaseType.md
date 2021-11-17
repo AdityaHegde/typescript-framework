@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / [models](../modules/models.md) / BaseType
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / [models](../modules/models.md) / BaseType
 
 # Class: BaseType
 
@@ -40,7 +40,7 @@
 
 #### Defined in
 
-[src/models/BaseType.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/models/BaseType.ts#L14)
+[src/models/BaseType.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/BaseType.ts#L14)
 
 ## Properties
 
@@ -50,7 +50,7 @@
 
 #### Defined in
 
-[src/models/BaseType.ts:6](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/models/BaseType.ts#L6)
+[src/models/BaseType.ts:6](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/BaseType.ts#L6)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[src/models/BaseType.ts:8](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/models/BaseType.ts#L8)
+[src/models/BaseType.ts:8](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/BaseType.ts#L8)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[src/models/BaseType.ts:10](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/models/BaseType.ts#L10)
+[src/models/BaseType.ts:10](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/BaseType.ts#L10)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[src/models/BaseType.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/models/BaseType.ts#L11)
+[src/models/BaseType.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/BaseType.ts#L11)
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 #### Defined in
 
-[src/models/BaseType.ts:12](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/models/BaseType.ts#L12)
+[src/models/BaseType.ts:12](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/BaseType.ts#L12)

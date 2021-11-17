@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / [server](../modules/server.md) / Route
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / [server](../modules/server.md) / Route
 
 # Class: Route
 
@@ -62,7 +62,7 @@
 
 #### Defined in
 
-[src/server/routes/Route.ts:19](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/routes/Route.ts#L19)
+[src/server/routes/Route.ts:19](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/Route.ts#L19)
 
 ## Properties
 
@@ -72,7 +72,7 @@
 
 #### Defined in
 
-[src/server/routes/Route.ts:17](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/routes/Route.ts#L17)
+[src/server/routes/Route.ts:17](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/Route.ts#L17)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/routes/Route.ts#L14)
+[src/server/routes/Route.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/Route.ts#L14)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/routes/Route.ts#L15)
+[src/server/routes/Route.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/Route.ts#L15)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/routes/Route.ts#L11)
+[src/server/routes/Route.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/Route.ts#L11)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/routes/Route.ts#L13)
+[src/server/routes/Route.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/Route.ts#L13)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/server/logging/LoggerBase.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/logging/LoggerBase.ts#L11)
+[src/server/logging/LoggerBase.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/logging/LoggerBase.ts#L11)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:10](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/routes/Route.ts#L10)
+[src/server/routes/Route.ts:10](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/Route.ts#L10)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:12](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/routes/Route.ts#L12)
+[src/server/routes/Route.ts:12](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/Route.ts#L12)
 
 ## Methods
 
@@ -166,7 +166,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:42](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/routes/Route.ts#L42)
+[src/server/routes/Route.ts:42](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/Route.ts#L42)
 
 ___
 
@@ -186,7 +186,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:38](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/routes/Route.ts#L38)
+[src/server/routes/Route.ts:38](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/Route.ts#L38)
 
 ___
 
@@ -209,7 +209,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:46](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/routes/Route.ts#L46)
+[src/server/routes/Route.ts:46](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/Route.ts#L46)
 
 ___
 
@@ -232,7 +232,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:55](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/routes/Route.ts#L55)
+[src/server/routes/Route.ts:55](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/Route.ts#L55)
 
 ___
 
@@ -252,7 +252,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:30](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/routes/Route.ts#L30)
+[src/server/routes/Route.ts:30](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/Route.ts#L30)
 
 ___
 
@@ -273,7 +273,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:64](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/routes/Route.ts#L64)
+[src/server/routes/Route.ts:64](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/Route.ts#L64)
 
 ___
 
@@ -295,4 +295,4 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:34](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/routes/Route.ts#L34)
+[src/server/routes/Route.ts:34](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/Route.ts#L34)

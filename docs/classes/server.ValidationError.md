@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / [server](../modules/server.md) / ValidationError
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / [server](../modules/server.md) / ValidationError
 
 # Class: ValidationError
 
@@ -22,6 +22,7 @@
 - [name](server.ValidationError.md#name)
 - [reasons](server.ValidationError.md#reasons)
 - [stack](server.ValidationError.md#stack)
+- [prepareStackTrace](server.ValidationError.md#preparestacktrace)
 - [stackTraceLimit](server.ValidationError.md#stacktracelimit)
 
 ### Methods
@@ -30,7 +31,6 @@
 - [hasReasons](server.ValidationError.md#hasreasons)
 - [toJSON](server.ValidationError.md#tojson)
 - [captureStackTrace](server.ValidationError.md#capturestacktrace)
-- [prepareStackTrace](server.ValidationError.md#preparestacktrace)
 
 ## Constructors
 
@@ -44,7 +44,7 @@ Error.constructor
 
 #### Defined in
 
-[src/server/validation/ValidationError.ts:9](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/validation/ValidationError.ts#L9)
+[src/server/validation/ValidationError.ts:9](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/validation/ValidationError.ts#L9)
 
 ## Properties
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[src/server/validation/ValidationError.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/validation/ValidationError.ts#L7)
+[src/server/validation/ValidationError.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/validation/ValidationError.ts#L7)
 
 ___
 
@@ -97,6 +97,39 @@ Error.stack
 #### Defined in
 
 node_modules/typescript/lib/lib.es5.d.ts:975
+
+___
+
+### prepareStackTrace
+
+▪ `Static` `Optional` **prepareStackTrace**: (`err`: `Error`, `stackTraces`: `CallSite`[]) => `any`
+
+#### Type declaration
+
+▸ (`err`, `stackTraces`): `any`
+
+Optional override for formatting stack traces
+
+**`see`** https://v8.dev/docs/stack-trace-api#customizing-stack-traces
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `err` | `Error` |
+| `stackTraces` | `CallSite`[] |
+
+##### Returns
+
+`any`
+
+#### Inherited from
+
+Error.prepareStackTrace
+
+#### Defined in
+
+node_modules/@types/node/globals.d.ts:11
 
 ___
 
@@ -131,7 +164,7 @@ node_modules/@types/node/globals.d.ts:13
 
 #### Defined in
 
-[src/server/validation/ValidationError.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/validation/ValidationError.ts#L13)
+[src/server/validation/ValidationError.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/validation/ValidationError.ts#L13)
 
 ___
 
@@ -145,7 +178,7 @@ ___
 
 #### Defined in
 
-[src/server/validation/ValidationError.ts:17](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/validation/ValidationError.ts#L17)
+[src/server/validation/ValidationError.ts:17](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/validation/ValidationError.ts#L17)
 
 ___
 
@@ -164,7 +197,7 @@ ___
 
 #### Defined in
 
-[src/server/validation/ValidationError.ts:21](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/validation/ValidationError.ts#L21)
+[src/server/validation/ValidationError.ts:21](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/validation/ValidationError.ts#L21)
 
 ___
 
@@ -192,32 +225,3 @@ Error.captureStackTrace
 #### Defined in
 
 node_modules/@types/node/globals.d.ts:4
-
-___
-
-### prepareStackTrace
-
-▸ `Static` `Optional` **prepareStackTrace**(`err`, `stackTraces`): `any`
-
-Optional override for formatting stack traces
-
-**`see`** https://v8.dev/docs/stack-trace-api#customizing-stack-traces
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `err` | `Error` |
-| `stackTraces` | `CallSite`[] |
-
-#### Returns
-
-`any`
-
-#### Inherited from
-
-Error.prepareStackTrace
-
-#### Defined in
-
-node_modules/@types/node/globals.d.ts:11

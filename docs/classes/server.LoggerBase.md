@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / [server](../modules/server.md) / LoggerBase
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / [server](../modules/server.md) / LoggerBase
 
 # Class: LoggerBase
 
@@ -42,4 +42,4 @@
 
 #### Defined in
 
-[src/server/logging/LoggerBase.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/logging/LoggerBase.ts#L11)
+[src/server/logging/LoggerBase.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/logging/LoggerBase.ts#L11)

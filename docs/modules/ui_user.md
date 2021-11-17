@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / ui/user
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / ui/user
 
 # Module: ui/user
 
@@ -43,7 +43,7 @@
 
 #### Defined in
 
-[src/ui/user/UserContext.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/user/UserContext.ts#L15)
+[src/ui/user/UserContext.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/user/UserContext.ts#L15)
 
 ___
 
@@ -63,27 +63,27 @@ ___
 
 #### Defined in
 
-[src/ui/user/UserContext.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/user/UserContext.ts#L7)
+[src/ui/user/UserContext.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/user/UserContext.ts#L7)
 
 ## Variables
 
 ### EndpointOptionsDefault
 
-• `Const` **EndpointOptionsDefault**: [`EndpointOptions`](ui_user.md#endpointoptions)
+• **EndpointOptionsDefault**: [`EndpointOptions`](ui_user.md#endpointoptions)
 
 #### Defined in
 
-[src/ui/user/UserContext.ts:24](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/user/UserContext.ts#L24)
+[src/ui/user/UserContext.ts:24](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/user/UserContext.ts#L24)
 
 ___
 
 ### UserContext
 
-• `Const` **UserContext**: `Context`<[`UserContextType`](ui_user.md#usercontexttype)\>
+• **UserContext**: `Context`<[`UserContextType`](ui_user.md#usercontexttype)\>
 
 #### Defined in
 
-[src/ui/user/UserContext.ts:96](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/user/UserContext.ts#L96)
+[src/ui/user/UserContext.ts:96](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/user/UserContext.ts#L96)
 
 ## Functions
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[src/ui/user/Login.tsx:7](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/user/Login.tsx#L7)
+[src/ui/user/Login.tsx:7](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/user/Login.tsx#L7)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[src/ui/user/RestrictAccess.tsx:8](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/user/RestrictAccess.tsx#L8)
+[src/ui/user/RestrictAccess.tsx:8](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/user/RestrictAccess.tsx#L8)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[src/ui/user/Signup.tsx:8](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/user/Signup.tsx#L8)
+[src/ui/user/Signup.tsx:8](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/user/Signup.tsx#L8)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[src/ui/user/UserDisplay.tsx:15](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/user/UserDisplay.tsx#L15)
+[src/ui/user/UserDisplay.tsx:15](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/user/UserDisplay.tsx#L15)
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 #### Defined in
 
-[src/ui/user/UserDisplay.tsx:6](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/user/UserDisplay.tsx#L6)
+[src/ui/user/UserDisplay.tsx:6](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/user/UserDisplay.tsx#L6)
 
 ___
 
@@ -169,11 +169,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `userModel` | typeof [`UserModel`](../classes/models.UserModel.md) |
-| `modelClient` | [`ModelClient`](../classes/ui_store.ModelClient.md) |
-| `endpointArgOpts` | [`EndpointOptions`](ui_user.md#endpointoptions) |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `userModel` | typeof [`UserModel`](../classes/models.UserModel.md) | `undefined` |
+| `modelClient` | [`ModelClient`](../classes/ui_store.ModelClient.md) | `undefined` |
+| `endpointArgOpts` | [`EndpointOptions`](ui_user.md#endpointoptions) | `EndpointOptionsDefault` |
 
 #### Returns
 
@@ -181,4 +181,4 @@ ___
 
 #### Defined in
 
-[src/ui/user/UserContext.ts:34](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/user/UserContext.ts#L34)
+[src/ui/user/UserContext.ts:34](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/user/UserContext.ts#L34)

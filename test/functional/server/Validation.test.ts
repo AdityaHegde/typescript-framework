@@ -3,6 +3,7 @@ import should from "should";
 import {ValidationTestModel} from "../../test-classes/server/ValidationTestModel";
 import {JwtMongooseTestBase} from "../../test-bases/JwtMongooseTestBase";
 import {sanitize} from "../../data/mongoose";
+import {DataProviderData} from "@adityahegde/typescript-test-utils";
 
 @JwtMongooseTestBase.Suite
 export class ValidationTest extends JwtMongooseTestBase {
@@ -13,7 +14,7 @@ export class ValidationTest extends JwtMongooseTestBase {
     this.ValidationTestApiBase = `${this.ServerBaseUrl}/${this.ValidationTestApiBase}`;
   }
 
-  public validationTestData() {
+  public validationTestData(): DataProviderData<[any, Array<string>]> {
     return {
       subData: [{
         title: "Should fail with required field missing",

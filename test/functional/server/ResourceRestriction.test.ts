@@ -20,7 +20,11 @@ const TestModels = [
   RestrictedModel,
 ];
 
-@JwtMongooseTestBase.StaticSuite
+@JwtMongooseTestBase.ParameterizedSuite(
+  getInstances().map(({title, dataStore, routeFactory, serverConfig, authentication, bootstrapData}: InstancesType) =>
+    [`${title}ResourceRestrictionTest`, dataStore, routeFactory, serverConfig, authentication, bootstrapData]
+  )
+)
 export class ResourceRestrictionTest extends ServerParameterizedTestBase {
   private resources = new Map<string, Array<any>>();
   private users: Array<User>;
@@ -166,9 +170,3 @@ export class ResourceRestrictionTest extends ServerParameterizedTestBase {
     }];
   }
 }
-
-getInstances().forEach(({title, dataStore, routeFactory,
-                          serverConfig, authentication, bootstrapData}: InstancesType) => {
-  new ResourceRestrictionTest(`${title}ResourceRestrictionTest`, dataStore, routeFactory,
-    serverConfig, authentication, bootstrapData).test();
-});

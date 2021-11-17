@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / ui/filter
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / ui/filter
 
 # Module: ui/filter
 
@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[src/ui/filter/ModelFilter.tsx:36](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/filter/ModelFilter.tsx#L36)
+[src/ui/filter/ModelFilter.tsx:36](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/filter/ModelFilter.tsx#L36)
 
 ___
 
@@ -53,4 +53,4 @@ ___
 
 #### Defined in
 
-[src/ui/filter/NumberFilterItem.tsx:6](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/filter/NumberFilterItem.tsx#L6)
+[src/ui/filter/NumberFilterItem.tsx:6](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/filter/NumberFilterItem.tsx#L6)

@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / [ui](../modules/ui.md) / ComponentByModelMap
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / [ui](../modules/ui.md) / ComponentByModelMap
 
 # Class: ComponentByModelMap<Props\>
 
@@ -68,7 +68,7 @@ Map&lt;string, FunctionComponent&lt;Props\&gt;\&gt;.constructor
 
 #### Defined in
 
-[src/ui/utils/ComponentByModelMap.tsx:15](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/utils/ComponentByModelMap.tsx#L15)
+[src/ui/utils/ComponentByModelMap.tsx:15](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/ComponentByModelMap.tsx#L15)
 
 ## Properties
 
@@ -78,7 +78,7 @@ Map&lt;string, FunctionComponent&lt;Props\&gt;\&gt;.constructor
 
 #### Inherited from
 
-Map.\_\_@toStringTag@151
+Map.\_\_@toStringTag@167
 
 #### Defined in
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/ui/utils/ComponentByModelMap.tsx:13](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/utils/ComponentByModelMap.tsx#L13)
+[src/ui/utils/ComponentByModelMap.tsx:13](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/ComponentByModelMap.tsx#L13)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Inherited from
 
-Map.\_\_@species@6
+Map.\_\_@species@8
 
 #### Defined in
 
@@ -136,7 +136,7 @@ Returns an iterable of entries in the map.
 
 #### Inherited from
 
-Map.\_\_@iterator@23
+Map.\_\_@iterator@28
 
 #### Defined in
 
@@ -190,7 +190,7 @@ ___
 
 #### Defined in
 
-[src/ui/utils/ComponentByModelMap.tsx:31](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/utils/ComponentByModelMap.tsx#L31)
+[src/ui/utils/ComponentByModelMap.tsx:31](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/ComponentByModelMap.tsx#L31)
 
 ___
 
@@ -303,7 +303,7 @@ ___
 
 #### Defined in
 
-[src/ui/utils/ComponentByModelMap.tsx:21](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/utils/ComponentByModelMap.tsx#L21)
+[src/ui/utils/ComponentByModelMap.tsx:21](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/ComponentByModelMap.tsx#L21)
 
 ___
 

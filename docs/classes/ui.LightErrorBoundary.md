@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / [ui](../modules/ui.md) / LightErrorBoundary
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / [ui](../modules/ui.md) / LightErrorBoundary
 
 # Class: LightErrorBoundary
 
@@ -60,7 +60,7 @@ Component<{}, {error: Error}\>.constructor
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:475
+node_modules/@types/react/index.d.ts:481
 
 • **new LightErrorBoundary**(`props`, `context`)
 
@@ -81,7 +81,7 @@ Component<{}, {error: Error}\>.constructor
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:480
+node_modules/@types/react/index.d.ts:486
 
 ## Properties
 
@@ -109,7 +109,7 @@ Component.context
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:473
+node_modules/@types/react/index.d.ts:479
 
 ___
 
@@ -123,7 +123,7 @@ Component.props
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:498
+node_modules/@types/react/index.d.ts:504
 
 ___
 
@@ -144,7 +144,7 @@ Component.refs
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:504
+node_modules/@types/react/index.d.ts:510
 
 ___
 
@@ -164,7 +164,7 @@ Component.state
 
 #### Defined in
 
-[src/ui/utils/LightErrorBoundary.tsx:5](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/utils/LightErrorBoundary.tsx#L5)
+[src/ui/utils/LightErrorBoundary.tsx:5](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/LightErrorBoundary.tsx#L5)
 
 ___
 
@@ -197,7 +197,7 @@ Component.contextType
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:455
+node_modules/@types/react/index.d.ts:461
 
 ## Methods
 
@@ -229,7 +229,7 @@ Component.UNSAFE\_componentWillMount
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:711
+node_modules/@types/react/index.d.ts:717
 
 ___
 
@@ -271,7 +271,7 @@ Component.UNSAFE\_componentWillReceiveProps
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:743
+node_modules/@types/react/index.d.ts:749
 
 ___
 
@@ -312,7 +312,7 @@ Component.UNSAFE\_componentWillUpdate
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:771
+node_modules/@types/react/index.d.ts:777
 
 ___
 
@@ -336,7 +336,7 @@ Component.componentDidCatch
 
 #### Defined in
 
-[src/ui/utils/LightErrorBoundary.tsx:9](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/utils/LightErrorBoundary.tsx#L9)
+[src/ui/utils/LightErrorBoundary.tsx:9](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/LightErrorBoundary.tsx#L9)
 
 ___
 
@@ -356,7 +356,7 @@ Component.componentDidMount
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:619
+node_modules/@types/react/index.d.ts:625
 
 ___
 
@@ -386,7 +386,7 @@ Component.componentDidUpdate
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:682
+node_modules/@types/react/index.d.ts:688
 
 ___
 
@@ -416,7 +416,7 @@ Component.componentWillMount
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:697
+node_modules/@types/react/index.d.ts:703
 
 ___
 
@@ -456,7 +456,7 @@ Component.componentWillReceiveProps
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:726
+node_modules/@types/react/index.d.ts:732
 
 ___
 
@@ -477,7 +477,7 @@ Component.componentWillUnmount
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:635
+node_modules/@types/react/index.d.ts:641
 
 ___
 
@@ -516,7 +516,7 @@ Component.componentWillUpdate
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:756
+node_modules/@types/react/index.d.ts:762
 
 ___
 
@@ -540,7 +540,7 @@ Component.forceUpdate
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:490
+node_modules/@types/react/index.d.ts:496
 
 ___
 
@@ -572,7 +572,7 @@ Component.getSnapshotBeforeUpdate
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:676
+node_modules/@types/react/index.d.ts:682
 
 ___
 
@@ -590,7 +590,7 @@ Component.render
 
 #### Defined in
 
-[src/ui/utils/LightErrorBoundary.tsx:13](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/utils/LightErrorBoundary.tsx#L13)
+[src/ui/utils/LightErrorBoundary.tsx:13](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/LightErrorBoundary.tsx#L13)
 
 ___
 
@@ -621,7 +621,7 @@ Component.setState
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:485
+node_modules/@types/react/index.d.ts:491
 
 ___
 
@@ -656,4 +656,4 @@ Component.shouldComponentUpdate
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:630
+node_modules/@types/react/index.d.ts:636

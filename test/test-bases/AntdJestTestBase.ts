@@ -1,11 +1,11 @@
 import {configure} from "enzyme";
 import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import {SinonStub} from "sinon";
-import {JestTestBase} from "../../src/test-utils/jest";
 import {TestModelClient} from "../test-classes/ui/TestModelClient";
 import {Models} from "../test-classes/ui/Models";
-import {addModelsToList} from "../../src/models/ModelList";
 import {ModelStoreRepository} from "../../src/ui/store";
+import {JestTestBase} from "@adityahegde/typescript-test-utils/dist/jest";
+import {addModelsToList} from "../../src/models";
 
 configure({ adapter: new Adapter() });
 

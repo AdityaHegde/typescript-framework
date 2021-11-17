@@ -1,5 +1,5 @@
+import { MochaTestBase } from "@adityahegde/typescript-test-utils/dist/mocha";
 import should from "should";
-import {MochaTestBase} from "../../../src/test-utils/mocha";
 import {ConfigTestBase} from "../../test-classes/models/ConfigTestBase";
 
 @MochaTestBase.Suite

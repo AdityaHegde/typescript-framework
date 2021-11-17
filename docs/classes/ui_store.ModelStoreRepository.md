@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / [ui/store](../modules/ui_store.md) / ModelStoreRepository
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / [ui/store](../modules/ui_store.md) / ModelStoreRepository
 
 # Class: ModelStoreRepository
 
@@ -56,7 +56,7 @@ Map&lt;string, ModelStore&lt;any\&gt;\&gt;.constructor
 
 #### Defined in
 
-[src/ui/store/ModelStoreRepository.ts:9](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/store/ModelStoreRepository.ts#L9)
+[src/ui/store/ModelStoreRepository.ts:9](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/store/ModelStoreRepository.ts#L9)
 
 ## Properties
 
@@ -66,7 +66,7 @@ Map&lt;string, ModelStore&lt;any\&gt;\&gt;.constructor
 
 #### Inherited from
 
-Map.\_\_@toStringTag@151
+Map.\_\_@toStringTag@167
 
 #### Defined in
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/ModelStoreRepository.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/store/ModelStoreRepository.ts#L7)
+[src/ui/store/ModelStoreRepository.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/store/ModelStoreRepository.ts#L7)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Inherited from
 
-Map.\_\_@species@6
+Map.\_\_@species@8
 
 #### Defined in
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/ModelStoreRepository.ts:25](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/store/ModelStoreRepository.ts#L25)
+[src/ui/store/ModelStoreRepository.ts:25](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/store/ModelStoreRepository.ts#L25)
 
 ## Methods
 
@@ -134,7 +134,7 @@ Returns an iterable of entries in the map.
 
 #### Inherited from
 
-Map.\_\_@iterator@23
+Map.\_\_@iterator@28
 
 #### Defined in
 
@@ -275,7 +275,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/ModelStoreRepository.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/ui/store/ModelStoreRepository.ts#L15)
+[src/ui/store/ModelStoreRepository.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/store/ModelStoreRepository.ts#L15)
 
 ___
 

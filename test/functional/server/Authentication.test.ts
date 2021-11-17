@@ -6,7 +6,10 @@ import {getCookieJar, loginUser} from "../../utils/getCookieJar";
 import {ServerParameterizedTestBase} from "../../test-bases/ServerParameterizedTestBase";
 import {sanitize} from "../../data/mongoose";
 
-@JwtMongooseTestBase.StaticSuite
+@JwtMongooseTestBase.ParameterizedSuite(
+  getInstances().map(({title, dataStore, routeFactory, serverConfig, authentication, bootstrapData}: InstancesType) =>
+    [`${title}AuthenticationTest`, dataStore, routeFactory, serverConfig, authentication, bootstrapData])
+)
 export class AuthenticationTest extends ServerParameterizedTestBase {
   private LoginUrl = "auth/login";
   private SignupUrl = "auth/signup";

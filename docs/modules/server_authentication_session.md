@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / server/authentication/session
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / server/authentication/session
 
 # Module: server/authentication/session
 

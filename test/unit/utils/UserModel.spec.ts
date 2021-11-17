@@ -1,11 +1,11 @@
 import should from "should";
-import {MochaTestBase} from "../../../src/test-utils/mocha";
-import {DataProviderData} from "../../../src/test-utils";
 import {Field3Enum} from "../../test-classes/models/Field3Enum";
 import {UserWithSingleRole} from "../../test-classes/models/UserWithSingleRole";
 import {UserWithMultiRole} from "../../test-classes/models/UserWithMultiRole";
-import {Builder} from "../../../src/utils/Builder";
-import {UserModel} from "../../../src/models/UserModel";
+import {UserModel} from "../../../src/models";
+import {MochaTestBase} from "@adityahegde/typescript-test-utils/dist/mocha";
+import {DataProviderData} from "@adityahegde/typescript-test-utils";
+import {Builder} from "../../../src";
 
 type ValidateDataProvider = DataProviderData<[UserModel, (user: UserModel) => boolean, boolean]>;
 

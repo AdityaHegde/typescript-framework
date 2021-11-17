@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / server/datastore/mongoose
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / server/datastore/mongoose
 
 # Module: server/datastore/mongoose
 
@@ -29,4 +29,4 @@
 
 #### Defined in
 
-[src/server/datastore/mongoose/MongooseStore.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/datastore/mongoose/MongooseStore.ts#L7)
+[src/server/datastore/mongoose/MongooseStore.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/mongoose/MongooseStore.ts#L7)

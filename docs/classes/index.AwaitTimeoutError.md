@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / AwaitTimeoutError
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / AwaitTimeoutError
 
 # Class: AwaitTimeoutError
 
@@ -21,12 +21,12 @@
 - [message](index.AwaitTimeoutError.md#message)
 - [name](index.AwaitTimeoutError.md#name)
 - [stack](index.AwaitTimeoutError.md#stack)
+- [prepareStackTrace](index.AwaitTimeoutError.md#preparestacktrace)
 - [stackTraceLimit](index.AwaitTimeoutError.md#stacktracelimit)
 
 ### Methods
 
 - [captureStackTrace](index.AwaitTimeoutError.md#capturestacktrace)
-- [prepareStackTrace](index.AwaitTimeoutError.md#preparestacktrace)
 
 ## Constructors
 
@@ -40,7 +40,7 @@ Error.constructor
 
 #### Defined in
 
-[src/utils/AwaitTimeoutError.ts:2](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/utils/AwaitTimeoutError.ts#L2)
+[src/utils/AwaitTimeoutError.ts:2](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/AwaitTimeoutError.ts#L2)
 
 ## Properties
 
@@ -86,6 +86,39 @@ node_modules/typescript/lib/lib.es5.d.ts:975
 
 ___
 
+### prepareStackTrace
+
+▪ `Static` `Optional` **prepareStackTrace**: (`err`: `Error`, `stackTraces`: `CallSite`[]) => `any`
+
+#### Type declaration
+
+▸ (`err`, `stackTraces`): `any`
+
+Optional override for formatting stack traces
+
+**`see`** https://v8.dev/docs/stack-trace-api#customizing-stack-traces
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `err` | `Error` |
+| `stackTraces` | `CallSite`[] |
+
+##### Returns
+
+`any`
+
+#### Inherited from
+
+Error.prepareStackTrace
+
+#### Defined in
+
+node_modules/@types/node/globals.d.ts:11
+
+___
+
 ### stackTraceLimit
 
 ▪ `Static` **stackTraceLimit**: `number`
@@ -124,32 +157,3 @@ Error.captureStackTrace
 #### Defined in
 
 node_modules/@types/node/globals.d.ts:4
-
-___
-
-### prepareStackTrace
-
-▸ `Static` `Optional` **prepareStackTrace**(`err`, `stackTraces`): `any`
-
-Optional override for formatting stack traces
-
-**`see`** https://v8.dev/docs/stack-trace-api#customizing-stack-traces
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `err` | `Error` |
-| `stackTraces` | `CallSite`[] |
-
-#### Returns
-
-`any`
-
-#### Inherited from
-
-Error.prepareStackTrace
-
-#### Defined in
-
-node_modules/@types/node/globals.d.ts:11

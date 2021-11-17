@@ -1,4 +1,4 @@
-[@adityhegde/typescript-framework](../README.md) / [Modules](../modules.md) / [server](../modules/server.md) / DataStoreModelFactory
+[@adityahegde/typescript-framework](../README.md) / [Modules](../modules.md) / [server](../modules/server.md) / DataStoreModelFactory
 
 # Class: DataStoreModelFactory
 
@@ -85,7 +85,7 @@ node_modules/typescript/lib/lib.es2015.iterable.d.ts:160
 
 #### Inherited from
 
-Map.\_\_@toStringTag@151
+Map.\_\_@toStringTag@167
 
 #### Defined in
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStoreModelFactory.ts:6](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/datastore/DataStoreModelFactory.ts#L6)
+[src/server/datastore/DataStoreModelFactory.ts:6](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModelFactory.ts#L6)
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 #### Inherited from
 
-Map.\_\_@species@6
+Map.\_\_@species@8
 
 #### Defined in
 
@@ -143,7 +143,7 @@ Returns an iterable of entries in the map.
 
 #### Inherited from
 
-Map.\_\_@iterator@23
+Map.\_\_@iterator@28
 
 #### Defined in
 
@@ -185,7 +185,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStoreModelFactory.ts:19](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/datastore/DataStoreModelFactory.ts#L19)
+[src/server/datastore/DataStoreModelFactory.ts:19](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModelFactory.ts#L19)
 
 ___
 
@@ -298,7 +298,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStoreModelFactory.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/datastore/DataStoreModelFactory.ts#L15)
+[src/server/datastore/DataStoreModelFactory.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModelFactory.ts#L15)
 
 ___
 
@@ -336,7 +336,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStoreModelFactory.ts:8](https://github.com/AdityaHegde/typescript-framework/blob/3d90755/src/server/datastore/DataStoreModelFactory.ts#L8)
+[src/server/datastore/DataStoreModelFactory.ts:8](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModelFactory.ts#L8)
 
 ___
 

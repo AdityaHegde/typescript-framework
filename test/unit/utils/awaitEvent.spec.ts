@@ -1,9 +1,7 @@
 import EventEmitter from "events";
+import {asyncWait, awaitEvent, AwaitTimeoutError} from "../../../src";
+import {MochaTestBase} from "@adityahegde/typescript-test-utils/dist/mocha";
 import {assert, match, SinonStub} from "sinon";
-import { MochaTestBase } from "../../../src/test-utils/mocha";
-import {AwaitTimeoutError} from "../../../src/utils/AwaitTimeoutError";
-import {asyncWait} from "../../../src/utils/asyncWait";
-import {awaitEvent} from "../../../src/utils/awaitEvent";
 
 @MochaTestBase.Suite
 export class AwaitEventSpec extends MochaTestBase {
