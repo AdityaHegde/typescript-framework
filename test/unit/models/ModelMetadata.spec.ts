@@ -1,13 +1,15 @@
 import should from "should";
 import {ModelMetadata, ServerModelMetadata, ValidationMetadata} from "../../../src/models";
-import {MochaTestBase} from "@adityahegde/typescript-test-utils/dist/mocha";
 import {TestMetadataBase} from "../../test-classes/models/TestMetadataBase";
 import {Field3Enum} from "../../test-classes/models/Field3Enum";
 import {IndividualFieldTest} from "../../test-classes/models/IndividualFieldTest";
+import {TestBase} from "@adityahegde/typescript-test-utils";
+import {MochaTestLibrary} from "@adityahegde/typescript-test-utils/dist/mocha/MochaTestLibrary";
 
-@MochaTestBase.Suite
-export class ModelMetadataSpec extends MochaTestBase {
-  @MochaTestBase.Test()
+@TestBase.Suite
+@TestBase.TestLibrary(MochaTestLibrary)
+export class ModelMetadataSpec extends TestBase {
+  @TestBase.Test()
   public verifyBasicMetadataPopulated() {
     should(TestMetadataBase.metadata.modelName).be.eql("TestMetadataBase");
     should(TestMetadataBase.metadata.singular).be.eql("testMetadataBase");
@@ -22,7 +24,7 @@ export class ModelMetadataSpec extends MochaTestBase {
     should(TestMetadataBase.serverMetadata.writeRole).be.undefined();
   }
 
-  @MochaTestBase.Test()
+  @TestBase.Test()
   public verifyIndividualFieldMetadataPopulated() {
     should(IndividualFieldTest.metadata.modelName).be.eql("IndividualFieldTest");
     should(IndividualFieldTest.metadata.singular).be.eql("ind");

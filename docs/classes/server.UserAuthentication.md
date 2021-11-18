@@ -56,7 +56,7 @@
 
 #### Defined in
 
-[src/server/authentication/UserAuthentication.ts:20](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/authentication/UserAuthentication.ts#L20)
+[src/server/authentication/UserAuthentication.ts:20](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/authentication/UserAuthentication.ts#L20)
 
 ## Properties
 
@@ -66,7 +66,7 @@
 
 #### Defined in
 
-[src/server/authentication/UserAuthentication.ts:18](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/authentication/UserAuthentication.ts#L18)
+[src/server/authentication/UserAuthentication.ts:18](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/authentication/UserAuthentication.ts#L18)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[src/server/logging/LoggerBase.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/logging/LoggerBase.ts#L11)
+[src/server/logging/LoggerBase.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/logging/LoggerBase.ts#L11)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[src/server/authentication/UserAuthentication.ts:16](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/authentication/UserAuthentication.ts#L16)
+[src/server/authentication/UserAuthentication.ts:16](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/authentication/UserAuthentication.ts#L16)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[src/server/authentication/UserAuthentication.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/authentication/UserAuthentication.ts#L13)
+[src/server/authentication/UserAuthentication.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/authentication/UserAuthentication.ts#L13)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[src/server/authentication/UserAuthentication.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/authentication/UserAuthentication.ts#L15)
+[src/server/authentication/UserAuthentication.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/authentication/UserAuthentication.ts#L15)
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 #### Defined in
 
-[src/server/authentication/UserAuthentication.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/authentication/UserAuthentication.ts#L14)
+[src/server/authentication/UserAuthentication.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/authentication/UserAuthentication.ts#L14)
 
 ## Methods
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-[src/server/authentication/UserAuthentication.ts:60](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/authentication/UserAuthentication.ts#L60)
+[src/server/authentication/UserAuthentication.ts:60](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/authentication/UserAuthentication.ts#L60)
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-[src/server/authentication/UserAuthentication.ts:100](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/authentication/UserAuthentication.ts#L100)
+[src/server/authentication/UserAuthentication.ts:100](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/authentication/UserAuthentication.ts#L100)
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-[src/server/authentication/UserAuthentication.ts:104](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/authentication/UserAuthentication.ts#L104)
+[src/server/authentication/UserAuthentication.ts:104](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/authentication/UserAuthentication.ts#L104)
 
 ___
 
@@ -200,7 +200,7 @@ ___
 
 #### Defined in
 
-[src/server/authentication/UserAuthentication.ts:49](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/authentication/UserAuthentication.ts#L49)
+[src/server/authentication/UserAuthentication.ts:49](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/authentication/UserAuthentication.ts#L49)
 
 ___
 
@@ -220,7 +220,7 @@ ___
 
 #### Defined in
 
-[src/server/authentication/UserAuthentication.ts:110](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/authentication/UserAuthentication.ts#L110)
+[src/server/authentication/UserAuthentication.ts:110](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/authentication/UserAuthentication.ts#L110)
 
 ___
 
@@ -240,7 +240,7 @@ ___
 
 #### Defined in
 
-[src/server/authentication/UserAuthentication.ts:29](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/authentication/UserAuthentication.ts#L29)
+[src/server/authentication/UserAuthentication.ts:29](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/authentication/UserAuthentication.ts#L29)
 
 ___
 
@@ -261,4 +261,4 @@ ___
 
 #### Defined in
 
-[src/server/authentication/UserAuthentication.ts:80](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/authentication/UserAuthentication.ts#L80)
+[src/server/authentication/UserAuthentication.ts:80](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/authentication/UserAuthentication.ts#L80)

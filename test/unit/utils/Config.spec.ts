@@ -1,10 +1,12 @@
-import { MochaTestBase } from "@adityahegde/typescript-test-utils/dist/mocha";
 import should from "should";
 import {ConfigTestBase} from "../../test-classes/models/ConfigTestBase";
+import {TestBase} from "@adityahegde/typescript-test-utils";
+import {MochaTestLibrary} from "@adityahegde/typescript-test-utils/dist/mocha/MochaTestLibrary";
 
-@MochaTestBase.Suite
-export class ConfigSpec extends MochaTestBase {
-  @MochaTestBase.Test()
+@TestBase.Suite
+@TestBase.TestLibrary(MochaTestLibrary)
+export class ConfigSpec extends TestBase {
+  @TestBase.Test()
   public shouldPopulateConfig() {
     const config = new ConfigTestBase({
       subConfig: {

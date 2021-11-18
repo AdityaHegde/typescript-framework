@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[src/ui/store/JsonApiClient.ts:10](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/store/JsonApiClient.ts#L10)
+[src/ui/store/JsonApiClient.ts:10](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/JsonApiClient.ts#L10)
 
 ## Properties
 
@@ -61,7 +61,7 @@
 
 #### Defined in
 
-[src/ui/store/JsonApiClient.ts:8](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/store/JsonApiClient.ts#L8)
+[src/ui/store/JsonApiClient.ts:8](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/JsonApiClient.ts#L8)
 
 ## Methods
 
@@ -88,7 +88,7 @@
 
 #### Defined in
 
-[src/ui/store/JsonApiClient.ts:51](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/store/JsonApiClient.ts#L51)
+[src/ui/store/JsonApiClient.ts:51](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/JsonApiClient.ts#L51)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/JsonApiClient.ts:60](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/store/JsonApiClient.ts#L60)
+[src/ui/store/JsonApiClient.ts:60](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/JsonApiClient.ts#L60)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/JsonApiClient.ts:64](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/store/JsonApiClient.ts#L64)
+[src/ui/store/JsonApiClient.ts:64](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/JsonApiClient.ts#L64)
 
 ___
 
@@ -167,7 +167,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/JsonApiClient.ts:29](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/store/JsonApiClient.ts#L29)
+[src/ui/store/JsonApiClient.ts:29](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/JsonApiClient.ts#L29)
 
 ___
 
@@ -198,7 +198,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/JsonApiClient.ts:47](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/store/JsonApiClient.ts#L47)
+[src/ui/store/JsonApiClient.ts:47](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/JsonApiClient.ts#L47)
 
 ___
 
@@ -229,7 +229,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/JsonApiClient.ts:81](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/store/JsonApiClient.ts#L81)
+[src/ui/store/JsonApiClient.ts:81](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/JsonApiClient.ts#L81)
 
 ___
 
@@ -260,7 +260,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/JsonApiClient.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/store/JsonApiClient.ts#L15)
+[src/ui/store/JsonApiClient.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/JsonApiClient.ts#L15)
 
 ___
 
@@ -291,7 +291,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/JsonApiClient.ts:22](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/store/JsonApiClient.ts#L22)
+[src/ui/store/JsonApiClient.ts:22](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/JsonApiClient.ts#L22)
 
 ___
 
@@ -322,7 +322,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/JsonApiClient.ts:71](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/store/JsonApiClient.ts#L71)
+[src/ui/store/JsonApiClient.ts:71](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/JsonApiClient.ts#L71)
 
 ___
 
@@ -353,4 +353,4 @@ ___
 
 #### Defined in
 
-[src/ui/store/JsonApiClient.ts:38](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/store/JsonApiClient.ts#L38)
+[src/ui/store/JsonApiClient.ts:38](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/JsonApiClient.ts#L38)

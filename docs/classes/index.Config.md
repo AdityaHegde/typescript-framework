@@ -56,7 +56,7 @@
 
 #### Defined in
 
-[src/utils/Config.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/Config.ts#L13)
+[src/utils/Config.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/utils/Config.ts#L13)
 
 ## Properties
 
@@ -66,7 +66,7 @@
 
 #### Defined in
 
-[src/utils/Config.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/Config.ts#L11)
+[src/utils/Config.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/utils/Config.ts#L11)
 
 ## Methods
 
@@ -100,7 +100,7 @@
 
 #### Defined in
 
-[src/utils/Config.ts:33](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/Config.ts#L33)
+[src/utils/Config.ts:33](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/utils/Config.ts#L33)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[src/utils/Config.ts:44](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/Config.ts#L44)
+[src/utils/Config.ts:44](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/utils/Config.ts#L44)
 
 ___
 
@@ -155,4 +155,4 @@ typeof [`Config`](index.Config.md)
 
 #### Defined in
 
-[src/utils/Config.ts:56](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/Config.ts#L56)
+[src/utils/Config.ts:56](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/utils/Config.ts#L56)

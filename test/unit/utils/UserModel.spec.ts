@@ -3,14 +3,15 @@ import {Field3Enum} from "../../test-classes/models/Field3Enum";
 import {UserWithSingleRole} from "../../test-classes/models/UserWithSingleRole";
 import {UserWithMultiRole} from "../../test-classes/models/UserWithMultiRole";
 import {UserModel} from "../../../src/models";
-import {MochaTestBase} from "@adityahegde/typescript-test-utils/dist/mocha";
-import {DataProviderData} from "@adityahegde/typescript-test-utils";
+import {DataProviderData, TestBase} from "@adityahegde/typescript-test-utils";
 import {Builder} from "../../../src";
+import {MochaTestLibrary} from "@adityahegde/typescript-test-utils/dist/mocha/MochaTestLibrary";
 
 type ValidateDataProvider = DataProviderData<[UserModel, (user: UserModel) => boolean, boolean]>;
 
-@MochaTestBase.Suite
-export class UserModelSpec extends MochaTestBase {
+@TestBase.Suite
+@TestBase.TestLibrary(MochaTestLibrary)
+export class UserModelSpec extends TestBase {
   public accessValidationData(): ValidateDataProvider {
     const usersWithSingleRoles = [Field3Enum.F3Enum1, Field3Enum.F3Enum3, Field3Enum.F3Enum5].map(role =>
       Builder(new UserWithSingleRole("")).role(role).build());
@@ -62,7 +63,7 @@ export class UserModelSpec extends MochaTestBase {
     };
   }
 
-  @MochaTestBase.Test("accessValidationData")
+  @TestBase.Test("accessValidationData")
   public shouldValidateAccess(user: UserModel, checker: (user: UserModel) => boolean, shouldAllowAccess: boolean) {
     should(checker(user)).be.equal(shouldAllowAccess);
   }

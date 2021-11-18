@@ -39,7 +39,7 @@
 
 #### Defined in
 
-[src/server/routes/RouteFactory.ts:16](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/RouteFactory.ts#L16)
+[src/server/routes/RouteFactory.ts:16](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/RouteFactory.ts#L16)
 
 ## Properties
 
@@ -49,7 +49,7 @@
 
 #### Defined in
 
-[src/server/routes/RouteFactory.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/RouteFactory.ts#L13)
+[src/server/routes/RouteFactory.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/RouteFactory.ts#L13)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/RouteFactory.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/RouteFactory.ts#L11)
+[src/server/routes/RouteFactory.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/RouteFactory.ts#L11)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/RouteFactory.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/RouteFactory.ts#L14)
+[src/server/routes/RouteFactory.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/RouteFactory.ts#L14)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/RouteFactory.ts:12](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/RouteFactory.ts#L12)
+[src/server/routes/RouteFactory.ts:12](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/RouteFactory.ts#L12)
 
 ## Methods
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/RouteFactory.ts:47](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/RouteFactory.ts#L47)
+[src/server/routes/RouteFactory.ts:47](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/RouteFactory.ts#L47)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/RouteFactory.ts:34](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/RouteFactory.ts#L34)
+[src/server/routes/RouteFactory.ts:34](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/RouteFactory.ts#L34)
 
 ___
 
@@ -139,4 +139,4 @@ ___
 
 #### Defined in
 
-[src/server/routes/RouteFactory.ts:22](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/routes/RouteFactory.ts#L22)
+[src/server/routes/RouteFactory.ts:22](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/RouteFactory.ts#L22)

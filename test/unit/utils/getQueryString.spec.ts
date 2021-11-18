@@ -1,10 +1,11 @@
 import should from "should";
-import {MochaTestBase} from "@adityahegde/typescript-test-utils/dist/mocha";
-import {DataProviderData} from "@adityahegde/typescript-test-utils";
+import {DataProviderData, TestBase} from "@adityahegde/typescript-test-utils";
 import {getQueryString} from "../../../src/ui";
+import {MochaTestLibrary} from "@adityahegde/typescript-test-utils/dist/mocha/MochaTestLibrary";
 
-@MochaTestBase.Suite
-export class GetQueryStringSpec extends MochaTestBase {
+@TestBase.Suite
+@TestBase.TestLibrary(MochaTestLibrary)
+export class GetQueryStringSpec extends TestBase {
   public queryBuilderData(): DataProviderData<[NodeJS.Dict<any>, any, string]> {
     return {
       subData: [{
@@ -34,7 +35,7 @@ export class GetQueryStringSpec extends MochaTestBase {
     };
   }
 
-  @MochaTestBase.Test("queryBuilderData")
+  @TestBase.Test("queryBuilderData")
   public shouldBuildQuery(query: NodeJS.Dict<any>, filter: any, expectedQueryString: string) {
     should(getQueryString(query, filter)).be.equal(expectedQueryString);
   }

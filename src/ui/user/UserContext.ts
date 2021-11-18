@@ -1,8 +1,8 @@
 import {createContext, useEffect, useState} from "react";
-import {useHistory} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import {fetchGet, fetchPost} from "../utils/fetch";
 import {ModelClient} from "../store";
-import {UserModel} from "../../models/UserModel";
+import {UserModel} from "../../models";
 
 export type UserContextType = {
   user: UserModel;
@@ -35,7 +35,7 @@ export function useUserContext(
   userModel: typeof UserModel, modelClient: ModelClient,
   endpointArgOpts: EndpointOptions = EndpointOptionsDefault,
 ): UserContextType {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const endpointOpts = {
     ...EndpointOptionsDefault,
@@ -48,20 +48,20 @@ export function useUserContext(
         if (authRespJson) {
           setUserContextTypeWrapper(modelClient.deserialize(userModel, authRespJson));
         }
-        history.push(endpointOpts.redirect);
-      }, () => history.push(endpointOpts.loginRedirect));
+        navigate(endpointOpts.redirect, {replace: true});
+      }, () => navigate(endpointOpts.loginRedirect, {replace: true}));
   }, []);
 
   const logout = async () => {
     await fetchPost(`${endpointOpts.authBase}${endpointOpts.logout}`, {});
     setUserContextTypeWrapper(null);
-    history.push(endpointOpts.loginRedirect)
+    navigate(endpointOpts.loginRedirect, {replace: true})
   };
 
   const authenticate = async (userData: any, endpoint: string) => {
     const authRespJson = await fetchPost(`${endpointOpts.authBase}${endpoint}`, userData);
     setUserContextTypeWrapper(modelClient.deserialize(userModel, authRespJson));
-    history.push(endpointOpts.redirect);
+    navigate(endpointOpts.redirect, {replace: true});
   };
 
   const login = (userData: any) => {

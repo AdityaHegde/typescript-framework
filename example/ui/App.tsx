@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {
-  Switch,
+  Routes,
   Route,
 } from "react-router-dom";
 import Layout, {Content, Header} from "antd/lib/layout/layout";
@@ -42,18 +42,18 @@ export function App() {
             <AppHeader />
           </Header>
           <Content style={{ minHeight: "1000px", margin: "25px" }}>
-            <Switch>
-              <Route key="/login" path="/login" exact><Login /></Route>
-              <Route key="/signup" path="/signup" exact><Signup /></Route>
-              <Route key={ProductPath} path={ProductPath} exact>
+            <Routes>
+              <Route key="/login" path="/login"><Login /></Route>
+              <Route key="/signup" path="/signup"><Signup /></Route>
+              <Route key={ProductPath} path={`${ProductPath}/*`}>
                 <DataPage modelStore={ProductModelStore} />
               </Route>
               <RestrictAccess role={ProductCategory.serverMetadata.writeRole}>
-                <Route key={ProductCategoryPath} path={ProductCategoryPath} exact>
+                <Route key={ProductCategoryPath} path={ProductCategoryPath}>
                   <DataPage modelStore={ProductCategoryModelStore} />
                 </Route>
               </RestrictAccess>
-            </Switch>
+            </Routes>
           </Content>
         </Layout>
       </Spin>

@@ -44,7 +44,7 @@ Error.constructor
 
 #### Defined in
 
-[src/server/validation/ValidationError.ts:9](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/validation/ValidationError.ts#L9)
+[src/server/validation/ValidationError.ts:9](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/validation/ValidationError.ts#L9)
 
 ## Properties
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[src/server/validation/ValidationError.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/validation/ValidationError.ts#L7)
+[src/server/validation/ValidationError.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/validation/ValidationError.ts#L7)
 
 ___
 
@@ -164,7 +164,7 @@ node_modules/@types/node/globals.d.ts:13
 
 #### Defined in
 
-[src/server/validation/ValidationError.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/validation/ValidationError.ts#L13)
+[src/server/validation/ValidationError.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/validation/ValidationError.ts#L13)
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[src/server/validation/ValidationError.ts:17](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/validation/ValidationError.ts#L17)
+[src/server/validation/ValidationError.ts:17](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/validation/ValidationError.ts#L17)
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-[src/server/validation/ValidationError.ts:21](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/validation/ValidationError.ts#L21)
+[src/server/validation/ValidationError.ts:21](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/validation/ValidationError.ts#L21)
 
 ___
 

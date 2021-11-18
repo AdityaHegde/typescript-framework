@@ -1,21 +1,23 @@
 import EventEmitter from "events";
 import {asyncWait, awaitEvent, AwaitTimeoutError} from "../../../src";
-import {MochaTestBase} from "@adityahegde/typescript-test-utils/dist/mocha";
 import {assert, match, SinonStub} from "sinon";
+import {TestBase} from "@adityahegde/typescript-test-utils";
+import {MochaTestLibrary} from "@adityahegde/typescript-test-utils/dist/mocha/MochaTestLibrary";
 
-@MochaTestBase.Suite
-export class AwaitEventSpec extends MochaTestBase {
+@TestBase.Suite
+@TestBase.TestLibrary(MochaTestLibrary)
+export class AwaitEventSpec extends TestBase {
   private emitter = new EventEmitter();
   private resolve: SinonStub;
   private reject: SinonStub;
 
-  @MochaTestBase.BeforeSuite()
+  @TestBase.BeforeSuite()
   public setup() {
     this.resolve = this.sandbox.stub();
     this.reject = this.sandbox.stub();
   }
 
-  @MochaTestBase.Test()
+  @TestBase.Test()
   public async shouldWaitForEvent() {
     awaitEvent(this.emitter, "event").then(this.resolve, this.reject);
 
@@ -28,7 +30,7 @@ export class AwaitEventSpec extends MochaTestBase {
     assert.calledOnceWithMatch(this.resolve, match(["arg0", 1, true, "arg3"]));
   }
 
-  @MochaTestBase.Test()
+  @TestBase.Test()
   public async shouldWaitAtMaxForEvent() {
     awaitEvent(this.emitter, "event", 100).then(this.resolve, this.reject);
 
@@ -41,6 +43,7 @@ export class AwaitEventSpec extends MochaTestBase {
     assert.calledOnceWithMatch(this.reject, match.instanceOf(AwaitTimeoutError));
   }
 
+  @TestBase.Test()
   public async shouldRejectForRejectionEvent() {
     awaitEvent(this.emitter, "event", -1, "failed").then(this.resolve, this.reject);
 

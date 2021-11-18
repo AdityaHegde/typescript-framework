@@ -47,7 +47,7 @@
 
 #### Defined in
 
-[src/server/datastore/DataStore.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStore.ts#L7)
+[src/server/datastore/DataStore.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStore.ts#L7)
 
 ## Properties
 
@@ -57,7 +57,7 @@
 
 #### Defined in
 
-[src/server/datastore/DataStore.ts:5](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStore.ts#L5)
+[src/server/datastore/DataStore.ts:5](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStore.ts#L5)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[src/server/logging/LoggerBase.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/logging/LoggerBase.ts#L11)
+[src/server/logging/LoggerBase.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/logging/LoggerBase.ts#L11)
 
 ## Methods
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStore.ts:12](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStore.ts#L12)
+[src/server/datastore/DataStore.ts:12](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStore.ts#L12)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStore.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStore.ts#L13)
+[src/server/datastore/DataStore.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStore.ts#L13)
 
 ___
 
@@ -113,4 +113,4 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStore.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStore.ts#L14)
+[src/server/datastore/DataStore.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStore.ts#L14)

@@ -1,14 +1,16 @@
 import {Models, UserModels} from "../test-classes/server/Models";
-import {MochaTestBase} from "@adityahegde/typescript-test-utils/dist/mocha";
 import {Authentication, DataStore, RouteFactory, Server, ServerConfig} from "../../src/server";
 import {addModelsToList} from "../../src/models";
+import {TestBase} from "@adityahegde/typescript-test-utils";
+import {MochaTestLibrary} from "@adityahegde/typescript-test-utils/dist/mocha/MochaTestLibrary";
 
 addModelsToList([
   ...Models,
   ...UserModels,
 ]);
 
-export class ServerTestBase extends MochaTestBase {
+@TestBase.TestLibrary(MochaTestLibrary)
+export class ServerTestBase extends TestBase {
   protected server: Server;
   protected dataStore: DataStore;
   protected serverConfig: ServerConfig;
@@ -17,7 +19,7 @@ export class ServerTestBase extends MochaTestBase {
 
   protected ServerBaseUrl: string;
 
-  @MochaTestBase.BeforeSuite()
+  @TestBase.BeforeSuite()
   public async setupServerTestBase() {
     this.server = new Server(
       this.serverConfig, this.dataStore, this.authentication, this.routeFactory,
@@ -26,7 +28,7 @@ export class ServerTestBase extends MochaTestBase {
     this.ServerBaseUrl = `http://localhost:${this.server.config.port}`;
   }
 
-  @MochaTestBase.AfterSuite()
+  @TestBase.AfterSuite()
   public async teardownServerTestBase() {
     await this.server.stop();
   }

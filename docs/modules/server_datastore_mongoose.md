@@ -29,4 +29,4 @@
 
 #### Defined in
 
-[src/server/datastore/mongoose/MongooseStore.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/mongoose/MongooseStore.ts#L7)
+[src/server/datastore/mongoose/MongooseStore.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/mongoose/MongooseStore.ts#L7)

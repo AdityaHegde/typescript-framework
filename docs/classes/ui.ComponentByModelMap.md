@@ -68,7 +68,7 @@ Map&lt;string, FunctionComponent&lt;Props\&gt;\&gt;.constructor
 
 #### Defined in
 
-[src/ui/utils/ComponentByModelMap.tsx:15](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/ComponentByModelMap.tsx#L15)
+[src/ui/utils/ComponentByModelMap.tsx:15](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/utils/ComponentByModelMap.tsx#L15)
 
 ## Properties
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/ui/utils/ComponentByModelMap.tsx:13](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/ComponentByModelMap.tsx#L13)
+[src/ui/utils/ComponentByModelMap.tsx:13](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/utils/ComponentByModelMap.tsx#L13)
 
 ___
 
@@ -190,7 +190,7 @@ ___
 
 #### Defined in
 
-[src/ui/utils/ComponentByModelMap.tsx:31](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/ComponentByModelMap.tsx#L31)
+[src/ui/utils/ComponentByModelMap.tsx:31](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/utils/ComponentByModelMap.tsx#L31)
 
 ___
 
@@ -303,7 +303,7 @@ ___
 
 #### Defined in
 
-[src/ui/utils/ComponentByModelMap.tsx:21](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/ComponentByModelMap.tsx#L21)
+[src/ui/utils/ComponentByModelMap.tsx:21](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/utils/ComponentByModelMap.tsx#L21)
 
 ___
 

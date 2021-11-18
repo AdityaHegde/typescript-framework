@@ -32,7 +32,6 @@ export class ResourceRestrictionTest extends ServerParameterizedTestBase {
 
   @JwtMongooseTestBase.BeforeSuite()
   public async setupResourceRestrictionTest() {
-    console.log("ResourceRestrictionTest")
     this.LoginUrl = `${this.ServerBaseUrl}/${this.LoginUrl}`;
 
     await Promise.all([
@@ -64,7 +63,7 @@ export class ResourceRestrictionTest extends ServerParameterizedTestBase {
     }
   }
 
-  // @JwtMongooseTestBase.Test("restrictTestDataProvider")
+  @JwtMongooseTestBase.Test("restrictTestDataProvider")
   public async shouldRestrictUnauthorizedUsers(
     user: string, modelMetadata: ModelMetadata, operation: ("getAll" | "create" | "update" | "delete"), shouldSucceed: boolean,
   ) {

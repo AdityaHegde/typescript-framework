@@ -1,6 +1,10 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import React from "react";
 import expect from "expect";
-import renderer from "react-test-renderer";
+import {render} from "@testing-library/react";
 import {SimpleModel} from "../../../test-classes/ui/SimpleModel";
 import {AntdJestTestBase} from "../../../test-bases/AntdJestTestBase";
 import {NestedModel} from "../../../test-classes/ui/NestedModel";
@@ -27,7 +31,7 @@ export class ModelFormItemsTest extends AntdJestTestBase {
 
   @AntdJestTestBase.Test("modelFormData")
   public modelFormTest(record: BaseType, model: typeof BaseType) {
-    const tree = renderer.create(<ModelForm record={record} model={model} formRef={null} onFinish={() => {}} />);
-    expect(tree).toMatchSnapshot();
+    const {asFragment} = render(<ModelForm record={record} model={model} formRef={null} onFinish={() => {}} />);
+    expect(asFragment()).toMatchSnapshot();
   }
 }

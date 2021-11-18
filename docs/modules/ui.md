@@ -47,7 +47,7 @@
 
 #### Defined in
 
-[src/ui/DataPage.tsx:11](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/DataPage.tsx#L11)
+[src/ui/DataPage.tsx:11](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/DataPage.tsx#L11)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[src/ui/ModalWrapper.tsx:17](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/ModalWrapper.tsx#L17)
+[src/ui/ModalWrapper.tsx:17](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/ModalWrapper.tsx#L17)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[src/ui/utils/fetch.ts:1](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/fetch.ts#L1)
+[src/ui/utils/fetch.ts:1](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/utils/fetch.ts#L1)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/ui/utils/fetch.ts:5](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/fetch.ts#L5)
+[src/ui/utils/fetch.ts:5](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/utils/fetch.ts#L5)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/ui/utils/fetch.ts:9](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/fetch.ts#L9)
+[src/ui/utils/fetch.ts:9](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/utils/fetch.ts#L9)
 
 ___
 
@@ -156,7 +156,7 @@ ___
 
 #### Defined in
 
-[src/ui/utils/getDisplayText.ts:3](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/getDisplayText.ts#L3)
+[src/ui/utils/getDisplayText.ts:3](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/utils/getDisplayText.ts#L3)
 
 ___
 
@@ -179,7 +179,7 @@ ___
 
 #### Defined in
 
-[src/ui/utils/getQueryString.ts:3](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/utils/getQueryString.ts#L3)
+[src/ui/utils/getQueryString.ts:3](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/utils/getQueryString.ts#L3)
 
 ___
 
@@ -199,4 +199,4 @@ ___
 
 #### Defined in
 
-[src/ui/useRoutePath.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/ui/useRoutePath.ts#L11)
+[src/ui/useRoutePath.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/useRoutePath.ts#L11)

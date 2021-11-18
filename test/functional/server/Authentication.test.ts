@@ -99,9 +99,3 @@ export class AuthenticationTest extends ServerParameterizedTestBase {
     should(error).be.instanceOf(HTTPError);
   }
 }
-
-getInstances().forEach(({title, dataStore, routeFactory,
-                          serverConfig, authentication, bootstrapData}: InstancesType) => {
-  new AuthenticationTest(`${title}AuthenticationTest`, dataStore, routeFactory,
-    serverConfig, authentication, bootstrapData).test();
-});

@@ -47,7 +47,7 @@
 
 #### Defined in
 
-[src/server/datastore/DataStoreModel.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModel.ts#L14)
+[src/server/datastore/DataStoreModel.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStoreModel.ts#L14)
 
 ## Properties
 
@@ -57,7 +57,7 @@
 
 #### Defined in
 
-[src/server/datastore/DataStoreModel.ts:12](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModel.ts#L12)
+[src/server/datastore/DataStoreModel.ts:12](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStoreModel.ts#L12)
 
 ## Methods
 
@@ -77,7 +77,7 @@
 
 #### Defined in
 
-[src/server/datastore/DataStoreModel.ts:21](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModel.ts#L21)
+[src/server/datastore/DataStoreModel.ts:21](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStoreModel.ts#L21)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStoreModel.ts:25](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModel.ts#L25)
+[src/server/datastore/DataStoreModel.ts:25](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStoreModel.ts#L25)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStoreModel.ts:26](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModel.ts#L26)
+[src/server/datastore/DataStoreModel.ts:26](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStoreModel.ts#L26)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStoreModel.ts:28](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModel.ts#L28)
+[src/server/datastore/DataStoreModel.ts:28](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStoreModel.ts#L28)
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStoreModel.ts:20](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModel.ts#L20)
+[src/server/datastore/DataStoreModel.ts:20](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStoreModel.ts#L20)
 
 ___
 
@@ -181,7 +181,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStoreModel.ts:18](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModel.ts#L18)
+[src/server/datastore/DataStoreModel.ts:18](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStoreModel.ts#L18)
 
 ___
 
@@ -201,7 +201,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStoreModel.ts:19](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModel.ts#L19)
+[src/server/datastore/DataStoreModel.ts:19](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStoreModel.ts#L19)
 
 ___
 
@@ -222,7 +222,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStoreModel.ts:22](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModel.ts#L22)
+[src/server/datastore/DataStoreModel.ts:22](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStoreModel.ts#L22)
 
 ___
 
@@ -244,7 +244,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStoreModel.ts:24](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModel.ts#L24)
+[src/server/datastore/DataStoreModel.ts:24](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStoreModel.ts#L24)
 
 ___
 
@@ -265,4 +265,4 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStoreModel.ts:23](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/server/datastore/DataStoreModel.ts#L23)
+[src/server/datastore/DataStoreModel.ts:23](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStoreModel.ts#L23)

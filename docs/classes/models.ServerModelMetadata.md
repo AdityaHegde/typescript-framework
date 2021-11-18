@@ -46,7 +46,7 @@
 
 #### Defined in
 
-[src/models/server-metadata/ServerModelMetadata.ts:24](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/server-metadata/ServerModelMetadata.ts#L24)
+[src/models/server-metadata/ServerModelMetadata.ts:24](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/server-metadata/ServerModelMetadata.ts#L24)
 
 ## Properties
 
@@ -56,7 +56,7 @@
 
 #### Defined in
 
-[src/models/server-metadata/ServerModelMetadata.ts:20](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/server-metadata/ServerModelMetadata.ts#L20)
+[src/models/server-metadata/ServerModelMetadata.ts:20](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/server-metadata/ServerModelMetadata.ts#L20)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[src/models/server-metadata/ServerModelMetadata.ts:21](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/server-metadata/ServerModelMetadata.ts#L21)
+[src/models/server-metadata/ServerModelMetadata.ts:21](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/server-metadata/ServerModelMetadata.ts#L21)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[src/models/server-metadata/ServerModelMetadata.ts:16](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/server-metadata/ServerModelMetadata.ts#L16)
+[src/models/server-metadata/ServerModelMetadata.ts:16](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/server-metadata/ServerModelMetadata.ts#L16)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[src/models/server-metadata/ServerModelMetadata.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/server-metadata/ServerModelMetadata.ts#L14)
+[src/models/server-metadata/ServerModelMetadata.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/server-metadata/ServerModelMetadata.ts#L14)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[src/models/server-metadata/ServerModelMetadata.ts:22](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/server-metadata/ServerModelMetadata.ts#L22)
+[src/models/server-metadata/ServerModelMetadata.ts:22](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/server-metadata/ServerModelMetadata.ts#L22)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[src/models/server-metadata/ServerModelMetadata.ts:18](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/server-metadata/ServerModelMetadata.ts#L18)
+[src/models/server-metadata/ServerModelMetadata.ts:18](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/server-metadata/ServerModelMetadata.ts#L18)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[src/models/server-metadata/ServerModelMetadata.ts:17](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/server-metadata/ServerModelMetadata.ts#L17)
+[src/models/server-metadata/ServerModelMetadata.ts:17](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/server-metadata/ServerModelMetadata.ts#L17)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/models/server-metadata/ServerModelMetadata.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/server-metadata/ServerModelMetadata.ts#L15)
+[src/models/server-metadata/ServerModelMetadata.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/server-metadata/ServerModelMetadata.ts#L15)
 
 ## Methods
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/models/server-metadata/ServerModelMetadata.ts:58](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/server-metadata/ServerModelMetadata.ts#L58)
+[src/models/server-metadata/ServerModelMetadata.ts:58](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/server-metadata/ServerModelMetadata.ts#L58)
 
 ___
 
@@ -166,7 +166,7 @@ ___
 
 #### Defined in
 
-[src/models/server-metadata/ServerModelMetadata.ts:54](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/server-metadata/ServerModelMetadata.ts#L54)
+[src/models/server-metadata/ServerModelMetadata.ts:54](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/server-metadata/ServerModelMetadata.ts#L54)
 
 ___
 
@@ -186,7 +186,7 @@ ___
 
 #### Defined in
 
-[src/models/server-metadata/ServerModelMetadata.ts:34](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/server-metadata/ServerModelMetadata.ts#L34)
+[src/models/server-metadata/ServerModelMetadata.ts:34](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/server-metadata/ServerModelMetadata.ts#L34)
 
 ___
 
@@ -206,7 +206,7 @@ ___
 
 #### Defined in
 
-[src/models/server-metadata/ServerModelMetadata.ts:46](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/server-metadata/ServerModelMetadata.ts#L46)
+[src/models/server-metadata/ServerModelMetadata.ts:46](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/server-metadata/ServerModelMetadata.ts#L46)
 
 ___
 
@@ -226,7 +226,7 @@ ___
 
 #### Defined in
 
-[src/models/server-metadata/ServerModelMetadata.ts:62](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/server-metadata/ServerModelMetadata.ts#L62)
+[src/models/server-metadata/ServerModelMetadata.ts:62](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/server-metadata/ServerModelMetadata.ts#L62)
 
 ___
 
@@ -247,7 +247,7 @@ ___
 
 #### Defined in
 
-[src/models/server-metadata/ServerModelMetadata.ts:41](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/server-metadata/ServerModelMetadata.ts#L41)
+[src/models/server-metadata/ServerModelMetadata.ts:41](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/server-metadata/ServerModelMetadata.ts#L41)
 
 ___
 
@@ -267,7 +267,7 @@ ___
 
 #### Defined in
 
-[src/models/server-metadata/ServerModelMetadata.ts:50](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/server-metadata/ServerModelMetadata.ts#L50)
+[src/models/server-metadata/ServerModelMetadata.ts:50](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/server-metadata/ServerModelMetadata.ts#L50)
 
 ___
 
@@ -299,4 +299,4 @@ ___
 
 #### Defined in
 
-[src/models/server-metadata/ServerModelMetadata.ts:77](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/models/server-metadata/ServerModelMetadata.ts#L77)
+[src/models/server-metadata/ServerModelMetadata.ts:77](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/server-metadata/ServerModelMetadata.ts#L77)

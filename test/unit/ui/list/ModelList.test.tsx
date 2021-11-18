@@ -1,6 +1,10 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import React from "react";
 import expect from "expect";
-import renderer from "react-test-renderer";
+import {render} from "@testing-library/react";
 import {SimpleModel} from "../../../test-classes/ui/SimpleModel";
 import {ModelList} from "../../../../src/ui/list";
 import {AntdJestTestBase} from "../../../test-bases/AntdJestTestBase";
@@ -30,7 +34,7 @@ export class ModelListTest extends AntdJestTestBase {
 
   @AntdJestTestBase.Test("modelListData")
   public modelListTest(records: Array<BaseType>, model: typeof BaseType) {
-    const tree = renderer.create(<ModelList records={records} model={model} onEdit={() => {}} onDelete={() => {}} />);
-    expect(tree).toMatchSnapshot();
+    const {asFragment} = render(<ModelList records={records} model={model} onEdit={() => {}} onDelete={() => {}} />);
+    expect(asFragment()).toMatchSnapshot();
   }
 }

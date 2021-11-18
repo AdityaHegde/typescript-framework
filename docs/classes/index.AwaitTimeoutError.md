@@ -40,7 +40,7 @@ Error.constructor
 
 #### Defined in
 
-[src/utils/AwaitTimeoutError.ts:2](https://github.com/AdityaHegde/typescript-framework/blob/3b13972/src/utils/AwaitTimeoutError.ts#L2)
+[src/utils/AwaitTimeoutError.ts:2](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/utils/AwaitTimeoutError.ts#L2)
 
 ## Properties
 

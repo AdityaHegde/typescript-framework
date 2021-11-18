@@ -1,13 +1,15 @@
 import should from "should";
 import {Builder} from "../../../src";
-import {MochaTestBase} from "@adityahegde/typescript-test-utils/dist/mocha";
 import {TestMetadataBase} from "../../test-classes/models/TestMetadataBase";
 import {TestMetadataChild} from "../../test-classes/models/TestMetadataChild";
 import {Field3Enum} from "../../test-classes/models/Field3Enum";
+import {TestBase} from "@adityahegde/typescript-test-utils";
+import {MochaTestLibrary} from "@adityahegde/typescript-test-utils/dist/mocha/MochaTestLibrary";
 
-@MochaTestBase.Suite
-export class BuilderSpec extends MochaTestBase {
-  @MochaTestBase.Test()
+@TestBase.Suite
+@TestBase.TestLibrary(MochaTestLibrary)
+export class BuilderSpec extends TestBase {
+  @TestBase.Test()
   public shouldBuildAnInstance() {
     const inst = Builder(new TestMetadataBase("abc"))
       .field1("xyz").fields5(["a", "b", "c"])
