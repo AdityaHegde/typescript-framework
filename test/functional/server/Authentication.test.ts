@@ -1,32 +1,28 @@
 import got, {HTTPError} from "got";
 import should from "should";
-import {getInstances, InstancesType} from "../../test-bases/getInstances";
-import {JwtMongooseTestBase} from "../../test-bases/JwtMongooseTestBase";
 import {getCookieJar, loginUser} from "../../utils/getCookieJar";
-import {ServerParameterizedTestBase} from "../../test-bases/ServerParameterizedTestBase";
 import {sanitize} from "../../data/mongoose";
+import {ServerTestBase} from "../../test-bases/ServerTestBase";
+import {getServerTestSuiteParametersForEveryAuth} from "../../test-bases/getServerTestSuiteParameter";
 
-@JwtMongooseTestBase.ParameterizedSuite(
-  getInstances().map(({title, dataStore, routeFactory, serverConfig, authentication, bootstrapData}: InstancesType) =>
-    [`${title}AuthenticationTest`, dataStore, routeFactory, serverConfig, authentication, bootstrapData])
-)
-export class AuthenticationTest extends ServerParameterizedTestBase {
+@ServerTestBase.ParameterizedSuite(getServerTestSuiteParametersForEveryAuth("AuthenticationTest"))
+export class AuthenticationTest extends ServerTestBase {
   private LoginUrl = "auth/login";
   private SignupUrl = "auth/signup";
   private LogoutUrl = "auth/logout";
   private UserUrl = "auth/user";
 
-  @JwtMongooseTestBase.BeforeSuite()
+  @ServerTestBase.BeforeSuite()
   public async setupJwtAuthenticationTest() {
-    this.LoginUrl = `${this.ServerBaseUrl}/${this.LoginUrl}`;
-    this.SignupUrl = `${this.ServerBaseUrl}/${this.SignupUrl}`;
-    this.LogoutUrl = `${this.ServerBaseUrl}/${this.LogoutUrl}`;
-    this.UserUrl = `${this.ServerBaseUrl}/${this.UserUrl}`;
+    this.LoginUrl = `${this.testSuiteParameter.ServerBaseUrl}/${this.LoginUrl}`;
+    this.SignupUrl = `${this.testSuiteParameter.ServerBaseUrl}/${this.SignupUrl}`;
+    this.LogoutUrl = `${this.testSuiteParameter.ServerBaseUrl}/${this.LogoutUrl}`;
+    this.UserUrl = `${this.testSuiteParameter.ServerBaseUrl}/${this.UserUrl}`;
 
     await got.post(this.SignupUrl, {json: {user: "t", email: "t@t.com", pwd: "t"}});
   }
 
-  @JwtMongooseTestBase.Test()
+  @ServerTestBase.Test()
   public async testLoginFailure() {
     let error: Error;
     try {
@@ -37,7 +33,7 @@ export class AuthenticationTest extends ServerParameterizedTestBase {
     should(error).be.instanceOf(HTTPError);
   }
 
-  @JwtMongooseTestBase.Test()
+  @ServerTestBase.Test()
   public async testRestrictedAccessFailure() {
     let error: Error;
     try {
@@ -48,7 +44,7 @@ export class AuthenticationTest extends ServerParameterizedTestBase {
     should(error).be.instanceOf(HTTPError);
   }
 
-  @JwtMongooseTestBase.Test()
+  @ServerTestBase.Test()
   public async testSignupAndLogin() {
     let error: Error;
     let resp: any;
@@ -69,7 +65,7 @@ export class AuthenticationTest extends ServerParameterizedTestBase {
     should(await sanitize(resp)).be.eql({"id":"<ID>","type":"User","attributes":{"user":"a","email":"a@a.com","role":3}});
   }
 
-  @JwtMongooseTestBase.Test()
+  @ServerTestBase.Test()
   public async testLoginAndRestrictedAccessAndLogout() {
     let {error, resp, cookieJar} = await loginUser("t", "t", this.LoginUrl);
     should(error).be.undefined();

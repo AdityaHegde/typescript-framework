@@ -1,17 +1,18 @@
 import got from "got";
 import should from "should";
 import {ValidationTestModel} from "../../test-classes/server/ValidationTestModel";
-import {JwtMongooseTestBase} from "../../test-bases/JwtMongooseTestBase";
 import {sanitize} from "../../data/mongoose";
 import {DataProviderData} from "@adityahegde/typescript-test-utils";
+import {ServerTestBase} from "../../test-bases/ServerTestBase";
+import {getServerTestSuiteParametersForJWT} from "../../test-bases/getServerTestSuiteParameter";
 
-@JwtMongooseTestBase.Suite
-export class ValidationTest extends JwtMongooseTestBase {
+@ServerTestBase.ParameterizedSuite(getServerTestSuiteParametersForJWT("ValidationTest"))
+export class ValidationTest extends ServerTestBase {
   protected ValidationTestApiBase = "api/validationTestModels";
 
-  @JwtMongooseTestBase.BeforeSuite()
+  @ServerTestBase.BeforeSuite()
   public async setupValidationTest() {
-    this.ValidationTestApiBase = `${this.ServerBaseUrl}/${this.ValidationTestApiBase}`;
+    this.ValidationTestApiBase = `${this.testSuiteParameter.ServerBaseUrl}/${this.ValidationTestApiBase}`;
   }
 
   public validationTestData(): DataProviderData<[any, Array<string>]> {
@@ -32,7 +33,7 @@ export class ValidationTest extends JwtMongooseTestBase {
     };
   }
 
-  @JwtMongooseTestBase.Test("validationTestData")
+  @ServerTestBase.Test("validationTestData")
   public async shouldFailBecauseOfValidationFailure(attributes: any, failedFields: Array<string>) {
     const resp = await got.post(this.ValidationTestApiBase,
       {json: {data: {type: ValidationTestModel.metadata.modelName, attributes}}, retry: 0, throwHttpErrors: false});
@@ -44,7 +45,7 @@ export class ValidationTest extends JwtMongooseTestBase {
     should(await sanitize(got.get(this.ValidationTestApiBase))).have.length(3);
   }
 
-  @JwtMongooseTestBase.Test()
+  @ServerTestBase.Test()
   public async shouldCreateRecord() {
     let recordId: string;
     await sanitize(got.post(this.ValidationTestApiBase,

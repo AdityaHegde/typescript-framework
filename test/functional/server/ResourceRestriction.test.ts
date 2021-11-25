@@ -1,17 +1,20 @@
 import got, {HTTPError} from "got";
 import should from "should";
-import {getInstances, InstancesType} from "../../test-bases/getInstances";
-import {JwtMongooseTestBase} from "../../test-bases/JwtMongooseTestBase";
 import {PublicModel} from "../../test-classes/server/bootstrap/PublicModel";
-import {ServerParameterizedTestBase} from "../../test-bases/ServerParameterizedTestBase";
 import {RestrictedModel} from "../../test-classes/server/bootstrap/RestrictedModel";
 import {PartialRestrictedModel} from "../../test-classes/server/bootstrap/PartialRestrictedModel";
 import {UserLockedModel} from "../../test-classes/server/UserLockedModel";
 import {loginUser} from "../../utils/getCookieJar";
 import {LoggedInModel} from "../../test-classes/server/bootstrap/LoggedInModel";
-import {ModelMetadata} from "../../../src/models/metadata/ModelMetadata";
+import {ModelMetadata, UserModel} from "../../../src/models";
 import {sanitize} from "../../data/mongoose";
-import { User } from "../../test-classes/server/user/User";
+import {ServerTestBase} from "../../test-bases/ServerTestBase";
+import {UserWithSingleRole} from "../../test-classes/server/user/UserWithSingleRole";
+import {UserWithMultiRole} from "../../test-classes/server/user/UserWithMultiRole";
+import {
+  getServerTestSuiteParametersForEveryAuth,
+  ServerTestSuiteParameter
+} from "../../test-bases/getServerTestSuiteParameter";
 
 const TestModels = [
   PublicModel,
@@ -20,27 +23,45 @@ const TestModels = [
   RestrictedModel,
 ];
 
-@JwtMongooseTestBase.ParameterizedSuite(
-  getInstances().map(({title, dataStore, routeFactory, serverConfig, authentication, bootstrapData}: InstancesType) =>
-    [`${title}ResourceRestrictionTest`, dataStore, routeFactory, serverConfig, authentication, bootstrapData]
-  )
-)
-export class ResourceRestrictionTest extends ServerParameterizedTestBase {
+function getResourceRestrictionTestInstances() {
+  const instances = new Array<ServerTestSuiteParameter>();
+  instances.push(...getServerTestSuiteParametersForEveryAuth("UserWithSingleRole ResourceRestrictionTest", UserWithSingleRole).map(instance => {
+    return {
+      ...instance,
+      userRoleData: [1, 2],
+    };
+  }));
+  instances.push(...getServerTestSuiteParametersForEveryAuth("UserWithMultiRole ResourceRestrictionTest", UserWithMultiRole).map(instance => {
+    return {
+      ...instance,
+      userRoleData: [
+        [1, 2, 3],
+        [2, 3]
+      ],
+    };
+  }));
+  return instances;
+}
+
+@ServerTestBase.ParameterizedSuite(getResourceRestrictionTestInstances())
+export class ResourceRestrictionTest extends ServerTestBase {
   private resources = new Map<string, Array<any>>();
-  private users: Array<User>;
+  private users: Array<UserModel>;
   private LoginUrl = "auth/login";
 
-  @JwtMongooseTestBase.BeforeSuite()
+  @ServerTestBase.BeforeSuite()
   public async setupResourceRestrictionTest() {
-    this.LoginUrl = `${this.ServerBaseUrl}/${this.LoginUrl}`;
+    this.LoginUrl = `${this.testSuiteParameter.ServerBaseUrl}/${this.LoginUrl}`;
 
     await Promise.all([
-      ["a", 1], ["b", 2],
+      ["a", this.testSuiteParameter.userRoleData[0]], ["b", this.testSuiteParameter.userRoleData[1]],
     ].map(([label, role]) => {
-      return got.post(`${this.ServerBaseUrl}/auth/signup`,
+      return got.post(`${this.testSuiteParameter.ServerBaseUrl}/auth/signup`,
         {json: {user: label, email: `${label}@${label}.com`, pwd: label, role}})
     }));
-    this.users = await this.dataStore.dataStoreModelFactory.getDataStoreModel(User.metadata.modelName).query({});
+    this.users = await this.dataStore.dataStoreModelFactory
+      .getDataStoreModel(this.userModel.metadata.modelName)
+      .query({});
 
     await Promise.all(TestModels.map(async (model) => {
       const modelStore = this.dataStore.dataStoreModelFactory.getDataStoreModel(model.metadata.modelName);
@@ -63,7 +84,7 @@ export class ResourceRestrictionTest extends ServerParameterizedTestBase {
     }
   }
 
-  @JwtMongooseTestBase.Test("restrictTestDataProvider")
+  @ServerTestBase.Test("restrictTestDataProvider")
   public async shouldRestrictUnauthorizedUsers(
     user: string, modelMetadata: ModelMetadata, operation: ("getAll" | "create" | "update" | "delete"), shouldSucceed: boolean,
   ) {
@@ -75,20 +96,19 @@ export class ResourceRestrictionTest extends ServerParameterizedTestBase {
     try {
       switch (operation) {
         case "getAll":
-          await got.get(`${this.ServerBaseUrl}/api/${modelMetadata.apiPath}`,
+          await got.get(`${this.testSuiteParameter.ServerBaseUrl}/api/${modelMetadata.apiPath}`,
             {cookieJar, retry: 0});
           break;
         case "create":
-          await got.post(`${this.ServerBaseUrl}/api/${modelMetadata.apiPath}`,
+          await got.post(`${this.testSuiteParameter.ServerBaseUrl}/api/${modelMetadata.apiPath}`,
             {json: {data: {type: modelMetadata.modelName, attributes: {label: "new"}}}, cookieJar, retry: 0});
           break;
         case "update":
-          await got.put(`${this.ServerBaseUrl}/api/${modelMetadata.apiPath}/${id}`,
+          await got.put(`${this.testSuiteParameter.ServerBaseUrl}/api/${modelMetadata.apiPath}/${id}`,
             {json: {data: {type: modelMetadata.modelName, attributes: {label: "update"}}}, cookieJar, retry: 0});
           break;
       }
     } catch (err) {
-      console.log(err.message);
       error = err;
     }
     if (shouldSucceed) {
@@ -98,10 +118,10 @@ export class ResourceRestrictionTest extends ServerParameterizedTestBase {
     }
   }
 
-  @JwtMongooseTestBase.Test()
+  @ServerTestBase.Test()
   public async shouldRestrictNonOwners() {
     const metadata = UserLockedModel.metadata;
-    const ApiBase = `${this.ServerBaseUrl}/api/${metadata.apiPath}`;
+    const ApiBase = `${this.testSuiteParameter.ServerBaseUrl}/api/${metadata.apiPath}`;
 
     const loginUser0 = await loginUser(this.users[0].user, this.users[0].user, this.LoginUrl);
     const loginUser1 = await loginUser(this.users[1].user, this.users[1].user, this.LoginUrl);

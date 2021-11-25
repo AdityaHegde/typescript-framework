@@ -12,9 +12,9 @@ export type MongooseConfig = {
 @Log
 export class MongooseStore extends DataStore {
   private mongoose: Mongoose;
-  private readonly  config: MongooseConfig;
+  private readonly config: MongooseConfig;
 
-  constructor(dataStoreModelFactory: DataStoreModelFactory, config: MongooseConfig) {
+  public constructor(dataStoreModelFactory: DataStoreModelFactory, config: MongooseConfig) {
     super(dataStoreModelFactory);
     this.config = config;
   }

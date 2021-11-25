@@ -6,7 +6,7 @@ module.exports = {
   mode: "development",
   devtool: "source-map",
   entry: [
-    "./example/ui/index.tsx",
+    "./test/functional/ui/app/ui/index.tsx",
   ],
   resolve: {
     extensions: ["*", ".ts", ".tsx", ".js"],
@@ -54,7 +54,7 @@ module.exports = {
 
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "example/server/public"),
+    path: path.resolve(__dirname, "test/functional/ui/public"),
     publicPath: "/",
   },
 };

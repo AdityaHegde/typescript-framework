@@ -7,7 +7,7 @@ import {
   Required,
   SelectField,
   ServerModelMetadata, TextField, UserField
-} from "../../src/models";
+} from "../../../../../src/models";
 
 export enum ProductRating {
   VeryBad,

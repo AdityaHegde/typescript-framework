@@ -1,5 +1,5 @@
 import {UserRole} from "./UserRole";
-import {BaseType, DisplayField, ModelMetadata, Required, ServerModelMetadata, TextField} from "../../src/models";
+import {BaseType, DisplayField, ModelMetadata, Required, ServerModelMetadata, TextField} from "../../../../../src/models";
 
 @ServerModelMetadata.Model({
   writeRole: UserRole.Mod,

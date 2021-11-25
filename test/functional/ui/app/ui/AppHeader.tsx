@@ -3,8 +3,8 @@ import Menu from "antd/lib/menu";
 import React from "react";
 import { Link } from "react-router-dom";
 import {ProductCategoryPath, ProductPath} from "./Constants";
-import {useRoutePath} from "../../src/ui";
-import {UserDisplay} from "../../src/ui/user";
+import {useRoutePath} from "../../../../../src/ui";
+import {UserDisplay} from "../../../../../src/ui/user";
 
 export function AppHeader() {
   const rootPath = useRoutePath();

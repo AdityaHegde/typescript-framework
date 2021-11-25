@@ -2,9 +2,9 @@ import {DataStoreModelFactory} from "./DataStoreModelFactory";
 import {LoggerBase} from "../logging/LoggerBase";
 
 export abstract class DataStore extends LoggerBase {
-  dataStoreModelFactory: DataStoreModelFactory;
+  public readonly dataStoreModelFactory: DataStoreModelFactory;
 
-  constructor(dataStoreModelFactory: DataStoreModelFactory) {
+  protected constructor(dataStoreModelFactory: DataStoreModelFactory) {
     super();
     this.dataStoreModelFactory = dataStoreModelFactory;
   }

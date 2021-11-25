@@ -11,9 +11,9 @@ import {ServerConfig} from "./ServerConfig";
 @Log
 export class Server extends LoggerBase {
   public readonly config: ServerConfig;
-  protected readonly dataStore: DataStore;
-  protected readonly authentication: Authentication;
-  protected readonly routeFactory: RouteFactory;
+  public readonly dataStore: DataStore;
+  public readonly authentication: Authentication;
+  public readonly routeFactory: RouteFactory;
 
   protected server: http.Server;
   protected app: express.Application;
@@ -42,15 +42,19 @@ export class Server extends LoggerBase {
     await this.authentication.init(this.app, this.dataStore, this.routeFactory);
     await this.routeFactory.init(this.app);
 
-    if (this.config.host) {
-      this.server.listen(this.config.port, this.config.host, () => {
-        this.logger.info(`Server started at http://${this.config.host}:${this.config.port}`);
-      });
-    } else {
-      this.server.listen(this.config.port, () => {
-        this.logger.info(`Server started at ${this.config.port}`);
-      });
-    }
+    return new Promise<void>(resolve => {
+      if (this.config.host) {
+        this.server.listen(this.config.port, this.config.host, () => {
+          this.logger.info(`Server started at http://${this.config.host}:${this.config.port}`);
+          resolve();
+        });
+      } else {
+        this.server.listen(this.config.port, () => {
+          this.logger.info(`Server started at ${this.config.port}`);
+          resolve();
+        });
+      }
+    });
   }
 
   public async stop() {

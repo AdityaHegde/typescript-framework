@@ -1,7 +1,10 @@
 import {MongooseStoreModel, MongooseStoreModelFactory} from "../../src/server/datastore/mongoose";
 import {BootstrapModels, UserModels} from "../test-classes/server/Models";
+import {ServerTestSuiteParameter} from "../test-bases/getServerTestSuiteParameter";
 
-export async function bootstrapMongooseData(modelFactory: MongooseStoreModelFactory) {
+export async function bootstrapMongooseData(serverTestSuiteParameter: ServerTestSuiteParameter) {
+  const modelFactory = serverTestSuiteParameter.server.dataStore.dataStoreModelFactory as MongooseStoreModelFactory;
+
   await Promise.all(BootstrapModels.map(async (model) => {
     const modelStore = modelFactory.getDataStoreModel(model.metadata.modelName) as MongooseStoreModel;
     await modelStore.mongooseModel.deleteMany({}).exec();

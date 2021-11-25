@@ -7,7 +7,7 @@ import {
   RemoteFilter,
   Required, Restricted,
   ServerModelMetadata, TextField, UserField
-} from "../../src/models";
+} from "../../../../../src/models";
 
 @ServerModelMetadata.Model({
   writeRole: UserRole.Seller,

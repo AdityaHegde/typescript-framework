@@ -1,9 +1,5 @@
 import {Roles} from "./Roles";
-import {UserModel} from "../../../../src/models/UserModel";
-import {RoleField} from "../../../../src/models/server-metadata/RoleField";
-import {ServerModelMetadata} from "../../../../src/models/server-metadata/ServerModelMetadata";
-import {SelectField} from "../../../../src/models/metadata/Fields";
-import {ModelMetadata} from "../../../../src/models/metadata/ModelMetadata";
+import {ModelMetadata, RoleField, SelectField, ServerModelMetadata, UserModel} from "../../../../src/models";
 
 @ServerModelMetadata.Model({
   readRole: Roles.Admin,

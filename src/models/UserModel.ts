@@ -17,7 +17,7 @@ export class UserModel extends BaseType {
   @TextField({label: "Email ID"})
   public email: string;
 
-  @Validation({required: true, email: true})
+  @Validation({required: true})
   @Restricted()
   @TextField({label: "Password"})
   public pwd: string;
@@ -28,6 +28,7 @@ export class UserModel extends BaseType {
     }
 
     if (this.serverMetadata.roleFieldType.isSet) {
+      role ??= [];
       // if checked role is array, make sure userRole has all the entries
       // else just a single indexOf on userRole is enough
       const hasRoleChecker = role.every ? (userRole) => {

@@ -1,12 +1,13 @@
 import got from "got";
 import should from "should";
 import {ChildOneModel} from "../../test-classes/server/relation/ChildOneModel";
-import {JwtMongooseTestBase} from "../../test-bases/JwtMongooseTestBase";
 import {ParentModel} from "../../test-classes/server/relation/ParentModel";
 import {ChildOneOneModel} from "../../test-classes/server/relation/ChildOneOneModel";
 import {ChildTwoModel} from "../../test-classes/server/relation/ChildTwoModel";
 import {parseGotResponse} from "../../data/mongoose";
 import {DataProviderData} from "@adityahegde/typescript-test-utils";
+import {ServerTestBase} from "../../test-bases/ServerTestBase";
+import {getServerTestSuiteParametersForJWT} from "../../test-bases/getServerTestSuiteParameter";
 
 const RelationsModels = [
   ParentModel, ChildOneModel, ChildOneOneModel, ChildTwoModel,
@@ -45,16 +46,16 @@ const InitialData = [{
   type: "parent", attributes: {label: "Parent_3"},
 }];
 
-@JwtMongooseTestBase.Suite
-export class RelationsTest extends JwtMongooseTestBase {
+@ServerTestBase.ParameterizedSuite(getServerTestSuiteParametersForJWT("RelationsTest"))
+export class RelationsTest extends ServerTestBase {
   protected ParentModelPath: string;
 
-  @JwtMongooseTestBase.BeforeSuite()
+  @ServerTestBase.BeforeSuite()
   public setupRelationsTest() {
-    this.ParentModelPath = `${this.ServerBaseUrl}${this.routeFactory.getRoute(ParentModel.metadata.modelName).apiPath}`;
+    this.ParentModelPath = `${this.testSuiteParameter.ServerBaseUrl}${this.routeFactory.getRoute(ParentModel.metadata.modelName).apiPath}`;
   }
 
-  @JwtMongooseTestBase.BeforeEachTest()
+  @ServerTestBase.BeforeEachTest()
   public async setupRelationsTestEachTest() {
     await Promise.all(RelationsModels.map(async (model) => {
       await this.dataStore.dataStoreModelFactory.getDataStoreModel(model.metadata.modelName).deleteMany({});
@@ -95,21 +96,21 @@ export class RelationsTest extends JwtMongooseTestBase {
     }
   }
 
-  @JwtMongooseTestBase.Test("saveChildModelsData")
+  @ServerTestBase.Test("saveChildModelsData")
   public async shouldSaveAllChildModels(parentModelData, expectedParentModelResponse, expectedChildOneOneModels) {
     const record = await parseGotResponse(got.post(this.ParentModelPath, {json: {data: parentModelData}}));
     let childOneModel;
     let childOneOneModels;
     let childTwoModels;
     if (record.links?.childOneModel) {
-      childOneModel = await parseGotResponse(got.get(`${this.ServerBaseUrl}${record.links.childOneModel}`, {retry: 0}));
+      childOneModel = await parseGotResponse(got.get(`${this.testSuiteParameter.ServerBaseUrl}${record.links.childOneModel}`, {retry: 0}));
       if (childOneModel.links?.childOneOneModels) {
         childOneOneModels = await parseGotResponse(
-          got.get(`${this.ServerBaseUrl}${childOneModel.links.childOneOneModels}`, {retry: 0}));
+          got.get(`${this.testSuiteParameter.ServerBaseUrl}${childOneModel.links.childOneOneModels}`, {retry: 0}));
       }
     }
     if (record.links?.childTwoModels) {
-      childTwoModels = await parseGotResponse(got.get(`${this.ServerBaseUrl}${record.links.childTwoModels}`, {retry: 0}));
+      childTwoModels = await parseGotResponse(got.get(`${this.testSuiteParameter.ServerBaseUrl}${record.links.childTwoModels}`, {retry: 0}));
     }
 
     should({

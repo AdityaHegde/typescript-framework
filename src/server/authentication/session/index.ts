@@ -1,2 +1,2 @@
-import {SessionAuthentication} from "./SessionAuthentication";
-export {SessionAuthentication};
+export {SessionAuthentication} from "./SessionAuthentication";
+export {getSessionAuthentication} from "./getSessionAuthentication";

@@ -1,46 +1,33 @@
 import should from "should";
 import got, {HTTPError} from "got";
-import {UserInvite} from "../../../src/models/UserInvite";
-import {BootstrapDataType, getInstances} from "../../test-bases/getInstances";
-import {JwtMongooseTestBase} from "../../test-bases/JwtMongooseTestBase";
-import {ServerParameterizedTestBase} from "../../test-bases/ServerParameterizedTestBase";
-import {UserModel} from "../../../src/models/UserModel";
-import {ServerConfig} from "../../../src/server/ServerConfig";
 import {loginUser} from "../../utils/getCookieJar";
-import {DataStore} from "../../../src/server/datastore/DataStore";
-import {JsonApiRoute} from "../../../src/server/routes/JsonApiRoute";
-import {JwtAuthentication} from "../../../src/server/authentication/jwt";
-import {RouteFactory} from "../../../src/server/routes/RouteFactory";
-import { UserWithSingleRole } from "../../test-classes/server/user/UserWithSingleRole";
+import {UserWithSingleRole} from "../../test-classes/server/user/UserWithSingleRole";
+// import {UserWithMultiRole} from "../../test-classes/server/user/UserWithMultiRole";
+import {ServerTestBase} from "../../test-bases/ServerTestBase";
+import {
+  getServerTestSuiteParametersForJWT, ServerTestSuiteParameter
+} from "../../test-bases/getServerTestSuiteParameter";
 
-const {dataStore, serverConfig, bootstrapData} = getInstances()[0];
+function getRolesTestInstances(): Array<ServerTestSuiteParameter> {
+  return [ UserWithSingleRole/*, UserWithMultiRole*/ ].map(userModel => {
+    return getServerTestSuiteParametersForJWT(`${userModel.metadata.modelName}sTest`, userModel)[0];
+  });
+}
 
-@ServerParameterizedTestBase.ParameterizedSuite(
-  [ UserWithSingleRole/*, UserWithMultiRole */].map(userModel =>
-    [`RolesTest for ${userModel.metadata.modelName}`, dataStore, serverConfig, bootstrapData, userModel])
-)
-export class RolesTest extends ServerParameterizedTestBase {
+@ServerTestBase.ParameterizedSuite(getRolesTestInstances())
+export class RolesTest extends ServerTestBase {
   private LoginUrl: string;
   private UpdateRoleUrl: string;
   private RestrictedModelUrl: string;
-  protected userModel: typeof UserModel;
 
-  constructor(suiteTitle: string, dataStore: DataStore, serverConfig: ServerConfig,
-              bootstrapData: BootstrapDataType, userModel: typeof UserModel) {
-    const authentication = new JwtAuthentication(serverConfig.authentication, userModel, UserInvite);
-    super(suiteTitle, dataStore, new RouteFactory(JsonApiRoute, serverConfig.routes, authentication),
-      serverConfig, authentication, bootstrapData);
-    this.userModel = userModel;
-  }
-
-  @JwtMongooseTestBase.BeforeSuite()
+  @ServerTestBase.BeforeSuite()
   public async setupRolesTest() {
-    this.LoginUrl = `${this.ServerBaseUrl}/auth/login`;
-    this.UpdateRoleUrl = `${this.ServerBaseUrl}/auth/updateRole`;
-    this.RestrictedModelUrl = `${this.ServerBaseUrl}/api/restrictedModels`;
+    this.LoginUrl = `${this.testSuiteParameter.ServerBaseUrl}/auth/login`;
+    this.UpdateRoleUrl = `${this.testSuiteParameter.ServerBaseUrl}/auth/updateRole`;
+    this.RestrictedModelUrl = `${this.testSuiteParameter.ServerBaseUrl}/api/restrictedModels`;
   }
 
-  @ServerParameterizedTestBase.Test()
+  @ServerTestBase.Test()
   public async shouldClaimOnlyOneAdmin() {
     should(await this.authentication.claimAdmin({user: "a", pwd: "a", email: "a@a.com"})).be.ok();
     should(await this.authentication.claimAdmin({user: "b", pwd: "b", email: "b@b.com"})).be.not.ok();
@@ -50,12 +37,12 @@ export class RolesTest extends ServerParameterizedTestBase {
     ]);
   }
 
-  @ServerParameterizedTestBase.Test()
+  @ServerTestBase.Test()
   public async shouldElevateRole() {
     const adminCookieJar = (await loginUser("a", "a", this.LoginUrl)).cookieJar;
     const userCookieJar = (await loginUser("b", "b", this.LoginUrl)).cookieJar;
 
-    const users = await this.dataStore.dataStoreModelFactory.getDataStoreModel(this.userModel.metadata.modelName).query({})
+    const users = await this.queryUsers();
 
     let error;
     try {
@@ -75,11 +62,11 @@ export class RolesTest extends ServerParameterizedTestBase {
     should(error).be.undefined();
   }
 
-  @ServerParameterizedTestBase.Test()
+  @ServerTestBase.Test()
   public async shouldHaveAtLeastOneAdmin() {
     const adminCookieJar = (await loginUser("a", "a", this.LoginUrl)).cookieJar;
 
-    const users = await this.dataStore.dataStoreModelFactory.getDataStoreModel(this.userModel.metadata.modelName).query({})
+    const users = await this.queryUsers();
 
     let error;
     try {
@@ -106,7 +93,7 @@ export class RolesTest extends ServerParameterizedTestBase {
   }
 
   private async getUsers() {
-    const users = await this.dataStore.dataStoreModelFactory.getDataStoreModel(this.userModel.metadata.modelName).query({});
+    const users = await this.queryUsers();
     return users.map(user => {
       const userJson = user.toJSON();
       return {
@@ -114,5 +101,9 @@ export class RolesTest extends ServerParameterizedTestBase {
         role: userJson.role,
       };
     });
+  }
+
+  private queryUsers() {
+    return this.dataStore.dataStoreModelFactory.getDataStoreModel(this.userModel.metadata.modelName).query({});
   }
 }

@@ -1,5 +1,3 @@
-import {configure} from "enzyme";
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import {SinonStub} from "sinon";
 import {TestModelClient} from "../test-classes/ui/TestModelClient";
 import {Models} from "../test-classes/ui/Models";
@@ -7,8 +5,6 @@ import {ModelStoreRepository} from "../../src/ui/store";
 import {addModelsToList} from "../../src/models";
 import {TestBase} from "@adityahegde/typescript-test-utils";
 import {JestTestLibrary} from "@adityahegde/typescript-test-utils/dist/jest/JestTestLibrary";
-
-configure({ adapter: new Adapter() });
 
 @TestBase.TestLibrary(JestTestLibrary)
 export class AntdJestTestBase extends TestBase {

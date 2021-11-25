@@ -1,35 +1,31 @@
-import {Models, UserModels} from "../test-classes/server/Models";
-import {Authentication, DataStore, RouteFactory, Server, ServerConfig} from "../../src/server";
-import {addModelsToList} from "../../src/models";
 import {TestBase} from "@adityahegde/typescript-test-utils";
-import {MochaTestLibrary} from "@adityahegde/typescript-test-utils/dist/mocha/MochaTestLibrary";
+import {JestTestLibrary} from "@adityahegde/typescript-test-utils/dist/jest/JestTestLibrary";
+import {ServerTestSetup} from "./ServerTestSetup";
+import {UserModels, Models} from "../test-classes/server/Models";
+import {addModelsToList, UserModel} from "../../src/models";
+import {Authentication, DataStore, RouteFactory} from "../../src/server";
+import {ServerTestSuiteParameter} from "./getServerTestSuiteParameter";
 
 addModelsToList([
   ...Models,
   ...UserModels,
 ]);
 
-@TestBase.TestLibrary(MochaTestLibrary)
+@TestBase.TestLibrary(JestTestLibrary)
+// this is a ServerTestSetup instead of having before and after in ServerTestBase to support servers in other languages
+@TestBase.TestSuiteSetup(ServerTestSetup)
 export class ServerTestBase extends TestBase {
-  protected server: Server;
-  protected dataStore: DataStore;
-  protected serverConfig: ServerConfig;
+  protected testSuiteParameter: ServerTestSuiteParameter;
   protected authentication: Authentication;
+  protected userModel: typeof UserModel;
+  protected dataStore: DataStore;
   protected routeFactory: RouteFactory;
 
-  protected ServerBaseUrl: string;
-
   @TestBase.BeforeSuite()
-  public async setupServerTestBase() {
-    this.server = new Server(
-      this.serverConfig, this.dataStore, this.authentication, this.routeFactory,
-    );
-    await this.server.start();
-    this.ServerBaseUrl = `http://localhost:${this.server.config.port}`;
-  }
-
-  @TestBase.AfterSuite()
-  public async teardownServerTestBase() {
-    await this.server.stop();
+  public flattenVariables() {
+    this.authentication = this.testSuiteParameter.server.authentication;
+    this.userModel = this.testSuiteParameter.server.authentication.userModelClass;
+    this.dataStore = this.testSuiteParameter.server.dataStore;
+    this.routeFactory = this.testSuiteParameter.server.routeFactory;
   }
 }

@@ -1,2 +1,2 @@
-import {JwtAuthentication} from "./JwtAuthentication";
-export {JwtAuthentication}
+export {JwtAuthentication} from "./JwtAuthentication";
+export {getJwtAuthentication} from "./getJwtAuthentication";

@@ -1,8 +1,5 @@
 import {Roles} from "./Roles";
-import {UserModel} from "../../../../src/models/UserModel";
-import {RoleField} from "../../../../src/models/server-metadata/RoleField";
-import {MultiSelectField} from "../../../../src/models/metadata/Fields";
-import {ModelMetadata} from "../../../../src/models/metadata/ModelMetadata";
+import {ModelMetadata, MultiSelectField, RoleField, UserModel} from "../../../../src/models";
 
 @ModelMetadata.Model()
 export class UserWithMultiRole extends UserModel {

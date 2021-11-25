@@ -4,17 +4,17 @@ import {
   Route,
 } from "react-router-dom";
 import Layout, {Content, Header} from "antd/lib/layout/layout";
-import {User} from "../models/User";
+import {ProductUser} from "../models/ProductUser";
 import {Models} from "../models/Models";
 import {AppHeader} from "./AppHeader";
 import {ProductCategoryPath, ProductPath} from "./Constants";
 import {ProductCategory} from "../models/ProductCategory";
 import {Product} from "../models/Product";
 import {Spin} from "antd";
-import {JsonApiClient, ModelStoreRepository} from "../../src/ui/store";
-import {Login, RestrictAccess, Signup, UserContext, useUserContext} from "../../src/ui/user";
-import {DataPage} from "../../src/ui";
-import {addModelsToList} from "../../src/models";
+import {JsonApiClient, ModelStoreRepository} from "../../../../../src/ui/store";
+import {Login, RestrictAccess, Signup, UserContext, useUserContext} from "../../../../../src/ui/user";
+import {DataPage} from "../../../../../src/ui";
+import {addModelsToList} from "../../../../../src/models";
 
 addModelsToList(Models);
 const modelClient = new JsonApiClient("/api");
@@ -30,7 +30,7 @@ export function App() {
     ProductCategoryModelStore.queryRecords({}).then(() => setLoading(false));
   }, []);
 
-  const userContextType = useUserContext(User, modelClient, {
+  const userContextType = useUserContext(ProductUser, modelClient, {
     redirect: ProductPath,
   });
 
@@ -43,16 +43,10 @@ export function App() {
           </Header>
           <Content style={{ minHeight: "1000px", margin: "25px" }}>
             <Routes>
-              <Route key="/login" path="/login"><Login /></Route>
-              <Route key="/signup" path="/signup"><Signup /></Route>
-              <Route key={ProductPath} path={`${ProductPath}/*`}>
-                <DataPage modelStore={ProductModelStore} />
-              </Route>
-              <RestrictAccess role={ProductCategory.serverMetadata.writeRole}>
-                <Route key={ProductCategoryPath} path={ProductCategoryPath}>
-                  <DataPage modelStore={ProductCategoryModelStore} />
-                </Route>
-              </RestrictAccess>
+              <Route key="/login" path="/login" element={<Login />} />
+              <Route key="/signup" path="/signup" element={<Signup />} />
+              <Route key={ProductPath} path={`${ProductPath}/*`} element={<DataPage modelStore={ProductModelStore} />} />
+              <Route key={ProductCategoryPath} path={ProductCategoryPath} element={<DataPage modelStore={ProductCategoryModelStore} />} />
             </Routes>
           </Content>
         </Layout>

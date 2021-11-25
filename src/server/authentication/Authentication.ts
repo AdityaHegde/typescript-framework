@@ -9,8 +9,8 @@ import {UserInvite} from "../../models/UserInvite";
 
 export abstract class Authentication extends LoggerBase {
   protected config: AuthenticationConfig;
-  protected userModelClass: typeof UserModel;
-  protected userInviteClass: typeof UserInvite;
+  public readonly userModelClass: typeof UserModel;
+  public readonly userInviteClass: typeof UserInvite;
   protected userAuthentication: UserAuthentication;
 
   constructor(config: AuthenticationConfig, userModelClass: typeof UserModel, userInviteClass: typeof UserInvite) {
