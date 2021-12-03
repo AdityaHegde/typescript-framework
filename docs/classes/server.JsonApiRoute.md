@@ -18,6 +18,7 @@
 
 ### Properties
 
+- [apiIdPath](server.JsonApiRoute.md#apiidpath)
 - [apiPath](server.JsonApiRoute.md#apipath)
 - [authentication](server.JsonApiRoute.md#authentication)
 - [basePath](server.JsonApiRoute.md#basepath)
@@ -42,6 +43,8 @@
 - [init](server.JsonApiRoute.md#init)
 - [registerReadRoutes](server.JsonApiRoute.md#registerreadroutes)
 - [registerWriteRoutes](server.JsonApiRoute.md#registerwriteroutes)
+- [resolveInPlaceRelation](server.JsonApiRoute.md#resolveinplacerelation)
+- [resolveRelationByIds](server.JsonApiRoute.md#resolverelationbyids)
 - [resolveRelations](server.JsonApiRoute.md#resolverelations)
 - [sanitizeQuery](server.JsonApiRoute.md#sanitizequery)
 - [sanitizeRecord](server.JsonApiRoute.md#sanitizerecord)
@@ -70,9 +73,19 @@
 
 #### Defined in
 
-[src/server/routes/JsonApiRoute.ts:39](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiRoute.ts#L39)
+[src/server/routes/JsonApiRoute.ts:38](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiRoute.ts#L38)
 
 ## Properties
+
+### apiIdPath
+
+• `Private` **apiIdPath**: `string`
+
+#### Defined in
+
+[src/server/routes/JsonApiRoute.ts:36](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiRoute.ts#L36)
+
+___
 
 ### apiPath
 
@@ -84,7 +97,7 @@
 
 #### Defined in
 
-[src/server/routes/Route.ts:17](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/Route.ts#L17)
+[src/server/routes/Route.ts:17](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/Route.ts#L17)
 
 ___
 
@@ -98,7 +111,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/Route.ts#L14)
+[src/server/routes/Route.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/Route.ts#L14)
 
 ___
 
@@ -112,7 +125,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/Route.ts#L15)
+[src/server/routes/Route.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/Route.ts#L15)
 
 ___
 
@@ -126,7 +139,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/Route.ts#L11)
+[src/server/routes/Route.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/Route.ts#L11)
 
 ___
 
@@ -140,7 +153,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/Route.ts#L13)
+[src/server/routes/Route.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/Route.ts#L13)
 
 ___
 
@@ -150,7 +163,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiRoute.ts:37](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiRoute.ts#L37)
+[src/server/routes/JsonApiRoute.ts:34](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiRoute.ts#L34)
 
 ___
 
@@ -164,7 +177,7 @@ ___
 
 #### Defined in
 
-[src/server/logging/LoggerBase.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/logging/LoggerBase.ts#L11)
+[src/server/logging/LoggerBase.ts:17](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/logging/LoggerBase.ts#L17)
 
 ___
 
@@ -178,7 +191,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:10](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/Route.ts#L10)
+[src/server/routes/Route.ts:10](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/Route.ts#L10)
 
 ___
 
@@ -192,7 +205,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:12](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/Route.ts#L12)
+[src/server/routes/Route.ts:12](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/Route.ts#L12)
 
 ## Methods
 
@@ -216,7 +229,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:42](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/Route.ts#L42)
+[src/server/routes/Route.ts:42](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/Route.ts#L42)
 
 ___
 
@@ -240,7 +253,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiRoute.ts:61](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiRoute.ts#L61)
+[src/server/routes/JsonApiRoute.ts:61](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiRoute.ts#L61)
 
 ___
 
@@ -253,7 +266,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `jsonRecord` | [`JSONRecordType`](../modules/server.md#jsonrecordtype) |
-| `req` | `any` |
+| `req` | `Request`<`ParamsDictionary`, `any`, `any`, `ParsedQs`, `Record`<`string`, `any`\>\> |
 
 #### Returns
 
@@ -261,7 +274,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiRoute.ts:162](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiRoute.ts#L162)
+[src/server/routes/JsonApiRoute.ts:167](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiRoute.ts#L167)
 
 ___
 
@@ -288,7 +301,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:46](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/Route.ts#L46)
+[src/server/routes/Route.ts:46](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/Route.ts#L46)
 
 ___
 
@@ -315,7 +328,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/Route.ts:55](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/Route.ts#L55)
+[src/server/routes/Route.ts:55](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/Route.ts#L55)
 
 ___
 
@@ -329,7 +342,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiRoute.ts:151](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiRoute.ts#L151)
+[src/server/routes/JsonApiRoute.ts:156](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiRoute.ts#L156)
 
 ___
 
@@ -341,7 +354,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `req` | `any` |
+| `req` | `Request`<`ParamsDictionary`, `any`, `any`, `ParsedQs`, `Record`<`string`, `any`\>\> |
 
 #### Returns
 
@@ -349,7 +362,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiRoute.ts:238](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiRoute.ts#L238)
+[src/server/routes/JsonApiRoute.ts:270](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiRoute.ts#L270)
 
 ___
 
@@ -361,7 +374,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `req` | `any` |
+| `req` | `Request`<`ParamsDictionary`, `any`, `any`, `ParsedQs`, `Record`<`string`, `any`\>\> |
 | `records` | `any` |
 
 #### Returns
@@ -370,7 +383,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiRoute.ts:222](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiRoute.ts#L222)
+[src/server/routes/JsonApiRoute.ts:254](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiRoute.ts#L254)
 
 ___
 
@@ -382,8 +395,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `res` | `any` |
-| `req` | `any` |
+| `res` | `Response`<`any`, `Record`<`string`, `any`\>\> |
+| `req` | `Request`<`ParamsDictionary`, `any`, `any`, `ParsedQs`, `Record`<`string`, `any`\>\> |
 | `operation` | () => `Promise`<`any`\> |
 
 #### Returns
@@ -392,7 +405,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiRoute.ts:135](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiRoute.ts#L135)
+[src/server/routes/JsonApiRoute.ts:140](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiRoute.ts#L140)
 
 ___
 
@@ -404,7 +417,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `router` | `any` |
+| `router` | `Router` |
 
 #### Returns
 
@@ -416,7 +429,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiRoute.ts:46](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiRoute.ts#L46)
+[src/server/routes/JsonApiRoute.ts:45](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiRoute.ts#L45)
 
 ___
 
@@ -428,7 +441,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `baseRouter` | `any` |
+| `baseRouter` | `Router` |
 
 #### Returns
 
@@ -436,7 +449,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiRoute.ts:69](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiRoute.ts#L69)
+[src/server/routes/JsonApiRoute.ts:69](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiRoute.ts#L69)
 
 ___
 
@@ -448,7 +461,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `baseRouter` | `any` |
+| `baseRouter` | `Router` |
 
 #### Returns
 
@@ -456,7 +469,52 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiRoute.ts:93](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiRoute.ts#L93)
+[src/server/routes/JsonApiRoute.ts:98](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiRoute.ts#L98)
+
+___
+
+### resolveInPlaceRelation
+
+▸ `Private` **resolveInPlaceRelation**(`jsonRecord`, `record`, `req`, `relation`): `Promise`<`void`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jsonRecord` | [`JSONRecordType`](../modules/server.md#jsonrecordtype) |
+| `record` | `any` |
+| `req` | `Request`<`ParamsDictionary`, `any`, `any`, `ParsedQs`, `Record`<`string`, `any`\>\> |
+| `relation` | [`RelationType`](../modules/models.md#relationtype) |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+[src/server/routes/JsonApiRoute.ts:223](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiRoute.ts#L223)
+
+___
+
+### resolveRelationByIds
+
+▸ `Private` **resolveRelationByIds**(`jsonRecord`, `record`, `relation`): `Promise`<`void`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jsonRecord` | [`JSONRecordType`](../modules/server.md#jsonrecordtype) |
+| `record` | `any` |
+| `relation` | [`RelationType`](../modules/models.md#relationtype) |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+[src/server/routes/JsonApiRoute.ts:238](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiRoute.ts#L238)
 
 ___
 
@@ -470,7 +528,7 @@ ___
 | :------ | :------ |
 | `jsonRecord` | [`JSONRecordType`](../modules/server.md#jsonrecordtype) |
 | `record` | `any` |
-| `req` | `any` |
+| `req` | `Request`<`ParamsDictionary`, `any`, `any`, `ParsedQs`, `Record`<`string`, `any`\>\> |
 
 #### Returns
 
@@ -478,7 +536,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiRoute.ts:199](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiRoute.ts#L199)
+[src/server/routes/JsonApiRoute.ts:204](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiRoute.ts#L204)
 
 ___
 
@@ -503,7 +561,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiRoute.ts:65](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiRoute.ts#L65)
+[src/server/routes/JsonApiRoute.ts:65](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiRoute.ts#L65)
 
 ___
 
@@ -517,7 +575,7 @@ ___
 | :------ | :------ | :------ |
 | `record` | `any` | `undefined` |
 | `params` | `any` | `undefined` |
-| `req?` | `any` | `undefined` |
+| `req?` | `Request`<`ParamsDictionary`, `any`, `any`, `ParsedQs`, `Record`<`string`, `any`\>\> | `undefined` |
 | `read` | `boolean` | `false` |
 
 #### Returns
@@ -530,7 +588,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiRoute.ts:57](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiRoute.ts#L57)
+[src/server/routes/JsonApiRoute.ts:57](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiRoute.ts#L57)
 
 ___
 
@@ -551,4 +609,4 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiRoute.ts:187](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiRoute.ts#L187)
+[src/server/routes/JsonApiRoute.ts:192](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiRoute.ts#L192)

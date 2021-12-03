@@ -53,27 +53,27 @@
 
 #### Defined in
 
-[src/server/Server.ts:21](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/Server.ts#L21)
+[src/server/Server.ts:21](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/Server.ts#L21)
 
 ## Properties
 
 ### app
 
-• `Protected` **app**: `any`
+• `Protected` **app**: `Application`
 
 #### Defined in
 
-[src/server/Server.ts:19](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/Server.ts#L19)
+[src/server/Server.ts:19](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/Server.ts#L19)
 
 ___
 
 ### authentication
 
-• `Protected` `Readonly` **authentication**: [`Authentication`](server.Authentication.md)
+• `Readonly` **authentication**: [`Authentication`](server.Authentication.md)
 
 #### Defined in
 
-[src/server/Server.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/Server.ts#L15)
+[src/server/Server.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/Server.ts#L15)
 
 ___
 
@@ -83,17 +83,17 @@ ___
 
 #### Defined in
 
-[src/server/Server.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/Server.ts#L13)
+[src/server/Server.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/Server.ts#L13)
 
 ___
 
 ### dataStore
 
-• `Protected` `Readonly` **dataStore**: [`DataStore`](server.DataStore.md)
+• `Readonly` **dataStore**: [`DataStore`](server.DataStore.md)
 
 #### Defined in
 
-[src/server/Server.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/Server.ts#L14)
+[src/server/Server.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/Server.ts#L14)
 
 ___
 
@@ -107,17 +107,17 @@ ___
 
 #### Defined in
 
-[src/server/logging/LoggerBase.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/logging/LoggerBase.ts#L11)
+[src/server/logging/LoggerBase.ts:17](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/logging/LoggerBase.ts#L17)
 
 ___
 
 ### routeFactory
 
-• `Protected` `Readonly` **routeFactory**: [`RouteFactory`](server.RouteFactory.md)
+• `Readonly` **routeFactory**: [`RouteFactory`](server.RouteFactory.md)
 
 #### Defined in
 
-[src/server/Server.ts:16](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/Server.ts#L16)
+[src/server/Server.ts:16](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/Server.ts#L16)
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 #### Defined in
 
-[src/server/Server.ts:18](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/Server.ts#L18)
+[src/server/Server.ts:18](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/Server.ts#L18)
 
 ## Methods
 
@@ -141,7 +141,7 @@ ___
 
 #### Defined in
 
-[src/server/Server.ts:70](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/Server.ts#L70)
+[src/server/Server.ts:74](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/Server.ts#L74)
 
 ___
 
@@ -155,7 +155,7 @@ ___
 
 #### Defined in
 
-[src/server/Server.ts:30](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/Server.ts#L30)
+[src/server/Server.ts:30](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/Server.ts#L30)
 
 ___
 
@@ -169,4 +169,4 @@ ___
 
 #### Defined in
 
-[src/server/Server.ts:56](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/Server.ts#L56)
+[src/server/Server.ts:60](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/Server.ts#L60)

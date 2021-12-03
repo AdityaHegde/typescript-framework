@@ -46,7 +46,7 @@
 
 #### Defined in
 
-[src/utils/Config.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/utils/Config.ts#L13)
+[src/utils/Config.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/utils/Config.ts#L13)
 
 ## Properties
 
@@ -56,7 +56,7 @@
 
 #### Defined in
 
-[src/server/authentication/AuthenticationConfig.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/authentication/AuthenticationConfig.ts#L7)
+[src/server/authentication/AuthenticationConfig.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/authentication/AuthenticationConfig.ts#L7)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[src/server/authentication/AuthenticationConfig.ts:5](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/authentication/AuthenticationConfig.ts#L5)
+[src/server/authentication/AuthenticationConfig.ts:5](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/authentication/AuthenticationConfig.ts#L5)
 
 ## Methods
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[src/utils/Config.ts:33](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/utils/Config.ts#L33)
+[src/utils/Config.ts:33](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/utils/Config.ts#L33)
 
 ___
 
@@ -143,4 +143,4 @@ ___
 
 #### Defined in
 
-[src/utils/Config.ts:44](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/utils/Config.ts#L44)
+[src/utils/Config.ts:44](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/utils/Config.ts#L44)

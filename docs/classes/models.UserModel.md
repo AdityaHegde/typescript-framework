@@ -49,7 +49,7 @@
 
 #### Defined in
 
-[src/models/BaseType.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/BaseType.ts#L14)
+[src/models/BaseType.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/BaseType.ts#L14)
 
 ## Properties
 
@@ -59,7 +59,7 @@
 
 #### Defined in
 
-[src/models/UserModel.ts:18](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/UserModel.ts#L18)
+[src/models/UserModel.ts:18](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/UserModel.ts#L18)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[src/models/BaseType.ts:6](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/BaseType.ts#L6)
+[src/models/BaseType.ts:6](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/BaseType.ts#L6)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[src/models/UserModel.ts:23](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/UserModel.ts#L23)
+[src/models/UserModel.ts:23](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/UserModel.ts#L23)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[src/models/BaseType.ts:8](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/BaseType.ts#L8)
+[src/models/BaseType.ts:8](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/BaseType.ts#L8)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[src/models/UserModel.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/UserModel.ts#L13)
+[src/models/UserModel.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/UserModel.ts#L13)
 
 ___
 
@@ -121,7 +121,7 @@ ___
 
 #### Defined in
 
-[src/models/BaseType.ts:10](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/BaseType.ts#L10)
+[src/models/BaseType.ts:10](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/BaseType.ts#L10)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[src/models/BaseType.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/BaseType.ts#L11)
+[src/models/BaseType.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/BaseType.ts#L11)
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 #### Defined in
 
-[src/models/BaseType.ts:12](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/BaseType.ts#L12)
+[src/models/BaseType.ts:12](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/BaseType.ts#L12)
 
 ## Methods
 
@@ -181,4 +181,4 @@ ___
 
 #### Defined in
 
-[src/models/UserModel.ts:25](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/UserModel.ts#L25)
+[src/models/UserModel.ts:25](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/UserModel.ts#L25)

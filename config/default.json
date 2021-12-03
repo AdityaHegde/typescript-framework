@@ -6,6 +6,9 @@
     "port": 8080,
     "routes": {
       "recordsResultLimit": 5
+    },
+    "authentication": {
+      "inviteOnly": false
     }
   },
   "mongodb": {

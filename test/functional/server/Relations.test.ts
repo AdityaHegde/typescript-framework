@@ -1,13 +1,13 @@
 import got from "got";
-import should from "should";
-import {ChildOneModel} from "../../test-classes/server/relation/ChildOneModel";
-import {ParentModel} from "../../test-classes/server/relation/ParentModel";
-import {ChildOneOneModel} from "../../test-classes/server/relation/ChildOneOneModel";
-import {ChildTwoModel} from "../../test-classes/server/relation/ChildTwoModel";
+import {ChildOneModel} from "./models/relation/ChildOneModel";
+import {ParentModel} from "./models/relation/ParentModel";
+import {ChildOneOneModel} from "./models/relation/ChildOneOneModel";
+import {ChildTwoModel} from "./models/relation/ChildTwoModel";
 import {parseGotResponse} from "../../data/mongoose";
 import {DataProviderData} from "@adityahegde/typescript-test-utils";
 import {ServerTestBase} from "../../test-bases/ServerTestBase";
 import {getServerTestSuiteParametersForJWT} from "../../test-bases/getServerTestSuiteParameter";
+import {assertObject} from "../../assertObject";
 
 const RelationsModels = [
   ParentModel, ChildOneModel, ChildOneOneModel, ChildTwoModel,
@@ -48,17 +48,25 @@ const InitialData = [{
 
 @ServerTestBase.ParameterizedSuite(getServerTestSuiteParametersForJWT("RelationsTest"))
 export class RelationsTest extends ServerTestBase {
-  protected ParentModelPath: string;
+  private ParentModelPath: string;
+
+  private childOneModelIdMap = new Map<string, string>();
+  private childTwoModelIdMap = new Map<string, string>();
 
   @ServerTestBase.BeforeSuite()
-  public setupRelationsTest() {
+  public async setupRelationsTest() {
     this.ParentModelPath = `${this.testSuiteParameter.ServerBaseUrl}${this.routeFactory.getRoute(ParentModel.metadata.modelName).apiPath}`;
-  }
 
-  @ServerTestBase.BeforeEachTest()
-  public async setupRelationsTestEachTest() {
-    await Promise.all(RelationsModels.map(async (model) => {
-      await this.dataStore.dataStoreModelFactory.getDataStoreModel(model.metadata.modelName).deleteMany({});
+    const childOnePath = `${this.testSuiteParameter.ServerBaseUrl}${this.routeFactory.getRoute(ChildOneModel.metadata.modelName).apiPath}`;
+    await Promise.all(InitialChildOneModels.map(async (InitialChildOneModel) => {
+      const record = await parseGotResponse(got.post(childOnePath, {json: {data: InitialChildOneModel}}));
+      this.childOneModelIdMap.set(record.attributes.label, record.id);
+    }));
+
+    const childTwoPath = `${this.testSuiteParameter.ServerBaseUrl}${this.routeFactory.getRoute(ChildTwoModel.metadata.modelName).apiPath}`;
+    await Promise.all(InitialChildTowModels.map(async (InitialChildTowModel) => {
+      const record = await parseGotResponse(got.post(childTwoPath, {json: {data: InitialChildTowModel}}));
+      this.childTwoModelIdMap.set(record.attributes.label, record.id);
     }));
   }
 
@@ -68,36 +76,55 @@ export class RelationsTest extends ServerTestBase {
         title: "Basic Data 1",
         args: [
           InitialData[0],
-          { label: "Parent_0", childOneModelId: "ChildOne_0", childTwoModelIds: ["ChildTwo_2", "ChildTwo_0", "ChildTwo_1"]},
+          { label: "Parent_0", childOneModel: "ChildOne_0", childTwoModels: ["ChildTwo_0", "ChildTwo_1", "ChildTwo_2"]},
           ["ChildOneOne_0", "ChildOneOne_1", "ChildOneOne_2"],
         ],
       }, {
         title: "Basic Data 2",
         args: [
           InitialData[1],
-          { label: "Parent_1", childOneModelId: "ChildOne_1", childTwoModelIds: ["ChildTwo_3", "ChildTwo_4"]},
+          { label: "Parent_1", childOneModel: "ChildOne_1", childTwoModels: ["ChildTwo_3", "ChildTwo_4"]},
           ["ChildOneOne_3", "ChildOneOne_4"],
         ],
       }, {
         title: "Partial Sparse Data",
         args: [
           InitialData[2],
-          { label: "Parent_2", childOneModelId: "ChildOne_3", childTwoModelIds: []},
+          { label: "Parent_2", childOneModel: "ChildOne_3", childTwoModels: []},
           [],
         ],
       }, {
         title: "Sparse Data",
         args: [
           InitialData[3],
-          { label: "Parent_3", childOneModelId: undefined, childTwoModelIds: []},
+          { label: "Parent_3", childOneModel: undefined, childTwoModels: []},
           [],
         ],
-      }]
+      }],
     }
   }
 
   @ServerTestBase.Test("saveChildModelsData")
   public async shouldSaveAllChildModels(parentModelData, expectedParentModelResponse, expectedChildOneOneModels) {
+    await this.saveAndAssert(parentModelData, expectedParentModelResponse, expectedChildOneOneModels);
+  }
+
+  @ServerTestBase.Test("saveChildModelsData")
+  public async shouldSaveWithChildModelIds(parentModelData, expectedParentModelResponse, expectedChildOneOneModels) {
+    if (parentModelData.relations?.childOneModel) {
+      parentModelData.relations.childOneModelId =
+        this.childOneModelIdMap.get(parentModelData.relations.childOneModel.attributes.label);
+      delete parentModelData.relations.childOneModel;
+    }
+    if (parentModelData.relations?.childTwoModels) {
+      parentModelData.relations.childTwoModelIds =
+        parentModelData.relations.childTwoModels.map(model => this.childTwoModelIdMap.get(model.attributes.label));
+      delete parentModelData.relations.childTwoModels;
+    }
+    await this.saveAndAssert(parentModelData, expectedParentModelResponse, expectedChildOneOneModels);
+  }
+
+  private async saveAndAssert(parentModelData, expectedParentModelResponse, expectedChildOneOneModels) {
     const record = await parseGotResponse(got.post(this.ParentModelPath, {json: {data: parentModelData}}));
     let childOneModel;
     let childOneOneModels;
@@ -113,11 +140,11 @@ export class RelationsTest extends ServerTestBase {
       childTwoModels = await parseGotResponse(got.get(`${this.testSuiteParameter.ServerBaseUrl}${record.links.childTwoModels}`, {retry: 0}));
     }
 
-    should({
+    assertObject({
       label: record.attributes.label,
-      childOneModelId: childOneModel?.attributes.label,
-      childTwoModelIds: childTwoModels?.map?.(childTwoModel => childTwoModel.attributes.label) ?? [],
-    }).containDeep(expectedParentModelResponse);
-    should(childOneOneModels?.map?.(childOneOneModel => childOneOneModel.attributes.label) ?? []).be.containDeep(expectedChildOneOneModels);
+      childOneModel: childOneModel?.attributes.label,
+      childTwoModels: childTwoModels?.map?.(childTwoModel => childTwoModel.attributes.label) ?? [],
+    }, expectedParentModelResponse);
+    assertObject(childOneOneModels?.map?.(childOneOneModel => childOneOneModel.attributes.label) ?? [], expectedChildOneOneModels);
   }
 }

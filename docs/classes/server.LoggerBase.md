@@ -42,4 +42,4 @@
 
 #### Defined in
 
-[src/server/logging/LoggerBase.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/logging/LoggerBase.ts#L11)
+[src/server/logging/LoggerBase.ts:17](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/logging/LoggerBase.ts#L17)

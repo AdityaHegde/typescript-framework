@@ -135,7 +135,7 @@ export function ArrayField(fieldOptions: { field?: string, label?: string, subTy
 /**
  */
 export function ModelSelectField(fieldOptions: { field?: string, label?: string, ref: string }) {
-  return Field<string>({
+  return Field<any>({
     type: "modelSelect",
     ...fieldOptions,
   });
@@ -144,7 +144,7 @@ export function ModelSelectField(fieldOptions: { field?: string, label?: string,
 /**
  */
 export function ModelMultiSelectField(fieldOptions: { field?: string, label?: string, ref: string }) {
-  return Field<Array<string>>({
+  return Field<Array<any>>({
     type: "modelSelect",
     multi: true,
     ...fieldOptions,

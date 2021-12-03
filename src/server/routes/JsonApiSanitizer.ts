@@ -1,8 +1,7 @@
 import {Request} from "express";
 import {JsonApiRoute, JSONRecordType} from "./JsonApiRoute";
 import {RouteFactory} from "./RouteFactory";
-import {ModelSelectFieldType} from "../../models/metadata/Fields";
-import {BaseType} from "../../models/BaseType";
+import {BaseType, ModelSelectFieldType} from "../../models";
 
 /**
  * Extracted responsibility of sanitizing various aspects in json api from JsonApiRoute
@@ -25,7 +24,7 @@ export class JsonApiSanitizer {
         attrs[fieldType.field] = record[fieldType.field];
       });
     this.model.metadata.parentKeys.forEach((fieldType) => {
-      attrs[fieldType.field] = fieldType.field in params ?
+      attrs[fieldType.field] = (fieldType.field in params) && !params[fieldType.field].startsWith(":") ?
         params[fieldType.field] : record[fieldType.field];
     });
     attrs.type = this.model.metadata.modelName;
@@ -51,7 +50,7 @@ export class JsonApiSanitizer {
       delete retRecord.attributes[restricted];
     });
 
-    this.getLinks(retRecord)
+    this.getLinks(retRecord);
 
     delete retRecord.attributes.id;
     delete retRecord.attributes.type;
@@ -83,15 +82,19 @@ export class JsonApiSanitizer {
     const links = {};
 
     this.model.metadata.relations.forEach((relation) => {
-      if (jsonRecord.attributes[relation.fk] === undefined || jsonRecord.attributes[relation.fk] === null) {
+      if (jsonRecord.attributes[relation.field] === undefined || jsonRecord.attributes[relation.field] === null) {
         return;
       }
 
       const subRoute = this.routeFactory.getRoute(
-        (this.model.metadata.fieldTypeMap.get(relation.fk) as ModelSelectFieldType).ref) as JsonApiRoute;
+        (this.model.metadata.fieldTypeMap.get(relation.field) as ModelSelectFieldType).ref) as JsonApiRoute;
 
-      const link = subRoute.apiPath + (relation.multi ? "" : jsonRecord.attributes[relation.fk]);
-      links[relation.field] = link.replace(":" + relation.reverseField, jsonRecord.id);
+      const link = subRoute.apiPath + (relation.multi ? "" : jsonRecord.attributes[relation.field]);
+      if (relation.reverseField) {
+        links[relation.field] = link.replace(":" + relation.reverseField, jsonRecord.id);
+      } else {
+        links[relation.field] = link;
+      }
     });
 
     if (Object.keys(links).length > 0) {

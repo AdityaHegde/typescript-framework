@@ -795,7 +795,10 @@ exports[`ModelListTest modelListTest NestedModel models 1`] = `
                   class="ant-list-item-meta-description"
                 >
                   <div>
-                    simpleModelId: 
+                    simpleModel: 
+                  </div>
+                  <div>
+                    simpleModels: 
                   </div>
                 </div>
               </div>
@@ -870,7 +873,10 @@ exports[`ModelListTest modelListTest NestedModel models 1`] = `
                   class="ant-list-item-meta-description"
                 >
                   <div>
-                    simpleModelId: DisplayC
+                    simpleModel: 
+                  </div>
+                  <div>
+                    simpleModels: 
                   </div>
                 </div>
               </div>
@@ -945,7 +951,10 @@ exports[`ModelListTest modelListTest NestedModel models 1`] = `
                   class="ant-list-item-meta-description"
                 >
                   <div>
-                    simpleModelId: 
+                    simpleModel: 
+                  </div>
+                  <div>
+                    simpleModels: 
                   </div>
                 </div>
               </div>

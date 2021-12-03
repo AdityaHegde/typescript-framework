@@ -50,7 +50,7 @@
 
 #### Defined in
 
-[src/ui/store/ModelStore.ts:10](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/ModelStore.ts#L10)
+[src/ui/store/ModelStore.ts:10](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/ModelStore.ts#L10)
 
 ## Properties
 
@@ -60,7 +60,7 @@
 
 #### Defined in
 
-[src/ui/store/ModelStore.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/ModelStore.ts#L7)
+[src/ui/store/ModelStore.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/ModelStore.ts#L7)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/ModelStore.ts:6](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/ModelStore.ts#L6)
+[src/ui/store/ModelStore.ts:6](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/ModelStore.ts#L6)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/ModelStore.ts:8](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/ModelStore.ts#L8)
+[src/ui/store/ModelStore.ts:8](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/ModelStore.ts#L8)
 
 ## Methods
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/ModelStore.ts:21](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/ModelStore.ts#L21)
+[src/ui/store/ModelStore.ts:21](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/ModelStore.ts#L21)
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/ModelStore.ts:32](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/ModelStore.ts#L32)
+[src/ui/store/ModelStore.ts:32](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/ModelStore.ts#L32)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/ModelStore.ts:16](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/ModelStore.ts#L16)
+[src/ui/store/ModelStore.ts:16](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/ModelStore.ts#L16)
 
 ___
 
@@ -161,4 +161,4 @@ ___
 
 #### Defined in
 
-[src/ui/store/ModelStore.ts:26](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/ModelStore.ts#L26)
+[src/ui/store/ModelStore.ts:26](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/ModelStore.ts#L26)

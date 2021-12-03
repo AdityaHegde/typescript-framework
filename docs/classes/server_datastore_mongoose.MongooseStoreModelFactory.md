@@ -33,6 +33,7 @@
 - [entries](server_datastore_mongoose.MongooseStoreModelFactory.md#entries)
 - [forEach](server_datastore_mongoose.MongooseStoreModelFactory.md#foreach)
 - [get](server_datastore_mongoose.MongooseStoreModelFactory.md#get)
+- [getCompiledModel](server_datastore_mongoose.MongooseStoreModelFactory.md#getcompiledmodel)
 - [getDataStoreModel](server_datastore_mongoose.MongooseStoreModelFactory.md#getdatastoremodel)
 - [has](server_datastore_mongoose.MongooseStoreModelFactory.md#has)
 - [init](server_datastore_mongoose.MongooseStoreModelFactory.md#init)
@@ -102,7 +103,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStoreModelFactory.ts:6](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStoreModelFactory.ts#L6)
+[src/server/datastore/DataStoreModelFactory.ts:6](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/datastore/DataStoreModelFactory.ts#L6)
 
 ___
 
@@ -112,7 +113,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/mongoose/MongooseStoreModelFactory.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/mongoose/MongooseStoreModelFactory.ts#L11)
+[src/server/datastore/mongoose/MongooseStoreModelFactory.ts:12](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/datastore/mongoose/MongooseStoreModelFactory.ts#L12)
 
 ___
 
@@ -202,7 +203,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/mongoose/MongooseStoreModelFactory.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/mongoose/MongooseStoreModelFactory.ts#L13)
+[src/server/datastore/mongoose/MongooseStoreModelFactory.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/datastore/mongoose/MongooseStoreModelFactory.ts#L14)
 
 ___
 
@@ -299,6 +300,26 @@ node_modules/typescript/lib/lib.es2015.collection.d.ts:25
 
 ___
 
+### getCompiledModel
+
+▸ `Private` **getCompiledModel**(`model`): `Model`<`Document`<`any`, `any`, `any`\>, `Object`, `Object`, `Object`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `model` | typeof [`BaseType`](models.BaseType.md) |
+
+#### Returns
+
+`Model`<`Document`<`any`, `any`, `any`\>, `Object`, `Object`, `Object`\>
+
+#### Defined in
+
+[src/server/datastore/mongoose/MongooseStoreModelFactory.ts:32](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/datastore/mongoose/MongooseStoreModelFactory.ts#L32)
+
+___
+
 ### getDataStoreModel
 
 ▸ **getDataStoreModel**(`modelName`): [`DataStoreModel`](server.DataStoreModel.md)
@@ -319,7 +340,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStoreModelFactory.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStoreModelFactory.ts#L15)
+[src/server/datastore/DataStoreModelFactory.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/datastore/DataStoreModelFactory.ts#L15)
 
 ___
 
@@ -361,7 +382,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStoreModelFactory.ts:8](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStoreModelFactory.ts#L8)
+[src/server/datastore/DataStoreModelFactory.ts:8](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/datastore/DataStoreModelFactory.ts#L8)
 
 ___
 

@@ -56,7 +56,7 @@ Map&lt;string, ModelStore&lt;any\&gt;\&gt;.constructor
 
 #### Defined in
 
-[src/ui/store/ModelStoreRepository.ts:9](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/ModelStoreRepository.ts#L9)
+[src/ui/store/ModelStoreRepository.ts:9](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/ModelStoreRepository.ts#L9)
 
 ## Properties
 
@@ -66,7 +66,7 @@ Map&lt;string, ModelStore&lt;any\&gt;\&gt;.constructor
 
 #### Inherited from
 
-Map.\_\_@toStringTag@167
+Map.\_\_@toStringTag@168
 
 #### Defined in
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/ModelStoreRepository.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/ModelStoreRepository.ts#L7)
+[src/ui/store/ModelStoreRepository.ts:7](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/ModelStoreRepository.ts#L7)
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/ModelStoreRepository.ts:25](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/ModelStoreRepository.ts#L25)
+[src/ui/store/ModelStoreRepository.ts:25](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/ModelStoreRepository.ts#L25)
 
 ## Methods
 
@@ -275,7 +275,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/ModelStoreRepository.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/ModelStoreRepository.ts#L15)
+[src/ui/store/ModelStoreRepository.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/ModelStoreRepository.ts#L15)
 
 ___
 

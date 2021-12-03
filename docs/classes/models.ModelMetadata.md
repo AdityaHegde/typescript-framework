@@ -58,7 +58,7 @@ Metadata class that holds all generic info about the model
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:54](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L54)
+[src/models/metadata/ModelMetadata.ts:53](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L53)
 
 ## Properties
 
@@ -68,7 +68,7 @@ Metadata class that holds all generic info about the model
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:38](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L38)
+[src/models/metadata/ModelMetadata.ts:37](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L37)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:39](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L39)
+[src/models/metadata/ModelMetadata.ts:38](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L38)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:44](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L44)
+[src/models/metadata/ModelMetadata.ts:43](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L43)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:43](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L43)
+[src/models/metadata/ModelMetadata.ts:42](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L42)
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:42](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L42)
+[src/models/metadata/ModelMetadata.ts:41](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L41)
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:46](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L46)
+[src/models/metadata/ModelMetadata.ts:45](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L45)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:35](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L35)
+[src/models/metadata/ModelMetadata.ts:34](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L34)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:49](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L49)
+[src/models/metadata/ModelMetadata.ts:48](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L48)
 
 ___
 
@@ -148,7 +148,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:37](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L37)
+[src/models/metadata/ModelMetadata.ts:36](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L36)
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:40](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L40)
+[src/models/metadata/ModelMetadata.ts:39](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L39)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:47](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L47)
+[src/models/metadata/ModelMetadata.ts:46](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L46)
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:45](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L45)
+[src/models/metadata/ModelMetadata.ts:44](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L44)
 
 ___
 
@@ -188,7 +188,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:48](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L48)
+[src/models/metadata/ModelMetadata.ts:47](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L47)
 
 ___
 
@@ -198,7 +198,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:36](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L36)
+[src/models/metadata/ModelMetadata.ts:35](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L35)
 
 ## Methods
 
@@ -220,7 +220,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:95](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L95)
+[src/models/metadata/ModelMetadata.ts:94](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L94)
 
 ___
 
@@ -242,7 +242,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:84](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L84)
+[src/models/metadata/ModelMetadata.ts:83](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L83)
 
 ___
 
@@ -264,7 +264,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:119](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L119)
+[src/models/metadata/ModelMetadata.ts:117](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L117)
 
 ___
 
@@ -286,7 +286,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:132](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L132)
+[src/models/metadata/ModelMetadata.ts:130](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L130)
 
 ___
 
@@ -308,7 +308,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:107](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L107)
+[src/models/metadata/ModelMetadata.ts:106](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L106)
 
 ___
 
@@ -330,7 +330,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:144](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L144)
+[src/models/metadata/ModelMetadata.ts:142](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L142)
 
 ___
 
@@ -350,7 +350,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:161](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L161)
+[src/models/metadata/ModelMetadata.ts:159](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L159)
 
 ___
 
@@ -370,7 +370,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:155](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L155)
+[src/models/metadata/ModelMetadata.ts:153](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L153)
 
 ___
 
@@ -392,7 +392,7 @@ ___
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:69](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L69)
+[src/models/metadata/ModelMetadata.ts:68](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L68)
 
 ___
 
@@ -426,4 +426,4 @@ Add this to the top of every class to initialize metadata.
 
 #### Defined in
 
-[src/models/metadata/ModelMetadata.ts:168](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/models/metadata/ModelMetadata.ts#L168)
+[src/models/metadata/ModelMetadata.ts:166](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/models/metadata/ModelMetadata.ts#L166)

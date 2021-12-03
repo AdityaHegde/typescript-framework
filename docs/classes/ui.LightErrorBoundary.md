@@ -164,7 +164,7 @@ Component.state
 
 #### Defined in
 
-[src/ui/utils/LightErrorBoundary.tsx:5](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/utils/LightErrorBoundary.tsx#L5)
+[src/ui/utils/LightErrorBoundary.tsx:5](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/utils/LightErrorBoundary.tsx#L5)
 
 ___
 
@@ -336,7 +336,7 @@ Component.componentDidCatch
 
 #### Defined in
 
-[src/ui/utils/LightErrorBoundary.tsx:9](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/utils/LightErrorBoundary.tsx#L9)
+[src/ui/utils/LightErrorBoundary.tsx:9](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/utils/LightErrorBoundary.tsx#L9)
 
 ___
 
@@ -590,7 +590,7 @@ Component.render
 
 #### Defined in
 
-[src/ui/utils/LightErrorBoundary.tsx:13](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/utils/LightErrorBoundary.tsx#L13)
+[src/ui/utils/LightErrorBoundary.tsx:13](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/utils/LightErrorBoundary.tsx#L13)
 
 ___
 

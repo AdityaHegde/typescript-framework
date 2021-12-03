@@ -4,7 +4,7 @@ import {getJwtAuthentication} from "../../src/server/authentication/jwt";
 import {getSessionAuthentication} from "../../src/server/authentication/session";
 import {ServerConfig, Server} from "../../src/server";
 import {UserInvite, UserModel} from "../../src/models";
-import {User} from "../test-classes/server/user/User";
+import {User} from "../functional/server/models/user/User";
 import {TestSuiteSetup} from "@adityahegde/typescript-test-utils/dist/TestSuiteSetup";
 import {bootstrapMongooseData} from "../data/mongoose";
 import {getPortByTestSuite} from "./getPortByTestSuite";

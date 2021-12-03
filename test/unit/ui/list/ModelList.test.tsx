@@ -5,11 +5,11 @@
 import React from "react";
 import expect from "expect";
 import {render} from "@testing-library/react";
-import {SimpleModel} from "../../../test-classes/ui/SimpleModel";
+import {SimpleModel} from "../models/SimpleModel";
 import {ModelList} from "../../../../src/ui/list";
 import {AntdJestTestBase} from "../../../test-bases/AntdJestTestBase";
-import {NestedModel} from "../../../test-classes/ui/NestedModel";
-import {ExhaustivePropsModel} from "../../../test-classes/ui/ExhaustivePropsModel";
+import {NestedModel} from "../models/NestedModel";
+import {ExhaustivePropsModel} from "../models/ExhaustivePropsModel";
 import { BaseType } from "../../../../src/models/BaseType";
 
 @AntdJestTestBase.Suite

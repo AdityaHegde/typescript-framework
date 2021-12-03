@@ -1,16 +1,16 @@
 import got, {HTTPError} from "got";
 import should from "should";
-import {PublicModel} from "../../test-classes/server/bootstrap/PublicModel";
-import {RestrictedModel} from "../../test-classes/server/bootstrap/RestrictedModel";
-import {PartialRestrictedModel} from "../../test-classes/server/bootstrap/PartialRestrictedModel";
-import {UserLockedModel} from "../../test-classes/server/UserLockedModel";
+import {PublicModel} from "./models/bootstrap/PublicModel";
+import {RestrictedModel} from "./models/bootstrap/RestrictedModel";
+import {PartialRestrictedModel} from "./models/bootstrap/PartialRestrictedModel";
+import {UserLockedModel} from "./models/UserLockedModel";
 import {loginUser} from "../../utils/getCookieJar";
-import {LoggedInModel} from "../../test-classes/server/bootstrap/LoggedInModel";
+import {LoggedInModel} from "./models/bootstrap/LoggedInModel";
 import {ModelMetadata, UserModel} from "../../../src/models";
 import {sanitize} from "../../data/mongoose";
 import {ServerTestBase} from "../../test-bases/ServerTestBase";
-import {UserWithSingleRole} from "../../test-classes/server/user/UserWithSingleRole";
-import {UserWithMultiRole} from "../../test-classes/server/user/UserWithMultiRole";
+import {UserWithSingleRole} from "./models/user/UserWithSingleRole";
+import {UserWithMultiRole} from "./models/user/UserWithMultiRole";
 import {
   getServerTestSuiteParametersForEveryAuth,
   ServerTestSuiteParameter

@@ -1,6 +1,10 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import {SinonStub} from "sinon";
-import {TestModelClient} from "../test-classes/ui/TestModelClient";
-import {Models} from "../test-classes/ui/Models";
+import {TestModelClient} from "../unit/ui/models/TestModelClient";
+import {Models} from "../unit/ui/models/Models";
 import {ModelStoreRepository} from "../../src/ui/store";
 import {addModelsToList} from "../../src/models";
 import {TestBase} from "@adityahegde/typescript-test-utils";

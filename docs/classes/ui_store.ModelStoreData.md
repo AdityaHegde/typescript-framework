@@ -52,7 +52,7 @@ React is notified of change by updating this object in the hooks,
 
 #### Defined in
 
-[src/ui/store/ModelStoreData.ts:12](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/ModelStoreData.ts#L12)
+[src/ui/store/ModelStoreData.ts:12](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/ModelStoreData.ts#L12)
 
 ## Properties
 
@@ -62,7 +62,7 @@ React is notified of change by updating this object in the hooks,
 
 #### Defined in
 
-[src/ui/store/ModelStoreData.ts:9](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/ModelStoreData.ts#L9)
+[src/ui/store/ModelStoreData.ts:9](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/ModelStoreData.ts#L9)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/ModelStoreData.ts:10](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/ModelStoreData.ts#L10)
+[src/ui/store/ModelStoreData.ts:10](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/ModelStoreData.ts#L10)
 
 ## Methods
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/ModelStoreData.ts:23](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/ModelStoreData.ts#L23)
+[src/ui/store/ModelStoreData.ts:23](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/ModelStoreData.ts#L23)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/ui/store/ModelStoreData.ts:29](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/ModelStoreData.ts#L29)
+[src/ui/store/ModelStoreData.ts:29](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/ModelStoreData.ts#L29)
 
 ___
 
@@ -132,4 +132,4 @@ ___
 
 #### Defined in
 
-[src/ui/store/ModelStoreData.ts:17](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/ModelStoreData.ts#L17)
+[src/ui/store/ModelStoreData.ts:17](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/ModelStoreData.ts#L17)

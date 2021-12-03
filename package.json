@@ -1,6 +1,6 @@
 {
   "name": "@adityahegde/typescript-framework",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A framework for a full stack ui in expressjs and react",
   "main": "dist/index.js",
   "directories": {
@@ -73,6 +73,7 @@
     "@playwright/test": "^1.16.3",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
+    "@types/express": "^4.17.13",
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.7",
     "@types/react": "^17.0.35",

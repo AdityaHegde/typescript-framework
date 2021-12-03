@@ -1,6 +1,6 @@
 import {DataStoreModel, QueryOptions} from "../DataStoreModel";
-import {Document, Model, Query} from "mongoose";
-import {BaseType} from "../../../models/BaseType";
+import {Document, Model, Query, Types} from "mongoose";
+import {BaseType} from "../../../models";
 
 export class MongooseStoreModel extends DataStoreModel {
   public mongooseModel: Model<Document>;
@@ -11,27 +11,30 @@ export class MongooseStoreModel extends DataStoreModel {
   }
 
   public async query(search: any, options?: QueryOptions): Promise<Array<any>> {
-    return this.normalizeRecords(await this.conditionallyApplyFilters(this.mongooseModel.find(this.translateSearch(search)), options));
+    return this.normalizeOutputRecords(await this.conditionallyApplyFilters(this.mongooseModel.find(this.translateSearch(search)), options));
   }
 
   public async querySingle(search: any): Promise<any> {
-    return this.normalizeRecord(await this.mongooseModel.findOne(search).exec());
+    return this.normalizeOutputRecord(await this.mongooseModel.findOne(search).exec());
   }
 
   public async getById(id: string): Promise<any> {
-    return this.normalizeRecord(await this.mongooseModel.findById(id).exec());
+    return this.normalizeOutputRecord(await this.mongooseModel.findById(id).exec());
   }
 
   public async create(record: any): Promise<any> {
-    return this.normalizeRecord(await this.mongooseModel.create(record));
+    this.normalizeInputRecord(record);
+    return this.normalizeOutputRecord(await this.mongooseModel.create(record));
   }
 
   public async update(id: string, record: any): Promise<any> {
-    return this.normalizeRecord(await this.mongooseModel.findByIdAndUpdate(id, record, {new: true}).exec());
+    this.normalizeInputRecord(record);
+    return this.normalizeOutputRecord(await this.mongooseModel.findByIdAndUpdate(id, record, {new: true}).exec());
   }
 
   public async updateOrCreate(query: any, record: any): Promise<any> {
-    return this.normalizeRecord(await this.mongooseModel.findOneAndUpdate(query, record, {new: true, upsert: true}).exec());
+    this.normalizeInputRecord(record);
+    return this.normalizeOutputRecord(await this.mongooseModel.findOneAndUpdate(query, record, {new: true, upsert: true}).exec());
   }
 
   public async updateMany(query: any, updates: any, options?: QueryOptions): Promise<any> {
@@ -104,16 +107,29 @@ export class MongooseStoreModel extends DataStoreModel {
     return newQuery;
   }
 
-  private normalizeRecords(records: Array<Document>) {
-    return records.map(record => this.normalizeRecord(record));
+  private normalizeOutputRecords(records: Array<Document>) {
+    return records.map(record => this.normalizeOutputRecord(record));
   }
 
-  private normalizeRecord(record: Document) {
+  private normalizeOutputRecord(record: Document) {
     if (!record) {
       return null;
     }
 
     record.id = record._id;
+
     return record;
+  }
+
+  private normalizeInputRecord(record: Record<string, any>) {
+    this.model.metadata.relations.forEach((relation) => {
+      if (!record[relation.fk]) {
+        return;
+      }
+
+      record[relation.field] = record[relation.fk].map ?
+        record[relation.fk].map(id => new Types.ObjectId(id)) : new Types.ObjectId(record[relation.fk]);
+      delete record[relation.fk];
+    });
   }
 }

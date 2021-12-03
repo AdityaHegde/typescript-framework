@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[src/ui/table/TableColumnFilters.tsx:25](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/table/TableColumnFilters.tsx#L25)
+[src/ui/table/TableColumnFilters.tsx:25](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/table/TableColumnFilters.tsx#L25)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[src/ui/table/TableCellRenderers.tsx:10](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/table/TableCellRenderers.tsx#L10)
+[src/ui/table/TableCellRenderers.tsx:9](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/table/TableCellRenderers.tsx#L9)
 
 ## Functions
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[src/ui/table/ModelTable.tsx:40](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/table/ModelTable.tsx#L40)
+[src/ui/table/ModelTable.tsx:40](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/table/ModelTable.tsx#L40)

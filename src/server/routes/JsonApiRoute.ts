@@ -7,11 +7,8 @@ import {RouteFactory} from "./RouteFactory";
 import {DataStoreModel} from "../datastore/DataStoreModel";
 import {Authentication} from "../authentication/Authentication";
 import {RoutesConfig} from "./RoutesConfig";
-import {UserModel} from "../../models/UserModel";
-import {ModelSelectFieldType} from "../../models/metadata/Fields";
-import {BaseType} from "../../models/BaseType";
-import {getQueryString} from "../../ui/utils/getQueryString";
-import {ModelNameMap} from "../../models/ModelList";
+import {BaseType, ModelNameMap, ModelSelectFieldType, RelationType, UserModel} from "../../models";
+import {getQueryString} from "../../ui";
 
 export type LinksType = {
   [link in string]: string
@@ -36,6 +33,8 @@ const PAGE_SIZE_KEY = "pageSize";
 export class JsonApiRoute extends Route {
   public jsonApiSanitizer: JsonApiSanitizer;
 
+  private apiIdPath: string;
+
   constructor(model: typeof BaseType, routesConfig: RoutesConfig, routeFactory: RouteFactory,
               dataStoreModel: DataStoreModel, authentication: Authentication, basePath: string) {
     super(model, routesConfig, routeFactory, dataStoreModel, authentication, basePath);
@@ -44,14 +43,15 @@ export class JsonApiRoute extends Route {
   }
 
   public async init(router: Router): Promise<void> {
-    const modelRouter = Router();
-
-    this.registerReadRoutes(modelRouter);
-    this.registerWriteRoutes(modelRouter);
-
     this.apiPath = this.getApiPath();
+    this.apiIdPath = `${this.apiPath}:id`;
+
+    // We are not creating a sub router here because path params are not passed over from sub router's path to handlers
+    // If express allows for a way to fix this we can move to sub routers
+    this.registerReadRoutes(router);
+    this.registerWriteRoutes(router);
+
     this.logger.info(`Adding a route for ${this.model.metadata.modelName} at ${this.apiPath}`);
-    router.use(this.apiPath, modelRouter);
   }
 
   public sanitizeRecord(record: any, params: any, req?: Request, read = false): any {
@@ -68,6 +68,9 @@ export class JsonApiRoute extends Route {
 
   private registerReadRoutes(baseRouter: Router) {
     const getManyHandler = async (req: Request, res: Response) => {
+      this.logger.debug(`Have query request. ` +
+        `modelName=${this.model.metadata.modelName} ` +
+        `query=${JSON.stringify(req.query)} params=${JSON.stringify(req.params)}`);
       await this.handle(res, req, () => {
         return this.dataStoreModel.query(this.sanitizeQuery(req.query, req.params), {
           ...(req.query[PAGINATION_KEY] ? {fromId: req.query[PAGINATION_KEY].toString()}: {}),
@@ -76,17 +79,19 @@ export class JsonApiRoute extends Route {
       });
     };
     const getSingleHandler = async (req: Request, res: Response) => {
+      this.logger.debug(`Have get single request. ` +
+        `modelName=${this.model.metadata.modelName} id=${req.params.id}`);
       await this.handle(res, req, () => {
         return this.dataStoreModel.getById(req.params.id);
       });
     };
 
     if (this.model.serverMetadata.readRole === undefined) {
-      baseRouter.get("/", getManyHandler);
-      baseRouter.get("/:id", getSingleHandler);
+      baseRouter.get(this.apiPath, getManyHandler);
+      baseRouter.get(this.apiIdPath, getSingleHandler);
     } else {
-      baseRouter.get("/", this.authentication.restrict(this.model.serverMetadata.readRole), getManyHandler);
-      baseRouter.get("/:id", this.authentication.restrict(this.model.serverMetadata.readRole), getSingleHandler);
+      baseRouter.get(this.apiPath, this.authentication.restrict(this.model.serverMetadata.readRole), getManyHandler);
+      baseRouter.get(this.apiIdPath, this.authentication.restrict(this.model.serverMetadata.readRole), getSingleHandler);
     }
   }
 
@@ -122,13 +127,13 @@ export class JsonApiRoute extends Route {
     };
 
     if (this.model.serverMetadata.writeRole === undefined) {
-      baseRouter.post("/", createHandler);
-      baseRouter.put("/:id", updateHandler);
-      baseRouter.delete("/:id", deleteHandler);
+      baseRouter.post(this.apiPath, createHandler);
+      baseRouter.put(this.apiIdPath, updateHandler);
+      baseRouter.delete(this.apiIdPath, deleteHandler);
     } else {
-      baseRouter.post("/", this.authentication.restrict(this.model.serverMetadata.writeRole), createHandler);
-      baseRouter.put("/:id", this.authentication.restrict(this.model.serverMetadata.writeRole), updateHandler);
-      baseRouter.delete("/:id", this.authentication.restrict(this.model.serverMetadata.writeRole), deleteHandler);
+      baseRouter.post(this.apiPath, this.authentication.restrict(this.model.serverMetadata.writeRole), createHandler);
+      baseRouter.put(this.apiIdPath, this.authentication.restrict(this.model.serverMetadata.writeRole), updateHandler);
+      baseRouter.delete(this.apiIdPath, this.authentication.restrict(this.model.serverMetadata.writeRole), deleteHandler);
     }
   }
 
@@ -139,7 +144,7 @@ export class JsonApiRoute extends Route {
       const resp = await operation();
       res.status(200).send(this.getResponsePayload(req, resp));
     } catch (err) {
-      this.logger.error(err.message);
+      this.logger.error(err.stack);
       res.status(500).send({
         errors: [err.toJSON ? err.toJSON() : {
           title: err.message,
@@ -202,21 +207,48 @@ export class JsonApiRoute extends Route {
     }
 
     await Promise.all(this.model.metadata.relations.map(async (relation) => {
+      if (relation.fk in jsonRecord.relations) {
+        await this.resolveRelationByIds(jsonRecord, record, relation);
+        return;
+      }
+
       if (!(relation.field in jsonRecord.relations)) {
         return;
       }
 
-      const subRoute = this.routeFactory.getRoute(
-        (this.model.metadata.fieldTypeMap.get(relation.fk) as ModelSelectFieldType).ref) as JsonApiRoute;
+      await this.resolveInPlaceRelation(jsonRecord, record, req, relation);
+    }));
+  }
+
+  private async resolveInPlaceRelation(jsonRecord: JSONRecordType, record: any, req: Request, relation: RelationType) {
+    const subRoute = this.routeFactory.getRoute(
+      (this.model.metadata.fieldTypeMap.get(relation.field) as ModelSelectFieldType).ref) as JsonApiRoute;
+    if (relation.reverseField) {
       (relation.multi ? jsonRecord.relations[relation.field] : [jsonRecord.relations[relation.field]])
         .forEach(relationJsonRecord => relationJsonRecord.attributes[relation.reverseField] = jsonRecord.id);
+    }
+    if (relation.multi) {
+      record[relation.field] = await Promise.all(jsonRecord.relations[relation.field].map(relationJsonRecord =>
+        subRoute.createOrUpdateJson(relationJsonRecord, req)));
+    } else {
+      record[relation.field] = await subRoute.createOrUpdateJson(jsonRecord.relations[relation.field], req);
+    }
+  }
+
+  private async resolveRelationByIds(jsonRecord: JSONRecordType, record: any, relation: RelationType) {
+    // ID of record used instead of record
+    record[relation.fk] = jsonRecord.relations[relation.fk];
+
+    if (relation.reverseField) {
+      const subRoute = this.routeFactory.getRoute(
+        (this.model.metadata.fieldTypeMap.get(relation.field) as ModelSelectFieldType).ref) as JsonApiRoute;
       if (relation.multi) {
-        record[relation.fk] = (await Promise.all(jsonRecord.relations[relation.field].map(relationJsonRecord =>
-          subRoute.createOrUpdateJson(relationJsonRecord, req)))).map(record => (record as any).id);
+        await Promise.all(record[relation.fk].map(fkId =>
+          subRoute.dataStoreModel.update(fkId, {[relation.reverseField]: jsonRecord.id})));
       } else {
-        record[relation.fk] = (await subRoute.createOrUpdateJson(jsonRecord.relations[relation.field], req)).id;
+        await subRoute.dataStoreModel.update(record[relation.fk], {[relation.reverseField]: jsonRecord.id});
       }
-    }));
+    }
   }
 
   private getResponsePayload(req: Request, records: any): JSONResponse {

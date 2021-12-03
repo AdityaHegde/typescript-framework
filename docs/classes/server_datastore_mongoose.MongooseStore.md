@@ -48,7 +48,7 @@
 
 #### Defined in
 
-[src/server/datastore/mongoose/MongooseStore.ts:17](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/mongoose/MongooseStore.ts#L17)
+[src/server/datastore/mongoose/MongooseStore.ts:17](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/datastore/mongoose/MongooseStore.ts#L17)
 
 ## Properties
 
@@ -58,13 +58,13 @@
 
 #### Defined in
 
-[src/server/datastore/mongoose/MongooseStore.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/mongoose/MongooseStore.ts#L15)
+[src/server/datastore/mongoose/MongooseStore.ts:15](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/datastore/mongoose/MongooseStore.ts#L15)
 
 ___
 
 ### dataStoreModelFactory
 
-• **dataStoreModelFactory**: [`DataStoreModelFactory`](server.DataStoreModelFactory.md)
+• `Readonly` **dataStoreModelFactory**: [`DataStoreModelFactory`](server.DataStoreModelFactory.md)
 
 #### Inherited from
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/DataStore.ts:5](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/DataStore.ts#L5)
+[src/server/datastore/DataStore.ts:5](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/datastore/DataStore.ts#L5)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[src/server/logging/LoggerBase.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/logging/LoggerBase.ts#L11)
+[src/server/logging/LoggerBase.ts:17](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/logging/LoggerBase.ts#L17)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/mongoose/MongooseStore.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/mongoose/MongooseStore.ts#L14)
+[src/server/datastore/mongoose/MongooseStore.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/datastore/mongoose/MongooseStore.ts#L14)
 
 ## Methods
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/mongoose/MongooseStore.ts:22](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/mongoose/MongooseStore.ts#L22)
+[src/server/datastore/mongoose/MongooseStore.ts:22](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/datastore/mongoose/MongooseStore.ts#L22)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[src/server/datastore/mongoose/MongooseStore.ts:32](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/mongoose/MongooseStore.ts#L32)
+[src/server/datastore/mongoose/MongooseStore.ts:32](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/datastore/mongoose/MongooseStore.ts#L32)
 
 ___
 
@@ -150,4 +150,4 @@ ___
 
 #### Defined in
 
-[src/server/datastore/mongoose/MongooseStore.ts:36](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/datastore/mongoose/MongooseStore.ts#L36)
+[src/server/datastore/mongoose/MongooseStore.ts:36](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/datastore/mongoose/MongooseStore.ts#L36)

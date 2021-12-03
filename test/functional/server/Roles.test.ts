@@ -1,7 +1,7 @@
 import should from "should";
 import got, {HTTPError} from "got";
 import {loginUser} from "../../utils/getCookieJar";
-import {UserWithSingleRole} from "../../test-classes/server/user/UserWithSingleRole";
+import {UserWithSingleRole} from "./models/user/UserWithSingleRole";
 // import {UserWithMultiRole} from "../../test-classes/server/user/UserWithMultiRole";
 import {ServerTestBase} from "../../test-bases/ServerTestBase";
 import {

@@ -23,7 +23,6 @@ export type ModelFieldType = FieldType & {
   readonly?: boolean;
   displayField?: boolean;
   restricted?: boolean;
-  modelField?: string;
   filter?: boolean;
   localFilter?: boolean;
 }
@@ -105,11 +104,10 @@ export class ModelMetadata {
    * @internal
    */
   public addRelationType(relationType: RelationType) {
-    const field = this.fieldTypeMap.get(relationType.fk);
+    const field = this.fieldTypeMap.get(relationType.field);
     if (!field) {
       throw new Error("Relation added without foreign key field defined");
     }
-    field.modelField = relationType.field;
     this.relations.push(relationType);
   }
 

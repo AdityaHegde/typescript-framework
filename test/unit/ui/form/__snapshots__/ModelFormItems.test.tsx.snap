@@ -359,10 +359,10 @@ exports[`ModelFormItemsTest modelFormTest NestedModel models 1`] = `
       >
         <label
           class=""
-          for="simpleModelId"
-          title="simpleModelId"
+          for="simpleModel"
+          title="simpleModel"
         >
-          simpleModelId
+          simpleModel
         </label>
       </div>
       <div
@@ -384,14 +384,14 @@ exports[`ModelFormItemsTest modelFormTest NestedModel models 1`] = `
                   class="ant-select-selection-search"
                 >
                   <input
-                    aria-activedescendant="simpleModelId_list_0"
+                    aria-activedescendant="simpleModel_list_0"
                     aria-autocomplete="list"
-                    aria-controls="simpleModelId_list"
+                    aria-controls="simpleModel_list"
                     aria-haspopup="listbox"
-                    aria-owns="simpleModelId_list"
+                    aria-owns="simpleModel_list"
                     autocomplete="off"
                     class="ant-select-selection-search-input"
-                    id="simpleModelId"
+                    id="simpleModel"
                     role="combobox"
                     type="search"
                     value=""
@@ -427,6 +427,80 @@ exports[`ModelFormItemsTest modelFormTest NestedModel models 1`] = `
                   </svg>
                 </span>
               </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="ant-row ant-form-item"
+    >
+      <div
+        class="ant-col ant-col-8 ant-form-item-label"
+      >
+        <label
+          class=""
+          for="simpleModels"
+          title="simpleModels"
+        >
+          simpleModels
+        </label>
+      </div>
+      <div
+        class="ant-col ant-col-16 ant-form-item-control"
+      >
+        <div
+          class="ant-form-item-control-input"
+        >
+          <div
+            class="ant-form-item-control-input-content"
+          >
+            <div
+              class="ant-select ant-select-multiple ant-select-show-search"
+            >
+              <div
+                class="ant-select-selector"
+              >
+                <div
+                  class="ant-select-selection-overflow"
+                >
+                  <div
+                    class="ant-select-selection-overflow-item ant-select-selection-overflow-item-suffix"
+                    style="opacity: 1;"
+                  >
+                    <div
+                      class="ant-select-selection-search"
+                      style="width: 0px;"
+                    >
+                      <input
+                        aria-activedescendant="simpleModels_list_0"
+                        aria-autocomplete="list"
+                        aria-controls="simpleModels_list"
+                        aria-haspopup="listbox"
+                        aria-owns="simpleModels_list"
+                        autocomplete="off"
+                        class="ant-select-selection-search-input"
+                        id="simpleModels"
+                        readonly=""
+                        role="combobox"
+                        style="opacity: 0;"
+                        type="search"
+                        unselectable="on"
+                        value=""
+                      />
+                      <span
+                        aria-hidden="true"
+                        class="ant-select-selection-search-mirror"
+                      >
+                         
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <span
+                  class="ant-select-selection-placeholder"
+                />
+              </div>
             </div>
           </div>
         </div>

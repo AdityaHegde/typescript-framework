@@ -1,6 +1,6 @@
 import got from "got";
 import should from "should";
-import {ValidationTestModel} from "../../test-classes/server/ValidationTestModel";
+import {ValidationTestModel} from "./models/ValidationTestModel";
 import {sanitize} from "../../data/mongoose";
 import {DataProviderData} from "@adityahegde/typescript-test-utils";
 import {ServerTestBase} from "../../test-bases/ServerTestBase";

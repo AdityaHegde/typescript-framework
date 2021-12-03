@@ -1,6 +1,6 @@
 import got from "got";
 import should from "should";
-import {QueryTestModel} from "../../test-classes/server/QueryTestModel";
+import {QueryTestModel} from "./models/QueryTestModel";
 import {JSONRecordType, JSONResponse} from "../../../src/server";
 import {sanitize} from "../../data/mongoose";
 import {ServerTestBase} from "../../test-bases/ServerTestBase";

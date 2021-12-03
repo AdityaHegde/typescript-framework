@@ -24,7 +24,7 @@ export class MongooseStore extends DataStore {
       dbName: this.config.dbName,
     });
 
-    this.logger.info("Connected to mongo db");
+    this.logger.info(`Connected to mongo db. connectionUrl=${this.config.connectionUrl} dbName=${this.config.dbName}`);
 
     await this.dataStoreModelFactory.init();
   }

@@ -5,12 +5,19 @@ type BuilderType<T> = {
   [K in keyof NonFunctionProperties<T>]:
     (value: NonFunctionProperties<T>[K]) => BuilderType<T>
 } & {
-  build: () => T,
+  build: (overrides?: Record<string, any>) => T,
 };
 
 export function Builder<T>(instance: T): BuilderType<T> {
   const builder: any = {
-    build: () => {
+    build: (overrides?: Record<string, any>) => {
+      if (overrides) {
+        for (const o in overrides) {
+          if (Object.prototype.hasOwnProperty.call(overrides, o)) {
+            instance[o] = overrides[o];
+          }
+        }
+      }
       return instance;
     },
   };

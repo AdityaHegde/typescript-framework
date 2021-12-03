@@ -5,12 +5,12 @@
 import React from "react";
 import expect from "expect";
 import {render} from "@testing-library/react";
-import {SimpleModel} from "../../../test-classes/ui/SimpleModel";
+import {SimpleModel} from "../models/SimpleModel";
 import {AntdJestTestBase} from "../../../test-bases/AntdJestTestBase";
-import {NestedModel} from "../../../test-classes/ui/NestedModel";
-import {ExhaustivePropsModel} from "../../../test-classes/ui/ExhaustivePropsModel";
+import {NestedModel} from "../models/NestedModel";
+import {ExhaustivePropsModel} from "../models/ExhaustivePropsModel";
 import {ModelForm} from "../../../../src/ui/form";
-import { BaseType } from "../../../../src/models/BaseType";
+import {BaseType} from "../../../../src/models";
 
 @AntdJestTestBase.Suite
 export class ModelFormItemsTest extends AntdJestTestBase {

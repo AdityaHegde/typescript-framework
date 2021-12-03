@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[src/ui/store/useRecordOperations.ts:29](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/useRecordOperations.ts#L29)
+[src/ui/store/useRecordOperations.ts:29](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/useRecordOperations.ts#L29)
 
 ___
 
@@ -73,4 +73,4 @@ ___
 
 #### Defined in
 
-[src/ui/store/useRecords.ts:5](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/ui/store/useRecords.ts#L5)
+[src/ui/store/useRecords.ts:5](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/ui/store/useRecords.ts#L5)

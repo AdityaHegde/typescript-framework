@@ -1,7 +1,7 @@
 import {TestBase} from "@adityahegde/typescript-test-utils";
 import {JestTestLibrary} from "@adityahegde/typescript-test-utils/dist/jest/JestTestLibrary";
 import {ServerTestSetup} from "./ServerTestSetup";
-import {UserModels, Models} from "../test-classes/server/Models";
+import {UserModels, Models} from "../functional/server/models/Models";
 import {addModelsToList, UserModel} from "../../src/models";
 import {Authentication, DataStore, RouteFactory} from "../../src/server";
 import {ServerTestSuiteParameter} from "./getServerTestSuiteParameter";

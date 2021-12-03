@@ -1,5 +1,5 @@
 import {MongooseStoreModel, MongooseStoreModelFactory} from "../../src/server/datastore/mongoose";
-import {BootstrapModels, UserModels} from "../test-classes/server/Models";
+import {BootstrapModels, UserModels} from "../functional/server/models/Models";
 import {ServerTestSuiteParameter} from "../test-bases/getServerTestSuiteParameter";
 
 export async function bootstrapMongooseData(serverTestSuiteParameter: ServerTestSuiteParameter) {

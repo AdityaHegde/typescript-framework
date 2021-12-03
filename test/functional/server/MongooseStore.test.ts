@@ -1,6 +1,6 @@
 import got from "got";
 import should from "should";
-import {PublicModel} from "../../test-classes/server/bootstrap/PublicModel";
+import {PublicModel} from "./models/bootstrap/PublicModel";
 import {sanitize} from "../../data/mongoose";
 import {ServerTestBase} from "../../test-bases/ServerTestBase";
 import {

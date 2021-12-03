@@ -1052,7 +1052,12 @@ exports[`ModelTableTest modelListTest NestedModel models 1`] = `
                     <th
                       class="ant-table-cell"
                     >
-                      simpleModelId
+                      simpleModel
+                    </th>
+                    <th
+                      class="ant-table-cell"
+                    >
+                      simpleModels
                     </th>
                     <th
                       class="ant-table-cell"
@@ -1068,6 +1073,9 @@ exports[`ModelTableTest modelListTest NestedModel models 1`] = `
                     class="ant-table-row ant-table-row-level-0"
                     data-row-key="a"
                   >
+                    <td
+                      class="ant-table-cell"
+                    />
                     <td
                       class="ant-table-cell"
                     />
@@ -1155,9 +1163,10 @@ exports[`ModelTableTest modelListTest NestedModel models 1`] = `
                     </td>
                     <td
                       class="ant-table-cell"
-                    >
-                      DisplayC
-                    </td>
+                    />
+                    <td
+                      class="ant-table-cell"
+                    />
                     <td
                       class="ant-table-cell"
                     >
@@ -1237,6 +1246,9 @@ exports[`ModelTableTest modelListTest NestedModel models 1`] = `
                     >
                       DisplayC
                     </td>
+                    <td
+                      class="ant-table-cell"
+                    />
                     <td
                       class="ant-table-cell"
                     />

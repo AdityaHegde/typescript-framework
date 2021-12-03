@@ -39,7 +39,7 @@ Extracted responsibility of sanitizing various aspects in json api from JsonApiR
 
 #### Defined in
 
-[src/server/routes/JsonApiSanitizer.ts:14](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiSanitizer.ts#L14)
+[src/server/routes/JsonApiSanitizer.ts:13](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiSanitizer.ts#L13)
 
 ## Properties
 
@@ -49,7 +49,7 @@ Extracted responsibility of sanitizing various aspects in json api from JsonApiR
 
 #### Defined in
 
-[src/server/routes/JsonApiSanitizer.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiSanitizer.ts#L11)
+[src/server/routes/JsonApiSanitizer.ts:10](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiSanitizer.ts#L10)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiSanitizer.ts:12](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiSanitizer.ts#L12)
+[src/server/routes/JsonApiSanitizer.ts:11](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiSanitizer.ts#L11)
 
 ## Methods
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiSanitizer.ts:40](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiSanitizer.ts#L40)
+[src/server/routes/JsonApiSanitizer.ts:39](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiSanitizer.ts#L39)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiSanitizer.ts:82](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiSanitizer.ts#L82)
+[src/server/routes/JsonApiSanitizer.ts:81](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiSanitizer.ts#L81)
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiSanitizer.ts:61](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiSanitizer.ts#L61)
+[src/server/routes/JsonApiSanitizer.ts:60](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiSanitizer.ts#L60)
 
 ___
 
@@ -134,7 +134,7 @@ ___
 | :------ | :------ | :------ |
 | `record` | `any` | `undefined` |
 | `params` | `any` | `undefined` |
-| `req?` | `any` | `undefined` |
+| `req?` | `Request`<`ParamsDictionary`, `any`, `any`, `ParsedQs`, `Record`<`string`, `any`\>\> | `undefined` |
 | `read` | `boolean` | `false` |
 
 #### Returns
@@ -143,4 +143,4 @@ ___
 
 #### Defined in
 
-[src/server/routes/JsonApiSanitizer.ts:19](https://github.com/AdityaHegde/typescript-framework/blob/7ced1c3/src/server/routes/JsonApiSanitizer.ts#L19)
+[src/server/routes/JsonApiSanitizer.ts:18](https://github.com/AdityaHegde/typescript-framework/blob/8035b74/src/server/routes/JsonApiSanitizer.ts#L18)
